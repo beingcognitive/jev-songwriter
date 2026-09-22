@@ -1,6 +1,7 @@
 {
   "name": "jev-songwriter",
   "private": true,
+  "license": "MIT",
   "type": "module",
   "description": "Jev writes melodies: code builds the grid and the legal notes, Jev judges which one comes next.",
   "scripts": {

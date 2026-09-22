@@ -96,6 +96,10 @@ lib/page.js        the HTML page
 test.mjs           node:test
 ```
 
+## License
+
+MIT. Jev is TypeSafe AI's model; scores and audio in the pages come from [abcjs](https://www.abcjs.net) (MIT), loaded from a CDN.
+
 ## Review log
 
 2026-09-22, after the first commit: one `/codex review` plus a 1+3+3 fan-out (self review, three Codex and three
