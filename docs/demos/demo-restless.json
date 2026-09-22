@@ -1,0 +1,4043 @@
+{
+  "title": "Restless, pacing the room at midnight, unable to sleep",
+  "key": "E minor",
+  "abcKey": "Em",
+  "flats": false,
+  "mode": "minor",
+  "tempo": 140,
+  "seed": 33,
+  "mood": "restless, pacing the room at midnight, unable to sleep",
+  "moodPreset": null,
+  "sevenths": false,
+  "chordsMode": "jev",
+  "order": "chords-first",
+  "givenChords": null,
+  "form": "mini_8",
+  "formName": "8-bar period",
+  "formLabel": "8 bars: a 4-bar question and its 4-bar answer",
+  "bars": 8,
+  "seconds": 14,
+  "range": "D4–G5",
+  "model": "jev-latest",
+  "backend": "native",
+  "createdAt": "2026-09-22T07:35:31.873Z",
+  "barPlan": [
+    {
+      "bar": 1,
+      "phrase": "A",
+      "role": "opening",
+      "barInPhrase": 1,
+      "chord": "F#dim",
+      "roman": "ii°",
+      "isCadence": false
+    },
+    {
+      "bar": 2,
+      "phrase": "A",
+      "role": "opening",
+      "barInPhrase": 2,
+      "chord": "Bm",
+      "roman": "v",
+      "isCadence": false
+    },
+    {
+      "bar": 3,
+      "phrase": "A",
+      "role": "opening",
+      "barInPhrase": 3,
+      "chord": "F#dim",
+      "roman": "ii°",
+      "isCadence": false
+    },
+    {
+      "bar": 4,
+      "phrase": "A",
+      "role": "opening",
+      "barInPhrase": 4,
+      "chord": "Bm",
+      "roman": "v",
+      "isCadence": true
+    },
+    {
+      "bar": 5,
+      "phrase": "A'",
+      "role": "answer",
+      "barInPhrase": 1,
+      "chord": "F#dim",
+      "roman": "ii°",
+      "isCadence": false
+    },
+    {
+      "bar": 6,
+      "phrase": "A'",
+      "role": "answer",
+      "barInPhrase": 2,
+      "chord": "Bm",
+      "roman": "v",
+      "isCadence": false
+    },
+    {
+      "bar": 7,
+      "phrase": "A'",
+      "role": "answer",
+      "barInPhrase": 3,
+      "chord": "F#dim",
+      "roman": "ii°",
+      "isCadence": false
+    },
+    {
+      "bar": 8,
+      "phrase": "A'",
+      "role": "answer",
+      "barInPhrase": 4,
+      "chord": "Em",
+      "roman": "i",
+      "isCadence": true
+    }
+  ],
+  "notes": [
+    {
+      "midi": 66,
+      "e": 1,
+      "bar": 1,
+      "onset": 0,
+      "source": "jev",
+      "traceIndex": 8,
+      "index": 0,
+      "abcStart": 123,
+      "abcEnd": 124
+    },
+    {
+      "midi": 69,
+      "e": 2,
+      "bar": 1,
+      "onset": 1,
+      "source": "jev",
+      "traceIndex": 9,
+      "index": 1,
+      "abcStart": 124,
+      "abcEnd": 126
+    },
+    {
+      "midi": 66,
+      "e": 2,
+      "bar": 1,
+      "onset": 3,
+      "source": "jev",
+      "traceIndex": 10,
+      "index": 2,
+      "abcStart": 126,
+      "abcEnd": 128
+    },
+    {
+      "midi": 69,
+      "e": 2,
+      "bar": 1,
+      "onset": 5,
+      "source": "jev",
+      "traceIndex": 11,
+      "index": 3,
+      "abcStart": 129,
+      "abcEnd": 131
+    },
+    {
+      "midi": 66,
+      "e": 1,
+      "bar": 1,
+      "onset": 7,
+      "source": "jev",
+      "traceIndex": 12,
+      "index": 4,
+      "abcStart": 131,
+      "abcEnd": 132
+    },
+    {
+      "midi": 71,
+      "e": 1,
+      "bar": 2,
+      "onset": 0,
+      "source": "jev",
+      "traceIndex": 13,
+      "index": 5,
+      "abcStart": 139,
+      "abcEnd": 140
+    },
+    {
+      "midi": 66,
+      "e": 1,
+      "bar": 2,
+      "onset": 1,
+      "source": "jev",
+      "traceIndex": 14,
+      "index": 6,
+      "abcStart": 140,
+      "abcEnd": 141
+    },
+    {
+      "midi": 71,
+      "e": 1,
+      "bar": 2,
+      "onset": 2,
+      "source": "jev",
+      "traceIndex": 15,
+      "index": 7,
+      "abcStart": 141,
+      "abcEnd": 142
+    },
+    {
+      "midi": 66,
+      "e": 2,
+      "bar": 2,
+      "onset": 3,
+      "source": "jev",
+      "traceIndex": 16,
+      "index": 8,
+      "abcStart": 142,
+      "abcEnd": 144
+    },
+    {
+      "midi": 71,
+      "e": 2,
+      "bar": 2,
+      "onset": 5,
+      "source": "jev",
+      "traceIndex": 17,
+      "index": 9,
+      "abcStart": 145,
+      "abcEnd": 147
+    },
+    {
+      "midi": 66,
+      "e": 1,
+      "bar": 2,
+      "onset": 7,
+      "source": "jev",
+      "traceIndex": 18,
+      "index": 10,
+      "abcStart": 147,
+      "abcEnd": 148
+    },
+    {
+      "midi": 69,
+      "e": 1,
+      "bar": 3,
+      "onset": 0,
+      "source": "jev",
+      "traceIndex": 19,
+      "index": 11,
+      "abcStart": 158,
+      "abcEnd": 159
+    },
+    {
+      "midi": 72,
+      "e": 2,
+      "bar": 3,
+      "onset": 1,
+      "source": "jev",
+      "traceIndex": 20,
+      "index": 12,
+      "abcStart": 159,
+      "abcEnd": 161
+    },
+    {
+      "midi": 69,
+      "e": 2,
+      "bar": 3,
+      "onset": 3,
+      "source": "jev",
+      "traceIndex": 21,
+      "index": 13,
+      "abcStart": 161,
+      "abcEnd": 163
+    },
+    {
+      "midi": 66,
+      "e": 2,
+      "bar": 3,
+      "onset": 5,
+      "source": "jev",
+      "traceIndex": 22,
+      "index": 14,
+      "abcStart": 164,
+      "abcEnd": 166
+    },
+    {
+      "midi": 69,
+      "e": 1,
+      "bar": 3,
+      "onset": 7,
+      "source": "jev",
+      "traceIndex": 23,
+      "index": 15,
+      "abcStart": 166,
+      "abcEnd": 167
+    },
+    {
+      "midi": 71,
+      "e": 8,
+      "bar": 4,
+      "onset": 0,
+      "source": "forced",
+      "traceIndex": 24,
+      "index": 16,
+      "abcStart": 174,
+      "abcEnd": 176
+    },
+    {
+      "midi": 66,
+      "e": 1,
+      "bar": 5,
+      "onset": 0,
+      "source": "reuse",
+      "traceIndex": 25,
+      "index": 17,
+      "abcStart": 186,
+      "abcEnd": 187
+    },
+    {
+      "midi": 69,
+      "e": 2,
+      "bar": 5,
+      "onset": 1,
+      "source": "reuse",
+      "traceIndex": 25,
+      "index": 18,
+      "abcStart": 187,
+      "abcEnd": 189
+    },
+    {
+      "midi": 66,
+      "e": 2,
+      "bar": 5,
+      "onset": 3,
+      "source": "reuse",
+      "traceIndex": 25,
+      "index": 19,
+      "abcStart": 189,
+      "abcEnd": 191
+    },
+    {
+      "midi": 69,
+      "e": 2,
+      "bar": 5,
+      "onset": 5,
+      "source": "reuse",
+      "traceIndex": 25,
+      "index": 20,
+      "abcStart": 192,
+      "abcEnd": 194
+    },
+    {
+      "midi": 66,
+      "e": 1,
+      "bar": 5,
+      "onset": 7,
+      "source": "reuse",
+      "traceIndex": 25,
+      "index": 21,
+      "abcStart": 194,
+      "abcEnd": 195
+    },
+    {
+      "midi": 71,
+      "e": 1,
+      "bar": 6,
+      "onset": 0,
+      "source": "reuse",
+      "traceIndex": 26,
+      "index": 22,
+      "abcStart": 202,
+      "abcEnd": 203
+    },
+    {
+      "midi": 66,
+      "e": 1,
+      "bar": 6,
+      "onset": 1,
+      "source": "reuse",
+      "traceIndex": 26,
+      "index": 23,
+      "abcStart": 203,
+      "abcEnd": 204
+    },
+    {
+      "midi": 71,
+      "e": 1,
+      "bar": 6,
+      "onset": 2,
+      "source": "reuse",
+      "traceIndex": 26,
+      "index": 24,
+      "abcStart": 204,
+      "abcEnd": 205
+    },
+    {
+      "midi": 66,
+      "e": 2,
+      "bar": 6,
+      "onset": 3,
+      "source": "reuse",
+      "traceIndex": 26,
+      "index": 25,
+      "abcStart": 205,
+      "abcEnd": 207
+    },
+    {
+      "midi": 71,
+      "e": 2,
+      "bar": 6,
+      "onset": 5,
+      "source": "reuse",
+      "traceIndex": 26,
+      "index": 26,
+      "abcStart": 208,
+      "abcEnd": 210
+    },
+    {
+      "midi": 66,
+      "e": 1,
+      "bar": 6,
+      "onset": 7,
+      "source": "reuse",
+      "traceIndex": 26,
+      "index": 27,
+      "abcStart": 210,
+      "abcEnd": 211
+    },
+    {
+      "midi": 69,
+      "e": 1,
+      "bar": 7,
+      "onset": 0,
+      "source": "reuse",
+      "traceIndex": 27,
+      "index": 28,
+      "abcStart": 221,
+      "abcEnd": 222
+    },
+    {
+      "midi": 72,
+      "e": 2,
+      "bar": 7,
+      "onset": 1,
+      "source": "reuse",
+      "traceIndex": 27,
+      "index": 29,
+      "abcStart": 222,
+      "abcEnd": 224
+    },
+    {
+      "midi": 69,
+      "e": 2,
+      "bar": 7,
+      "onset": 3,
+      "source": "reuse",
+      "traceIndex": 27,
+      "index": 30,
+      "abcStart": 224,
+      "abcEnd": 226
+    },
+    {
+      "midi": 66,
+      "e": 2,
+      "bar": 7,
+      "onset": 5,
+      "source": "reuse",
+      "traceIndex": 27,
+      "index": 31,
+      "abcStart": 227,
+      "abcEnd": 229
+    },
+    {
+      "midi": 69,
+      "e": 1,
+      "bar": 7,
+      "onset": 7,
+      "source": "reuse",
+      "traceIndex": 27,
+      "index": 32,
+      "abcStart": 229,
+      "abcEnd": 230
+    },
+    {
+      "midi": 64,
+      "e": 8,
+      "bar": 8,
+      "onset": 0,
+      "source": "forced",
+      "traceIndex": 28,
+      "index": 33,
+      "abcStart": 237,
+      "abcEnd": 239
+    }
+  ],
+  "trace": [
+    {
+      "kind": "chord",
+      "source": "jev",
+      "bar": 1,
+      "chord": "F#dim",
+      "roman": "ii°",
+      "answers": {
+        "chord": {
+          "choice": "F#dim",
+          "confidence": 0.31,
+          "top": [
+            [
+              "F#dim",
+              0.42
+            ],
+            [
+              "Em",
+              0.31
+            ],
+            [
+              "Am",
+              0.18
+            ],
+            [
+              "Bm",
+              0.07
+            ],
+            [
+              "G",
+              0.01
+            ]
+          ]
+        }
+      },
+      "heuristicRank": 7,
+      "optionCount": 7,
+      "confidence": 0.31,
+      "latencyMs": 569,
+      "usage": {
+        "input": 927,
+        "output": 71
+      },
+      "model": "jev-1.13.0",
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "E minor",
+              "meter": "4/4",
+              "tempo_bpm": 140,
+              "form": "8-bar period (8 bars): A opening 4 bars, A' answer 4 bars (repeats A)",
+              "mood": "restless, pacing the room at midnight, unable to sleep",
+              "character": "a simple, singable song; the chords carry its mood and its shape"
+            },
+            "position": {
+              "bar": 1,
+              "of_bars": 8,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-4)",
+              "bar_in_phrase": "1 of 4",
+              "bars_until_cadence": 3,
+              "cadence": "bar 4 is Bm (v), a half cadence set by the form"
+            },
+            "harmony_so_far": [],
+            "recent": {
+              "last_chord": "none, this is the first bar",
+              "bars_on_the_last_root": 0,
+              "bars_since_the_tonic": 0
+            }
+          },
+          "questions": {
+            "chord": {
+              "type": "choice",
+              "instructions": "The chord for bar 1 that best serves the song and its mood, \"restless, pacing the room at midnight, unable to sleep\": it follows the chords so far, fits this phrase's role, and heads for the cadence in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "Em": "Em (i), minor, tonic: home, rest. the first chord of the piece; starting on the tonic states the key. darker.",
+                "Am": "Am (iv), minor, predominant: moves away from home, leads to v or VII. the first chord of the piece; starting away from the tonic leaves the key open. darker.",
+                "Bm": "Bm (v), minor, minor dominant: a soft pull back to i. the first chord of the piece; starting away from the tonic leaves the key open. darker.",
+                "C": "C (VI), major, submediant: warm, often before VII or iv. the first chord of the piece; starting away from the tonic leaves the key open. bright.",
+                "G": "G (III), major, relative major: home's brighter twin. the first chord of the piece; starting away from the tonic leaves the key open. bright.",
+                "D": "D (VII), major, subtonic: a modal pull back to i. the first chord of the piece; starting away from the tonic leaves the key open. bright.",
+                "F#dim": "F#dim (ii°), diminished, predominant, diminished: tense, leads to v. the first chord of the piece; starting away from the tonic leaves the key open. rarely a resting chord in a song. tense and unstable."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "chord": {
+              "type": "choice",
+              "choice": "F#dim",
+              "confidence": 0.31,
+              "probabilities": {
+                "G": 0.01,
+                "Em": 0.31,
+                "Am": 0.18,
+                "Bm": 0.07,
+                "D": 0.01,
+                "F#dim": 0.42,
+                "C": 0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 927,
+            "output_tokens": 71
+          }
+        }
+      },
+      "note": null,
+      "step": 1
+    },
+    {
+      "kind": "chord",
+      "source": "jev",
+      "bar": 2,
+      "chord": "Bm",
+      "roman": "v",
+      "answers": {
+        "chord": {
+          "choice": "Bm",
+          "confidence": 0.35,
+          "top": [
+            [
+              "Bm",
+              0.44
+            ],
+            [
+              "F#dim",
+              0.19
+            ],
+            [
+              "Am",
+              0.16
+            ],
+            [
+              "Em",
+              0.14
+            ],
+            [
+              "D",
+              0.03
+            ]
+          ]
+        }
+      },
+      "heuristicRank": 2,
+      "optionCount": 7,
+      "confidence": 0.35,
+      "latencyMs": 321,
+      "usage": {
+        "input": 1002,
+        "output": 69
+      },
+      "model": "jev-1.13.0",
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "E minor",
+              "meter": "4/4",
+              "tempo_bpm": 140,
+              "form": "8-bar period (8 bars): A opening 4 bars, A' answer 4 bars (repeats A)",
+              "mood": "restless, pacing the room at midnight, unable to sleep",
+              "character": "a simple, singable song; the chords carry its mood and its shape"
+            },
+            "position": {
+              "bar": 2,
+              "of_bars": 8,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-4)",
+              "bar_in_phrase": "2 of 4",
+              "bars_until_cadence": 2,
+              "cadence": "bar 4 is Bm (v), a half cadence set by the form"
+            },
+            "harmony_so_far": [
+              "bar 1: F#dim (ii°)"
+            ],
+            "recent": {
+              "last_chord": "F#dim (ii°)",
+              "bars_on_the_last_root": 1,
+              "bars_since_the_tonic": 1
+            }
+          },
+          "questions": {
+            "chord": {
+              "type": "choice",
+              "instructions": "The chord for bar 2 that best serves the song and its mood, \"restless, pacing the room at midnight, unable to sleep\": it follows the chords so far, fits this phrase's role, and heads for the cadence in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "Em": "Em (i), minor, tonic: home, rest. root steps down a 2nd from F#dim, 0 common tones. a common move (ii° to i). darker.",
+                "Bm": "Bm (v), minor, minor dominant: a soft pull back to i. root falls a 5th (rises a 4th), the strongest pull from F#dim, 1 common tone. a common move (ii° to v). darker.",
+                "Am": "Am (iv), minor, predominant: moves away from home, leads to v or VII. root rises a 3rd from F#dim, 2 common tones. a less usual move (ii° to iv). darker.",
+                "G": "G (III), major, relative major: home's brighter twin. root steps up a 2nd from F#dim, 0 common tones. a less usual move (ii° to III). bright.",
+                "C": "C (VI), major, submediant: warm, often before VII or iv. root rises a 5th (falls a 4th) from F#dim, 1 common tone. a less usual move (ii° to VI). bright.",
+                "D": "D (VII), major, subtonic: a modal pull back to i. root falls a 3rd from F#dim, 2 common tones. a less usual move (ii° to VII). bright.",
+                "F#dim": "F#dim (ii°), diminished, predominant, diminished: tense, leads to v. repeats F#dim. rarely a resting chord in a song. tense and unstable."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "chord": {
+              "type": "choice",
+              "choice": "Bm",
+              "confidence": 0.35,
+              "probabilities": {
+                "C": 0.02,
+                "Em": 0.14,
+                "G": 0.02,
+                "Bm": 0.44,
+                "Am": 0.16,
+                "F#dim": 0.19,
+                "D": 0.03
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1002,
+            "output_tokens": 69
+          }
+        }
+      },
+      "note": null,
+      "step": 2
+    },
+    {
+      "kind": "chord",
+      "source": "jev",
+      "bar": 3,
+      "chord": "F#dim",
+      "roman": "ii°",
+      "answers": {
+        "chord": {
+          "choice": "F#dim",
+          "confidence": 0.43,
+          "top": [
+            [
+              "F#dim",
+              0.52
+            ],
+            [
+              "Am",
+              0.32
+            ],
+            [
+              "Em",
+              0.1
+            ],
+            [
+              "Bm",
+              0.05
+            ],
+            [
+              "D",
+              0.01
+            ]
+          ]
+        }
+      },
+      "heuristicRank": 4,
+      "optionCount": 7,
+      "confidence": 0.43,
+      "latencyMs": 268,
+      "usage": {
+        "input": 1081,
+        "output": 71
+      },
+      "model": "jev-1.13.0",
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "E minor",
+              "meter": "4/4",
+              "tempo_bpm": 140,
+              "form": "8-bar period (8 bars): A opening 4 bars, A' answer 4 bars (repeats A)",
+              "mood": "restless, pacing the room at midnight, unable to sleep",
+              "character": "a simple, singable song; the chords carry its mood and its shape"
+            },
+            "position": {
+              "bar": 3,
+              "of_bars": 8,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-4)",
+              "bar_in_phrase": "3 of 4",
+              "bars_until_cadence": 1,
+              "cadence": "bar 4 is Bm (v), a half cadence set by the form"
+            },
+            "harmony_so_far": [
+              "bar 1: F#dim (ii°)",
+              "bar 2: Bm (v)"
+            ],
+            "recent": {
+              "last_chord": "Bm (v)",
+              "bars_on_the_last_root": 1,
+              "bars_since_the_tonic": 2
+            }
+          },
+          "questions": {
+            "chord": {
+              "type": "choice",
+              "instructions": "The chord for bar 3 that best serves the song and its mood, \"restless, pacing the room at midnight, unable to sleep\": it follows the chords so far, fits this phrase's role, and heads for the cadence in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "Em": "Em (i), minor, tonic: home, rest. root falls a 5th (rises a 4th), the strongest pull from Bm, 1 common tone. a very common move (v to i). does not prepare the coming cadence chord. darker.",
+                "Am": "Am (iv), minor, predominant: moves away from home, leads to v or VII. root steps down a 2nd from Bm, 0 common tones. a less usual move (v to iv). a predominant right before the v cadence: the classic preparation. darker.",
+                "C": "C (VI), major, submediant: warm, often before VII or iv. root steps up a 2nd from Bm, 0 common tones. a common move (v to VI). does not prepare the coming cadence chord. bright.",
+                "F#dim": "F#dim (ii°), diminished, predominant, diminished: tense, leads to v. root rises a 5th (falls a 4th) from Bm, 1 common tone. a less usual move (v to ii°). a predominant right before the v cadence: the classic preparation. rarely a resting chord in a song. tense and unstable.",
+                "G": "G (III), major, relative major: home's brighter twin. root falls a 3rd from Bm, 2 common tones. a less usual move (v to III). does not prepare the coming cadence chord. bright.",
+                "D": "D (VII), major, subtonic: a modal pull back to i. root rises a 3rd from Bm, 2 common tones. a less usual move (v to VII). does not prepare the coming cadence chord. bright.",
+                "Bm": "Bm (v), minor, minor dominant: a soft pull back to i. repeats Bm. the cadence chord itself, one bar early: the cadence would arrive as a repeat. darker."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "chord": {
+              "type": "choice",
+              "choice": "F#dim",
+              "confidence": 0.43,
+              "probabilities": {
+                "F#dim": 0.52,
+                "Em": 0.1,
+                "Am": 0.32,
+                "G": 0,
+                "D": 0.01,
+                "Bm": 0.05,
+                "C": 0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1081,
+            "output_tokens": 71
+          }
+        }
+      },
+      "note": null,
+      "step": 3
+    },
+    {
+      "kind": "chord",
+      "source": "forced",
+      "bar": 4,
+      "chord": "Bm",
+      "roman": "v",
+      "note": "half cadence: Bm (v), set by the form",
+      "step": 4
+    },
+    {
+      "kind": "chord",
+      "source": "reuse",
+      "bar": 5,
+      "chord": "F#dim",
+      "roman": "ii°",
+      "note": "bar 5 takes the chord of bar 1: phrase A' repeats A",
+      "step": 5
+    },
+    {
+      "kind": "chord",
+      "source": "reuse",
+      "bar": 6,
+      "chord": "Bm",
+      "roman": "v",
+      "note": "bar 6 takes the chord of bar 2: phrase A' repeats A",
+      "step": 6
+    },
+    {
+      "kind": "chord",
+      "source": "reuse",
+      "bar": 7,
+      "chord": "F#dim",
+      "roman": "ii°",
+      "note": "bar 7 takes the chord of bar 3: phrase A' repeats A",
+      "step": 7
+    },
+    {
+      "kind": "chord",
+      "source": "forced",
+      "bar": 8,
+      "chord": "Em",
+      "roman": "i",
+      "note": "full cadence: Em (i), set by the form",
+      "step": 8
+    },
+    {
+      "kind": "jev",
+      "bar": 1,
+      "beat": "1",
+      "onset": 0,
+      "pitch": "F#4",
+      "length": "eighth",
+      "eighths": 1,
+      "note": null,
+      "source": "jev",
+      "pitchSource": "jev",
+      "lengthSource": "jev",
+      "answers": {
+        "next_pitch": {
+          "choice": "F#4",
+          "confidence": 0.4,
+          "top": [
+            [
+              "F#4",
+              0.46
+            ],
+            [
+              "A4",
+              0.26
+            ],
+            [
+              "C5",
+              0.07
+            ],
+            [
+              "E4",
+              0.07
+            ],
+            [
+              "D4",
+              0.06
+            ]
+          ]
+        },
+        "length": {
+          "choice": "eighth",
+          "confidence": 0.49,
+          "top": [
+            [
+              "eighth",
+              0.59
+            ],
+            [
+              "quarter",
+              0.28
+            ],
+            [
+              "dotted_quarter",
+              0.08
+            ],
+            [
+              "half",
+              0.04
+            ],
+            [
+              "dotted_half",
+              0.01
+            ]
+          ]
+        }
+      },
+      "heuristicRank": 1,
+      "lengthRank": 3,
+      "optionCount": 11,
+      "confidence": 0.4,
+      "latencyMs": 277,
+      "usage": {
+        "input": 1489,
+        "output": 167
+      },
+      "model": "jev-1.13.0",
+      "noteIndices": [
+        0
+      ],
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "E minor",
+              "meter": "4/4",
+              "tempo_bpm": 140,
+              "form": "8-bar period (8 bars): A opening 4 bars, A' answer 4 bars (repeats A)",
+              "mood": "restless, pacing the room at midnight, unable to sleep",
+              "range": "D4 to G5, scale tones of E minor only",
+              "character": "a simple, singable melody with a clear shape"
+            },
+            "position": {
+              "bar": 1,
+              "of_bars": 8,
+              "beat": "1",
+              "beat_strength": "strong",
+              "eighths_left_in_bar": 8,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-4)",
+              "bar_in_phrase": "1 of 4",
+              "bars_until_cadence": 3,
+              "cadence": "bar 4 holds the dominant (5th degree) for the whole bar: a half cadence"
+            },
+            "harmony": {
+              "this_bar": "F#dim (ii°): F# A C",
+              "next_bar": "Bm (v): B D F#"
+            },
+            "melody_so_far": [
+              "bar 1 (F#dim), so far: (nothing yet)"
+            ],
+            "recent": {
+              "last_note": "none, this is the first note",
+              "previous_motion": "none",
+              "direction_run": "none",
+              "highest_so_far": "none",
+              "lowest_so_far": "none",
+              "notes_since_rest": 0,
+              "notes_in_this_bar": 0
+            }
+          },
+          "questions": {
+            "next_pitch": {
+              "type": "choice",
+              "instructions": "The pitch a good songwriter would write next in this E minor melody for a song whose mood is \"restless, pacing the room at midnight, unable to sleep\": singable, shaped by what came before, fitting this bar's chord (F#dim), and heading for the cadence described in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "F#4": "F#4, 2nd degree (supertonic). the first note of the piece. chord tone, the root of F#dim.",
+                "A4": "A4, 4th degree (subdominant). the first note of the piece. chord tone, the third of F#dim.",
+                "C5": "C5, 6th degree (submediant). the first note of the piece. chord tone, the fifth of F#dim.",
+                "F#5": "F#5, 2nd degree (supertonic). the first note of the piece. chord tone, the root of F#dim.",
+                "E4": "E4, 1st degree (tonic). the first note of the piece. not in F#dim, a tension against the chord.",
+                "G4": "G4, 3rd degree (mediant). the first note of the piece. not in F#dim, a tension against the chord.",
+                "B4": "B4, 5th degree (dominant). the first note of the piece. not in F#dim, a tension against the chord.",
+                "D4": "D4, 7th degree (subtonic). the first note of the piece. not in F#dim, a tension against the chord. the bottom of the range.",
+                "D5": "D5, 7th degree (subtonic). the first note of the piece. not in F#dim, a tension against the chord.",
+                "E5": "E5, 1st degree (tonic). the first note of the piece. not in F#dim, a tension against the chord.",
+                "G5": "G5, 3rd degree (mediant). the first note of the piece. not in F#dim, a tension against the chord. the top of the range."
+              }
+            },
+            "length": {
+              "type": "choice",
+              "instructions": "How long the next note should last for a song whose mood is \"restless, pacing the room at midnight, unable to sleep\", given the beat it starts on and the rhythm so far. Only lengths that fit in the bar are offered.",
+              "criteria": {
+                "quarter": "Quarter note, one beat. starts on beat 1. ends on beat 2, leaving 3 beats in the bar.",
+                "half": "Half note, two beats. starts on beat 1. ends on beat 3, leaving 2 beats in the bar.",
+                "eighth": "Eighth note, half a beat. starts on beat 1. ends on beat 1-and, leaving 3½ beats in the bar.",
+                "dotted_quarter": "Dotted quarter, a beat and a half. starts on beat 1. ends on beat 2-and, leaving 2½ beats in the bar.",
+                "dotted_half": "Dotted half, three beats. starts on beat 1. ends on beat 4, leaving one beat in the bar."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "next_pitch": {
+              "type": "choice",
+              "choice": "F#4",
+              "confidence": 0.4,
+              "probabilities": {
+                "C5": 0.07,
+                "B4": 0.01,
+                "G4": 0.04,
+                "E5": 0,
+                "F#4": 0.46,
+                "E4": 0.07,
+                "D5": 0.01,
+                "G5": 0,
+                "F#5": 0.02,
+                "D4": 0.06,
+                "A4": 0.26
+              }
+            },
+            "length": {
+              "type": "choice",
+              "choice": "eighth",
+              "confidence": 0.49,
+              "probabilities": {
+                "half": 0.04,
+                "dotted_quarter": 0.08,
+                "eighth": 0.59,
+                "quarter": 0.28,
+                "dotted_half": 0.01
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1489,
+            "output_tokens": 167
+          }
+        }
+      },
+      "step": 9
+    },
+    {
+      "kind": "jev",
+      "bar": 1,
+      "beat": "1-and",
+      "onset": 1,
+      "pitch": "A4",
+      "length": "quarter",
+      "eighths": 2,
+      "note": null,
+      "source": "jev",
+      "pitchSource": "jev",
+      "lengthSource": "jev",
+      "answers": {
+        "next_pitch": {
+          "choice": "A4",
+          "confidence": 0.58,
+          "top": [
+            [
+              "A4",
+              0.61
+            ],
+            [
+              "F#4",
+              0.08
+            ],
+            [
+              "B4",
+              0.08
+            ],
+            [
+              "C5",
+              0.07
+            ],
+            [
+              "G4",
+              0.06
+            ]
+          ]
+        },
+        "length": {
+          "choice": "quarter",
+          "confidence": 0.25,
+          "top": [
+            [
+              "quarter",
+              0.4
+            ],
+            [
+              "eighth",
+              0.34
+            ],
+            [
+              "dotted_quarter",
+              0.15
+            ],
+            [
+              "half",
+              0.06
+            ],
+            [
+              "dotted_half",
+              0.05
+            ]
+          ]
+        }
+      },
+      "heuristicRank": 3,
+      "lengthRank": 2,
+      "optionCount": 10,
+      "confidence": 0.58,
+      "latencyMs": 242,
+      "usage": {
+        "input": 1635,
+        "output": 157
+      },
+      "model": "jev-1.13.0",
+      "noteIndices": [
+        1
+      ],
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "E minor",
+              "meter": "4/4",
+              "tempo_bpm": 140,
+              "form": "8-bar period (8 bars): A opening 4 bars, A' answer 4 bars (repeats A)",
+              "mood": "restless, pacing the room at midnight, unable to sleep",
+              "range": "D4 to G5, scale tones of E minor only",
+              "character": "a simple, singable melody with a clear shape"
+            },
+            "position": {
+              "bar": 1,
+              "of_bars": 8,
+              "beat": "1-and",
+              "beat_strength": "weak, off the beat",
+              "eighths_left_in_bar": 7,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-4)",
+              "bar_in_phrase": "1 of 4",
+              "bars_until_cadence": 3,
+              "cadence": "bar 4 holds the dominant (5th degree) for the whole bar: a half cadence"
+            },
+            "harmony": {
+              "this_bar": "F#dim (ii°): F# A C",
+              "next_bar": "Bm (v): B D F#"
+            },
+            "melody_so_far": [
+              "bar 1 (F#dim), so far: F#4/e"
+            ],
+            "recent": {
+              "last_note": "F#4, half a beat",
+              "previous_motion": "none",
+              "direction_run": "none",
+              "highest_so_far": "F#4",
+              "lowest_so_far": "F#4",
+              "notes_since_rest": 1,
+              "notes_in_this_bar": 1
+            }
+          },
+          "questions": {
+            "next_pitch": {
+              "type": "choice",
+              "instructions": "The pitch a good songwriter would write next in this E minor melody for a song whose mood is \"restless, pacing the room at midnight, unable to sleep\": singable, shaped by what came before, fitting this bar's chord (F#dim), and heading for the cadence described in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "E4": "E4, 1st degree (tonic). step down from F#4 (major 2nd). not in F#dim, a tension against the chord. a new low point for the piece.",
+                "G4": "G4, 3rd degree (mediant). step up from F#4 (minor 2nd). not in F#dim, a tension against the chord. a new high point for the piece.",
+                "A4": "A4, 4th degree (subdominant). skip up from F#4 (minor 3rd). chord tone, the third of F#dim. a new high point for the piece.",
+                "F#4": "F#4, 2nd degree (supertonic). repeats F#4. chord tone, the root of F#dim.",
+                "C5": "C5, 6th degree (submediant). leap up from F#4 (tritone). chord tone, the fifth of F#dim. a new high point for the piece.",
+                "D4": "D4, 7th degree (subtonic). skip down from F#4 (major 3rd). not in F#dim, a tension against the chord. the bottom of the range.",
+                "F#5": "F#5, 2nd degree (supertonic). octave leap up from F#4. chord tone, the root of F#dim. a new high point for the piece.",
+                "B4": "B4, 5th degree (dominant). leap up from F#4 (perfect 4th). not in F#dim, a tension against the chord. a new high point for the piece.",
+                "D5": "D5, 7th degree (subtonic). leap up from F#4 (minor 6th). not in F#dim, a tension against the chord. a new high point for the piece.",
+                "E5": "E5, 1st degree (tonic). leap up from F#4 (minor 7th). not in F#dim, a tension against the chord. a new high point for the piece."
+              }
+            },
+            "length": {
+              "type": "choice",
+              "instructions": "How long the next note should last for a song whose mood is \"restless, pacing the room at midnight, unable to sleep\", given the beat it starts on and the rhythm so far. Only lengths that fit in the bar are offered.",
+              "criteria": {
+                "eighth": "Eighth note, half a beat. starts on beat 1-and. ends on beat 2, leaving 3 beats in the bar. completes the current beat. same length as the previous note.",
+                "quarter": "Quarter note, one beat. starts on beat 1-and. ends on beat 2-and, leaving 2½ beats in the bar. starts off the beat and crosses the next beat (syncopated).",
+                "half": "Half note, two beats. starts on beat 1-and. ends on beat 3-and, leaving 1½ beats in the bar. starts off the beat and crosses the next beat (syncopated).",
+                "dotted_quarter": "Dotted quarter, a beat and a half. starts on beat 1-and. ends on beat 3, leaving 2 beats in the bar. starts off the beat and crosses the next beat (syncopated).",
+                "dotted_half": "Dotted half, three beats. starts on beat 1-and. ends on beat 4-and, leaving half a beat in the bar. starts off the beat and crosses the next beat (syncopated). leaves a lone eighth to end the bar."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "next_pitch": {
+              "type": "choice",
+              "choice": "A4",
+              "confidence": 0.58,
+              "probabilities": {
+                "F#5": 0.01,
+                "E5": 0.01,
+                "D4": 0.04,
+                "C5": 0.07,
+                "F#4": 0.08,
+                "D5": 0,
+                "G4": 0.06,
+                "A4": 0.61,
+                "E4": 0.04,
+                "B4": 0.08
+              }
+            },
+            "length": {
+              "type": "choice",
+              "choice": "quarter",
+              "confidence": 0.25,
+              "probabilities": {
+                "dotted_quarter": 0.15,
+                "dotted_half": 0.05,
+                "half": 0.06,
+                "quarter": 0.4,
+                "eighth": 0.34
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1635,
+            "output_tokens": 157
+          }
+        }
+      },
+      "step": 10
+    },
+    {
+      "kind": "jev",
+      "bar": 1,
+      "beat": "2-and",
+      "onset": 3,
+      "pitch": "F#4",
+      "length": "quarter",
+      "eighths": 2,
+      "note": null,
+      "source": "jev",
+      "pitchSource": "jev",
+      "lengthSource": "jev",
+      "answers": {
+        "next_pitch": {
+          "choice": "F#4",
+          "confidence": 0.34,
+          "top": [
+            [
+              "F#4",
+              0.39
+            ],
+            [
+              "C5",
+              0.35
+            ],
+            [
+              "A4",
+              0.08
+            ],
+            [
+              "B4",
+              0.06
+            ],
+            [
+              "G4",
+              0.04
+            ]
+          ]
+        },
+        "length": {
+          "choice": "quarter",
+          "confidence": 0.26,
+          "top": [
+            [
+              "quarter",
+              0.44
+            ],
+            [
+              "eighth",
+              0.28
+            ],
+            [
+              "dotted_quarter",
+              0.18
+            ],
+            [
+              "half",
+              0.1
+            ]
+          ]
+        }
+      },
+      "heuristicRank": 3,
+      "lengthRank": 2,
+      "optionCount": 12,
+      "confidence": 0.34,
+      "latencyMs": 237,
+      "usage": {
+        "input": 1645,
+        "output": 164
+      },
+      "model": "jev-1.13.0",
+      "noteIndices": [
+        2
+      ],
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "E minor",
+              "meter": "4/4",
+              "tempo_bpm": 140,
+              "form": "8-bar period (8 bars): A opening 4 bars, A' answer 4 bars (repeats A)",
+              "mood": "restless, pacing the room at midnight, unable to sleep",
+              "range": "D4 to G5, scale tones of E minor only",
+              "character": "a simple, singable melody with a clear shape"
+            },
+            "position": {
+              "bar": 1,
+              "of_bars": 8,
+              "beat": "2-and",
+              "beat_strength": "weak, off the beat",
+              "eighths_left_in_bar": 5,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-4)",
+              "bar_in_phrase": "1 of 4",
+              "bars_until_cadence": 3,
+              "cadence": "bar 4 holds the dominant (5th degree) for the whole bar: a half cadence"
+            },
+            "harmony": {
+              "this_bar": "F#dim (ii°): F# A C",
+              "next_bar": "Bm (v): B D F#"
+            },
+            "melody_so_far": [
+              "bar 1 (F#dim), so far: F#4/e A4/q"
+            ],
+            "recent": {
+              "last_note": "A4, one beat",
+              "previous_motion": "skip up a minor 3rd",
+              "direction_run": "none",
+              "highest_so_far": "A4",
+              "lowest_so_far": "F#4",
+              "notes_since_rest": 2,
+              "notes_in_this_bar": 2
+            }
+          },
+          "questions": {
+            "next_pitch": {
+              "type": "choice",
+              "instructions": "The pitch a good songwriter would write next in this E minor melody for a song whose mood is \"restless, pacing the room at midnight, unable to sleep\": singable, shaped by what came before, fitting this bar's chord (F#dim), and heading for the cadence described in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "G4": "G4, 3rd degree (mediant). step down from A4 (major 2nd). not in F#dim, a tension against the chord.",
+                "B4": "B4, 5th degree (dominant). step up from A4 (major 2nd). not in F#dim, a tension against the chord. a new high point for the piece.",
+                "F#4": "F#4, 2nd degree (supertonic). skip down from A4 (minor 3rd). chord tone, the root of F#dim.",
+                "C5": "C5, 6th degree (submediant). skip up from A4 (minor 3rd). chord tone, the fifth of F#dim. a new high point for the piece.",
+                "A4": "A4, 4th degree (subdominant). repeats A4. chord tone, the third of F#dim.",
+                "F#5": "F#5, 2nd degree (supertonic). leap up from A4 (major 6th). chord tone, the root of F#dim. a new high point for the piece.",
+                "E4": "E4, 1st degree (tonic). leap down from A4 (perfect 4th). not in F#dim, a tension against the chord. a new low point for the piece.",
+                "D5": "D5, 7th degree (subtonic). leap up from A4 (perfect 4th). not in F#dim, a tension against the chord. a new high point for the piece.",
+                "E5": "E5, 1st degree (tonic). leap up from A4 (perfect 5th). not in F#dim, a tension against the chord. a new high point for the piece.",
+                "D4": "D4, 7th degree (subtonic). leap down from A4 (perfect 5th). not in F#dim, a tension against the chord. the bottom of the range.",
+                "G5": "G5, 3rd degree (mediant). leap up from A4 (minor 7th). not in F#dim, a tension against the chord. the top of the range.",
+                "rest": "Rest: silence for the chosen length, a breath. 2 notes since the last rest."
+              }
+            },
+            "length": {
+              "type": "choice",
+              "instructions": "How long the next note should last for a song whose mood is \"restless, pacing the room at midnight, unable to sleep\", given the beat it starts on and the rhythm so far. Only lengths that fit in the bar are offered.",
+              "criteria": {
+                "eighth": "Eighth note, half a beat. starts on beat 2-and. ends on beat 3, leaving 2 beats in the bar. completes the current beat.",
+                "quarter": "Quarter note, one beat. starts on beat 2-and. ends on beat 3-and, leaving 1½ beats in the bar. starts off the beat and crosses the next beat (syncopated). same length as the previous note.",
+                "half": "Half note, two beats. starts on beat 2-and. ends on beat 4-and, leaving half a beat in the bar. starts off the beat and crosses the next beat (syncopated). leaves a lone eighth to end the bar.",
+                "dotted_quarter": "Dotted quarter, a beat and a half. starts on beat 2-and. ends on beat 4, leaving one beat in the bar. starts off the beat and crosses the next beat (syncopated)."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "next_pitch": {
+              "type": "choice",
+              "choice": "F#4",
+              "confidence": 0.34,
+              "probabilities": {
+                "D4": 0.01,
+                "A4": 0.08,
+                "E4": 0.01,
+                "D5": 0.01,
+                "E5": 0.01,
+                "G4": 0.04,
+                "F#4": 0.39,
+                "G5": 0,
+                "rest": 0.02,
+                "C5": 0.35,
+                "F#5": 0.02,
+                "B4": 0.06
+              }
+            },
+            "length": {
+              "type": "choice",
+              "choice": "quarter",
+              "confidence": 0.26,
+              "probabilities": {
+                "eighth": 0.28,
+                "half": 0.1,
+                "dotted_quarter": 0.18,
+                "quarter": 0.44
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1645,
+            "output_tokens": 164
+          }
+        }
+      },
+      "step": 11
+    },
+    {
+      "kind": "jev",
+      "bar": 1,
+      "beat": "3-and",
+      "onset": 5,
+      "pitch": "A4",
+      "length": "quarter",
+      "eighths": 2,
+      "note": null,
+      "source": "jev",
+      "pitchSource": "jev",
+      "lengthSource": "jev",
+      "answers": {
+        "next_pitch": {
+          "choice": "A4",
+          "confidence": 0.54,
+          "top": [
+            [
+              "A4",
+              0.57
+            ],
+            [
+              "C5",
+              0.15
+            ],
+            [
+              "B4",
+              0.1
+            ],
+            [
+              "F#4",
+              0.05
+            ],
+            [
+              "D4",
+              0.03
+            ]
+          ]
+        },
+        "length": {
+          "choice": "quarter",
+          "confidence": 0.32,
+          "top": [
+            [
+              "quarter",
+              0.55
+            ],
+            [
+              "dotted_quarter",
+              0.27
+            ],
+            [
+              "eighth",
+              0.18
+            ]
+          ]
+        }
+      },
+      "heuristicRank": 3,
+      "lengthRank": 2,
+      "optionCount": 11,
+      "confidence": 0.54,
+      "latencyMs": 328,
+      "usage": {
+        "input": 1541,
+        "output": 148
+      },
+      "model": "jev-1.13.0",
+      "noteIndices": [
+        3
+      ],
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "E minor",
+              "meter": "4/4",
+              "tempo_bpm": 140,
+              "form": "8-bar period (8 bars): A opening 4 bars, A' answer 4 bars (repeats A)",
+              "mood": "restless, pacing the room at midnight, unable to sleep",
+              "range": "D4 to G5, scale tones of E minor only",
+              "character": "a simple, singable melody with a clear shape"
+            },
+            "position": {
+              "bar": 1,
+              "of_bars": 8,
+              "beat": "3-and",
+              "beat_strength": "weak, off the beat",
+              "eighths_left_in_bar": 3,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-4)",
+              "bar_in_phrase": "1 of 4",
+              "bars_until_cadence": 3,
+              "cadence": "bar 4 holds the dominant (5th degree) for the whole bar: a half cadence"
+            },
+            "harmony": {
+              "this_bar": "F#dim (ii°): F# A C",
+              "next_bar": "Bm (v): B D F#"
+            },
+            "melody_so_far": [
+              "bar 1 (F#dim), so far: F#4/e A4/q F#4/q"
+            ],
+            "recent": {
+              "last_note": "F#4, one beat",
+              "previous_motion": "skip down a minor 3rd",
+              "direction_run": "none",
+              "highest_so_far": "A4",
+              "lowest_so_far": "F#4",
+              "notes_since_rest": 3,
+              "notes_in_this_bar": 3
+            }
+          },
+          "questions": {
+            "next_pitch": {
+              "type": "choice",
+              "instructions": "The pitch a good songwriter would write next in this E minor melody for a song whose mood is \"restless, pacing the room at midnight, unable to sleep\": singable, shaped by what came before, fitting this bar's chord (F#dim), and heading for the cadence described in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "E4": "E4, 1st degree (tonic). step down from F#4 (major 2nd). not in F#dim, a tension against the chord. a new low point for the piece.",
+                "G4": "G4, 3rd degree (mediant). step up from F#4 (minor 2nd). not in F#dim, a tension against the chord.",
+                "A4": "A4, 4th degree (subdominant). skip up from F#4 (minor 3rd). chord tone, the third of F#dim.",
+                "F#4": "F#4, 2nd degree (supertonic). repeats F#4. chord tone, the root of F#dim.",
+                "C5": "C5, 6th degree (submediant). leap up from F#4 (tritone). chord tone, the fifth of F#dim. a new high point for the piece.",
+                "D4": "D4, 7th degree (subtonic). skip down from F#4 (major 3rd). not in F#dim, a tension against the chord. the bottom of the range.",
+                "F#5": "F#5, 2nd degree (supertonic). octave leap up from F#4. chord tone, the root of F#dim. a new high point for the piece.",
+                "B4": "B4, 5th degree (dominant). leap up from F#4 (perfect 4th). not in F#dim, a tension against the chord. a new high point for the piece.",
+                "D5": "D5, 7th degree (subtonic). leap up from F#4 (minor 6th). not in F#dim, a tension against the chord. a new high point for the piece.",
+                "E5": "E5, 1st degree (tonic). leap up from F#4 (minor 7th). not in F#dim, a tension against the chord. a new high point for the piece.",
+                "rest": "Rest: silence for the chosen length, a breath. 3 notes since the last rest."
+              }
+            },
+            "length": {
+              "type": "choice",
+              "instructions": "How long the next note should last for a song whose mood is \"restless, pacing the room at midnight, unable to sleep\", given the beat it starts on and the rhythm so far. Only lengths that fit in the bar are offered.",
+              "criteria": {
+                "eighth": "Eighth note, half a beat. starts on beat 3-and. ends on beat 4, leaving one beat in the bar. completes the current beat.",
+                "quarter": "Quarter note, one beat. starts on beat 3-and. ends on beat 4-and, leaving half a beat in the bar. starts off the beat and crosses the next beat (syncopated). same length as the previous note. leaves a lone eighth to end the bar.",
+                "dotted_quarter": "Dotted quarter, a beat and a half. starts on beat 3-and. fills the rest of the bar. starts off the beat and crosses the next beat (syncopated)."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "next_pitch": {
+              "type": "choice",
+              "choice": "A4",
+              "confidence": 0.54,
+              "probabilities": {
+                "F#4": 0.05,
+                "rest": 0.02,
+                "E5": 0.01,
+                "D4": 0.03,
+                "B4": 0.1,
+                "F#5": 0.01,
+                "D5": 0.01,
+                "A4": 0.57,
+                "G4": 0.02,
+                "C5": 0.15,
+                "E4": 0.03
+              }
+            },
+            "length": {
+              "type": "choice",
+              "choice": "quarter",
+              "confidence": 0.32,
+              "probabilities": {
+                "quarter": 0.55,
+                "eighth": 0.18,
+                "dotted_quarter": 0.27
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1541,
+            "output_tokens": 148
+          }
+        }
+      },
+      "step": 12
+    },
+    {
+      "kind": "jev",
+      "bar": 1,
+      "beat": "4-and",
+      "onset": 7,
+      "pitch": "F#4",
+      "length": "eighth",
+      "eighths": 1,
+      "note": "only one length fits the bar",
+      "source": "jev",
+      "pitchSource": "jev",
+      "lengthSource": "jev",
+      "answers": {
+        "next_pitch": {
+          "choice": "F#4",
+          "confidence": 0.57,
+          "top": [
+            [
+              "F#4",
+              0.61
+            ],
+            [
+              "C5",
+              0.22
+            ],
+            [
+              "A4",
+              0.06
+            ],
+            [
+              "B4",
+              0.04
+            ],
+            [
+              "rest",
+              0.02
+            ]
+          ]
+        },
+        "length": null
+      },
+      "heuristicRank": 3,
+      "lengthRank": null,
+      "optionCount": 12,
+      "confidence": 0.57,
+      "latencyMs": 221,
+      "usage": {
+        "input": 1367,
+        "output": 117
+      },
+      "model": "jev-1.13.0",
+      "noteIndices": [
+        4
+      ],
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "E minor",
+              "meter": "4/4",
+              "tempo_bpm": 140,
+              "form": "8-bar period (8 bars): A opening 4 bars, A' answer 4 bars (repeats A)",
+              "mood": "restless, pacing the room at midnight, unable to sleep",
+              "range": "D4 to G5, scale tones of E minor only",
+              "character": "a simple, singable melody with a clear shape"
+            },
+            "position": {
+              "bar": 1,
+              "of_bars": 8,
+              "beat": "4-and",
+              "beat_strength": "weak, off the beat",
+              "eighths_left_in_bar": 1,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-4)",
+              "bar_in_phrase": "1 of 4",
+              "bars_until_cadence": 3,
+              "cadence": "bar 4 holds the dominant (5th degree) for the whole bar: a half cadence"
+            },
+            "harmony": {
+              "this_bar": "F#dim (ii°): F# A C",
+              "next_bar": "Bm (v): B D F#"
+            },
+            "melody_so_far": [
+              "bar 1 (F#dim), so far: F#4/e A4/q F#4/q A4/q"
+            ],
+            "recent": {
+              "last_note": "A4, one beat",
+              "previous_motion": "skip up a minor 3rd",
+              "direction_run": "none",
+              "highest_so_far": "A4",
+              "lowest_so_far": "F#4",
+              "notes_since_rest": 4,
+              "notes_in_this_bar": 4
+            }
+          },
+          "questions": {
+            "next_pitch": {
+              "type": "choice",
+              "instructions": "The pitch a good songwriter would write next in this E minor melody for a song whose mood is \"restless, pacing the room at midnight, unable to sleep\": singable, shaped by what came before, fitting this bar's chord (F#dim), and heading for the cadence described in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "G4": "G4, 3rd degree (mediant). step down from A4 (major 2nd). not in F#dim, a tension against the chord.",
+                "B4": "B4, 5th degree (dominant). step up from A4 (major 2nd). not in F#dim, a tension against the chord. a new high point for the piece.",
+                "F#4": "F#4, 2nd degree (supertonic). skip down from A4 (minor 3rd). chord tone, the root of F#dim. returns to the note this phrase started on.",
+                "C5": "C5, 6th degree (submediant). skip up from A4 (minor 3rd). chord tone, the fifth of F#dim. a new high point for the piece.",
+                "A4": "A4, 4th degree (subdominant). repeats A4. chord tone, the third of F#dim.",
+                "F#5": "F#5, 2nd degree (supertonic). leap up from A4 (major 6th). chord tone, the root of F#dim. a new high point for the piece.",
+                "E4": "E4, 1st degree (tonic). leap down from A4 (perfect 4th). not in F#dim, a tension against the chord. a new low point for the piece.",
+                "D5": "D5, 7th degree (subtonic). leap up from A4 (perfect 4th). not in F#dim, a tension against the chord. a new high point for the piece.",
+                "E5": "E5, 1st degree (tonic). leap up from A4 (perfect 5th). not in F#dim, a tension against the chord. a new high point for the piece.",
+                "D4": "D4, 7th degree (subtonic). leap down from A4 (perfect 5th). not in F#dim, a tension against the chord. the bottom of the range.",
+                "G5": "G5, 3rd degree (mediant). leap up from A4 (minor 7th). not in F#dim, a tension against the chord. the top of the range.",
+                "rest": "Rest: silence for the chosen length, a breath. 4 notes since the last rest."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "next_pitch": {
+              "type": "choice",
+              "choice": "F#4",
+              "confidence": 0.57,
+              "probabilities": {
+                "F#4": 0.61,
+                "D4": 0.01,
+                "rest": 0.02,
+                "F#5": 0.02,
+                "C5": 0.22,
+                "D5": 0,
+                "E5": 0,
+                "E4": 0,
+                "G5": 0,
+                "G4": 0.02,
+                "A4": 0.06,
+                "B4": 0.04
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1367,
+            "output_tokens": 117
+          }
+        }
+      },
+      "step": 13
+    },
+    {
+      "kind": "jev",
+      "bar": 2,
+      "beat": "1",
+      "onset": 0,
+      "pitch": "B4",
+      "length": "eighth",
+      "eighths": 1,
+      "note": null,
+      "source": "jev",
+      "pitchSource": "jev",
+      "lengthSource": "jev",
+      "answers": {
+        "next_pitch": {
+          "choice": "B4",
+          "confidence": 0.46,
+          "top": [
+            [
+              "B4",
+              0.52
+            ],
+            [
+              "F#4",
+              0.16
+            ],
+            [
+              "D4",
+              0.12
+            ],
+            [
+              "A4",
+              0.09
+            ],
+            [
+              "D5",
+              0.03
+            ]
+          ]
+        },
+        "length": {
+          "choice": "eighth",
+          "confidence": 0.6,
+          "top": [
+            [
+              "eighth",
+              0.65
+            ],
+            [
+              "quarter",
+              0.19
+            ],
+            [
+              "half",
+              0.08
+            ],
+            [
+              "dotted_quarter",
+              0.06
+            ],
+            [
+              "dotted_half",
+              0.01
+            ]
+          ]
+        }
+      },
+      "heuristicRank": 3,
+      "lengthRank": 1,
+      "optionCount": 10,
+      "confidence": 0.46,
+      "latencyMs": 267,
+      "usage": {
+        "input": 1593,
+        "output": 165
+      },
+      "model": "jev-1.13.0",
+      "noteIndices": [
+        5
+      ],
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "E minor",
+              "meter": "4/4",
+              "tempo_bpm": 140,
+              "form": "8-bar period (8 bars): A opening 4 bars, A' answer 4 bars (repeats A)",
+              "mood": "restless, pacing the room at midnight, unable to sleep",
+              "range": "D4 to G5, scale tones of E minor only",
+              "character": "a simple, singable melody with a clear shape"
+            },
+            "position": {
+              "bar": 2,
+              "of_bars": 8,
+              "beat": "1",
+              "beat_strength": "strong",
+              "eighths_left_in_bar": 8,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-4)",
+              "bar_in_phrase": "2 of 4",
+              "bars_until_cadence": 2,
+              "cadence": "bar 4 holds the dominant (5th degree) for the whole bar: a half cadence"
+            },
+            "harmony": {
+              "this_bar": "Bm (v): B D F#",
+              "next_bar": "F#dim (ii°): F# A C"
+            },
+            "melody_so_far": [
+              "bar 1 (F#dim): F#4/e A4/q F#4/q A4/q F#4/e",
+              "bar 2 (Bm), so far: (nothing yet)"
+            ],
+            "recent": {
+              "last_note": "F#4, half a beat",
+              "previous_motion": "skip down a minor 3rd",
+              "direction_run": "none",
+              "highest_so_far": "A4",
+              "lowest_so_far": "F#4",
+              "notes_since_rest": 5,
+              "notes_in_this_bar": 0
+            }
+          },
+          "questions": {
+            "next_pitch": {
+              "type": "choice",
+              "instructions": "The pitch a good songwriter would write next in this E minor melody for a song whose mood is \"restless, pacing the room at midnight, unable to sleep\": singable, shaped by what came before, fitting this bar's chord (Bm), and heading for the cadence described in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "D4": "D4, 7th degree (subtonic). skip down from F#4 (major 3rd). chord tone, the third of Bm. the bottom of the range.",
+                "F#4": "F#4, 2nd degree (supertonic). repeats F#4. chord tone, the fifth of Bm. returns to the note this phrase started on.",
+                "B4": "B4, 5th degree (dominant). leap up from F#4 (perfect 4th). chord tone, the root of Bm. a new high point for the piece.",
+                "D5": "D5, 7th degree (subtonic). leap up from F#4 (minor 6th). chord tone, the third of Bm. a new high point for the piece.",
+                "E4": "E4, 1st degree (tonic). step down from F#4 (major 2nd). not in Bm, a tension against the chord. a new low point for the piece.",
+                "G4": "G4, 3rd degree (mediant). step up from F#4 (minor 2nd). not in Bm, a tension against the chord.",
+                "F#5": "F#5, 2nd degree (supertonic). octave leap up from F#4. chord tone, the fifth of Bm. a new high point for the piece.",
+                "A4": "A4, 4th degree (subdominant). skip up from F#4 (minor 3rd). not in Bm, a tension against the chord.",
+                "C5": "C5, 6th degree (submediant). leap up from F#4 (tritone). not in Bm, a tension against the chord. a new high point for the piece.",
+                "E5": "E5, 1st degree (tonic). leap up from F#4 (minor 7th). not in Bm, a tension against the chord. a new high point for the piece."
+              }
+            },
+            "length": {
+              "type": "choice",
+              "instructions": "How long the next note should last for a song whose mood is \"restless, pacing the room at midnight, unable to sleep\", given the beat it starts on and the rhythm so far. Only lengths that fit in the bar are offered.",
+              "criteria": {
+                "eighth": "Eighth note, half a beat. starts on beat 1. ends on beat 1-and, leaving 3½ beats in the bar. same length as the previous note.",
+                "quarter": "Quarter note, one beat. starts on beat 1. ends on beat 2, leaving 3 beats in the bar.",
+                "half": "Half note, two beats. starts on beat 1. ends on beat 3, leaving 2 beats in the bar.",
+                "dotted_quarter": "Dotted quarter, a beat and a half. starts on beat 1. ends on beat 2-and, leaving 2½ beats in the bar.",
+                "dotted_half": "Dotted half, three beats. starts on beat 1. ends on beat 4, leaving one beat in the bar.",
+                "whole": "Whole note, the full bar. starts on beat 1. fills the whole bar."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "next_pitch": {
+              "type": "choice",
+              "choice": "B4",
+              "confidence": 0.46,
+              "probabilities": {
+                "D5": 0.03,
+                "E4": 0.03,
+                "E5": 0,
+                "D4": 0.12,
+                "C5": 0.01,
+                "A4": 0.09,
+                "G4": 0.03,
+                "B4": 0.52,
+                "F#4": 0.16,
+                "F#5": 0.01
+              }
+            },
+            "length": {
+              "type": "choice",
+              "choice": "eighth",
+              "confidence": 0.6,
+              "probabilities": {
+                "dotted_quarter": 0.06,
+                "eighth": 0.65,
+                "dotted_half": 0.01,
+                "whole": 0.01,
+                "quarter": 0.19,
+                "half": 0.08
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1593,
+            "output_tokens": 165
+          }
+        }
+      },
+      "step": 14
+    },
+    {
+      "kind": "jev",
+      "bar": 2,
+      "beat": "1-and",
+      "onset": 1,
+      "pitch": "F#4",
+      "length": "eighth",
+      "eighths": 1,
+      "note": null,
+      "source": "jev",
+      "pitchSource": "jev",
+      "lengthSource": "jev",
+      "answers": {
+        "next_pitch": {
+          "choice": "F#4",
+          "confidence": 0.4,
+          "top": [
+            [
+              "F#4",
+              0.45
+            ],
+            [
+              "D5",
+              0.37
+            ],
+            [
+              "F#5",
+              0.06
+            ],
+            [
+              "B4",
+              0.04
+            ],
+            [
+              "A4",
+              0.04
+            ]
+          ]
+        },
+        "length": {
+          "choice": "eighth",
+          "confidence": 0.26,
+          "top": [
+            [
+              "quarter",
+              0.41
+            ],
+            [
+              "eighth",
+              0.4
+            ],
+            [
+              "dotted_quarter",
+              0.1
+            ],
+            [
+              "half",
+              0.04
+            ],
+            [
+              "dotted_half",
+              0.04
+            ]
+          ]
+        }
+      },
+      "heuristicRank": 6,
+      "lengthRank": 1,
+      "optionCount": 11,
+      "confidence": 0.4,
+      "latencyMs": 383,
+      "usage": {
+        "input": 1738,
+        "output": 167
+      },
+      "model": "jev-1.13.0",
+      "noteIndices": [
+        6
+      ],
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "E minor",
+              "meter": "4/4",
+              "tempo_bpm": 140,
+              "form": "8-bar period (8 bars): A opening 4 bars, A' answer 4 bars (repeats A)",
+              "mood": "restless, pacing the room at midnight, unable to sleep",
+              "range": "D4 to G5, scale tones of E minor only",
+              "character": "a simple, singable melody with a clear shape"
+            },
+            "position": {
+              "bar": 2,
+              "of_bars": 8,
+              "beat": "1-and",
+              "beat_strength": "weak, off the beat",
+              "eighths_left_in_bar": 7,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-4)",
+              "bar_in_phrase": "2 of 4",
+              "bars_until_cadence": 2,
+              "cadence": "bar 4 holds the dominant (5th degree) for the whole bar: a half cadence"
+            },
+            "harmony": {
+              "this_bar": "Bm (v): B D F#",
+              "next_bar": "F#dim (ii°): F# A C"
+            },
+            "melody_so_far": [
+              "bar 1 (F#dim): F#4/e A4/q F#4/q A4/q F#4/e",
+              "bar 2 (Bm), so far: B4/e"
+            ],
+            "recent": {
+              "last_note": "B4, half a beat",
+              "previous_motion": "leap up a perfect 4th",
+              "direction_run": "none",
+              "highest_so_far": "B4",
+              "lowest_so_far": "F#4",
+              "notes_since_rest": 6,
+              "notes_in_this_bar": 1
+            }
+          },
+          "questions": {
+            "next_pitch": {
+              "type": "choice",
+              "instructions": "The pitch a good songwriter would write next in this E minor melody for a song whose mood is \"restless, pacing the room at midnight, unable to sleep\": singable, shaped by what came before, fitting this bar's chord (Bm), and heading for the cadence described in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "A4": "A4, 4th degree (subdominant). step down from B4 (major 2nd). steps back after the leap, resolving it. not in Bm, a tension against the chord.",
+                "G4": "G4, 3rd degree (mediant). skip down from B4 (major 3rd). not in Bm, a tension against the chord.",
+                "C5": "C5, 6th degree (submediant). step up from B4 (minor 2nd). keeps going in the direction of the leap. not in Bm, a tension against the chord. a new high point for the piece.",
+                "B4": "B4, 5th degree (dominant). repeats B4. chord tone, the root of Bm.",
+                "D5": "D5, 7th degree (subtonic). skip up from B4 (minor 3rd). keeps going in the direction of the leap. chord tone, the third of Bm. a new high point for the piece.",
+                "F#4": "F#4, 2nd degree (supertonic). leap down from B4 (perfect 4th). chord tone, the fifth of Bm. returns to the note this phrase started on.",
+                "D4": "D4, 7th degree (subtonic). leap down from B4 (major 6th). chord tone, the third of Bm. the bottom of the range.",
+                "E4": "E4, 1st degree (tonic). leap down from B4 (perfect 5th). not in Bm, a tension against the chord. a new low point for the piece.",
+                "F#5": "F#5, 2nd degree (supertonic). leap up from B4 (perfect 5th). keeps going in the direction of the leap. chord tone, the fifth of Bm. a new high point for the piece.",
+                "E5": "E5, 1st degree (tonic). leap up from B4 (perfect 4th). keeps going in the direction of the leap. not in Bm, a tension against the chord. a new high point for the piece.",
+                "G5": "G5, 3rd degree (mediant). leap up from B4 (minor 6th). keeps going in the direction of the leap. not in Bm, a tension against the chord. the top of the range."
+              }
+            },
+            "length": {
+              "type": "choice",
+              "instructions": "How long the next note should last for a song whose mood is \"restless, pacing the room at midnight, unable to sleep\", given the beat it starts on and the rhythm so far. Only lengths that fit in the bar are offered.",
+              "criteria": {
+                "eighth": "Eighth note, half a beat. starts on beat 1-and. ends on beat 2, leaving 3 beats in the bar. completes the current beat. same length as the previous note.",
+                "quarter": "Quarter note, one beat. starts on beat 1-and. ends on beat 2-and, leaving 2½ beats in the bar. starts off the beat and crosses the next beat (syncopated).",
+                "half": "Half note, two beats. starts on beat 1-and. ends on beat 3-and, leaving 1½ beats in the bar. starts off the beat and crosses the next beat (syncopated).",
+                "dotted_quarter": "Dotted quarter, a beat and a half. starts on beat 1-and. ends on beat 3, leaving 2 beats in the bar. starts off the beat and crosses the next beat (syncopated).",
+                "dotted_half": "Dotted half, three beats. starts on beat 1-and. ends on beat 4-and, leaving half a beat in the bar. starts off the beat and crosses the next beat (syncopated). leaves a lone eighth to end the bar."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "next_pitch": {
+              "type": "choice",
+              "choice": "F#4",
+              "confidence": 0.4,
+              "probabilities": {
+                "C5": 0.01,
+                "B4": 0.04,
+                "D5": 0.37,
+                "G5": 0,
+                "F#4": 0.45,
+                "E4": 0,
+                "F#5": 0.06,
+                "D4": 0.01,
+                "G4": 0.01,
+                "A4": 0.04,
+                "E5": 0.01
+              }
+            },
+            "length": {
+              "type": "choice",
+              "choice": "eighth",
+              "confidence": 0.26,
+              "probabilities": {
+                "half": 0.04,
+                "quarter": 0.41000000000000003,
+                "dotted_quarter": 0.1,
+                "eighth": 0.4,
+                "dotted_half": 0.04
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1738,
+            "output_tokens": 167
+          }
+        }
+      },
+      "step": 15
+    },
+    {
+      "kind": "jev",
+      "bar": 2,
+      "beat": "2",
+      "onset": 2,
+      "pitch": "B4",
+      "length": "eighth",
+      "eighths": 1,
+      "note": null,
+      "source": "jev",
+      "pitchSource": "jev",
+      "lengthSource": "jev",
+      "answers": {
+        "next_pitch": {
+          "choice": "B4",
+          "confidence": 0.39,
+          "top": [
+            [
+              "B4",
+              0.46
+            ],
+            [
+              "D4",
+              0.18
+            ],
+            [
+              "F#4",
+              0.13
+            ],
+            [
+              "D5",
+              0.11
+            ],
+            [
+              "G4",
+              0.06
+            ]
+          ]
+        },
+        "length": {
+          "choice": "eighth",
+          "confidence": 0.57,
+          "top": [
+            [
+              "eighth",
+              0.65
+            ],
+            [
+              "quarter",
+              0.18
+            ],
+            [
+              "dotted_quarter",
+              0.12
+            ],
+            [
+              "half",
+              0.04
+            ],
+            [
+              "dotted_half",
+              0.01
+            ]
+          ]
+        }
+      },
+      "heuristicRank": 5,
+      "lengthRank": 1,
+      "optionCount": 10,
+      "confidence": 0.39,
+      "latencyMs": 295,
+      "usage": {
+        "input": 1580,
+        "output": 158
+      },
+      "model": "jev-1.13.0",
+      "noteIndices": [
+        7
+      ],
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "E minor",
+              "meter": "4/4",
+              "tempo_bpm": 140,
+              "form": "8-bar period (8 bars): A opening 4 bars, A' answer 4 bars (repeats A)",
+              "mood": "restless, pacing the room at midnight, unable to sleep",
+              "range": "D4 to G5, scale tones of E minor only",
+              "character": "a simple, singable melody with a clear shape"
+            },
+            "position": {
+              "bar": 2,
+              "of_bars": 8,
+              "beat": "2",
+              "beat_strength": "medium",
+              "eighths_left_in_bar": 6,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-4)",
+              "bar_in_phrase": "2 of 4",
+              "bars_until_cadence": 2,
+              "cadence": "bar 4 holds the dominant (5th degree) for the whole bar: a half cadence"
+            },
+            "harmony": {
+              "this_bar": "Bm (v): B D F#",
+              "next_bar": "F#dim (ii°): F# A C"
+            },
+            "melody_so_far": [
+              "bar 1 (F#dim): F#4/e A4/q F#4/q A4/q F#4/e",
+              "bar 2 (Bm), so far: B4/e F#4/e"
+            ],
+            "recent": {
+              "last_note": "F#4, half a beat",
+              "previous_motion": "leap down a perfect 4th",
+              "direction_run": "none",
+              "highest_so_far": "B4",
+              "lowest_so_far": "F#4",
+              "notes_since_rest": 7,
+              "notes_in_this_bar": 2
+            }
+          },
+          "questions": {
+            "next_pitch": {
+              "type": "choice",
+              "instructions": "The pitch a good songwriter would write next in this E minor melody for a song whose mood is \"restless, pacing the room at midnight, unable to sleep\": singable, shaped by what came before, fitting this bar's chord (Bm), and heading for the cadence described in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "G4": "G4, 3rd degree (mediant). step up from F#4 (minor 2nd). steps back after the leap, resolving it. not in Bm, a tension against the chord.",
+                "E4": "E4, 1st degree (tonic). step down from F#4 (major 2nd). keeps going in the direction of the leap. not in Bm, a tension against the chord. a new low point for the piece.",
+                "A4": "A4, 4th degree (subdominant). skip up from F#4 (minor 3rd). not in Bm, a tension against the chord.",
+                "F#4": "F#4, 2nd degree (supertonic). repeats F#4. chord tone, the fifth of Bm. returns to the note this phrase started on.",
+                "B4": "B4, 5th degree (dominant). leap up from F#4 (perfect 4th). chord tone, the root of Bm.",
+                "D5": "D5, 7th degree (subtonic). leap up from F#4 (minor 6th). chord tone, the third of Bm. a new high point for the piece.",
+                "D4": "D4, 7th degree (subtonic). skip down from F#4 (major 3rd). keeps going in the direction of the leap. chord tone, the third of Bm. the bottom of the range.",
+                "F#5": "F#5, 2nd degree (supertonic). octave leap up from F#4. chord tone, the fifth of Bm. a new high point for the piece.",
+                "C5": "C5, 6th degree (submediant). leap up from F#4 (tritone). not in Bm, a tension against the chord. a new high point for the piece.",
+                "E5": "E5, 1st degree (tonic). leap up from F#4 (minor 7th). not in Bm, a tension against the chord. a new high point for the piece."
+              }
+            },
+            "length": {
+              "type": "choice",
+              "instructions": "How long the next note should last for a song whose mood is \"restless, pacing the room at midnight, unable to sleep\", given the beat it starts on and the rhythm so far. Only lengths that fit in the bar are offered.",
+              "criteria": {
+                "eighth": "Eighth note, half a beat. starts on beat 2. ends on beat 2-and, leaving 2½ beats in the bar. same length as the previous note.",
+                "quarter": "Quarter note, one beat. starts on beat 2. ends on beat 3, leaving 2 beats in the bar.",
+                "half": "Half note, two beats. starts on beat 2. ends on beat 4, leaving one beat in the bar.",
+                "dotted_quarter": "Dotted quarter, a beat and a half. starts on beat 2. ends on beat 3-and, leaving 1½ beats in the bar.",
+                "dotted_half": "Dotted half, three beats. starts on beat 2. fills the rest of the bar."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "next_pitch": {
+              "type": "choice",
+              "choice": "B4",
+              "confidence": 0.39,
+              "probabilities": {
+                "D5": 0.11,
+                "B4": 0.46,
+                "E5": 0,
+                "G4": 0.06,
+                "E4": 0.02,
+                "D4": 0.18,
+                "C5": 0,
+                "A4": 0.03,
+                "F#5": 0.01,
+                "F#4": 0.13
+              }
+            },
+            "length": {
+              "type": "choice",
+              "choice": "eighth",
+              "confidence": 0.57,
+              "probabilities": {
+                "half": 0.04,
+                "dotted_half": 0.01,
+                "quarter": 0.18,
+                "eighth": 0.65,
+                "dotted_quarter": 0.12
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1580,
+            "output_tokens": 158
+          }
+        }
+      },
+      "step": 16
+    },
+    {
+      "kind": "jev",
+      "bar": 2,
+      "beat": "2-and",
+      "onset": 3,
+      "pitch": "F#4",
+      "length": "quarter",
+      "eighths": 2,
+      "note": null,
+      "source": "jev",
+      "pitchSource": "jev",
+      "lengthSource": "jev",
+      "answers": {
+        "next_pitch": {
+          "choice": "F#4",
+          "confidence": 0.38,
+          "top": [
+            [
+              "F#4",
+              0.44
+            ],
+            [
+              "D5",
+              0.38
+            ],
+            [
+              "B4",
+              0.05
+            ],
+            [
+              "A4",
+              0.05
+            ],
+            [
+              "F#5",
+              0.03
+            ]
+          ]
+        },
+        "length": {
+          "choice": "quarter",
+          "confidence": 0.24,
+          "top": [
+            [
+              "quarter",
+              0.44
+            ],
+            [
+              "eighth",
+              0.35
+            ],
+            [
+              "dotted_quarter",
+              0.13
+            ],
+            [
+              "half",
+              0.08
+            ]
+          ]
+        }
+      },
+      "heuristicRank": 6,
+      "lengthRank": 2,
+      "optionCount": 12,
+      "confidence": 0.38,
+      "latencyMs": 350,
+      "usage": {
+        "input": 1717,
+        "output": 164
+      },
+      "model": "jev-1.13.0",
+      "noteIndices": [
+        8
+      ],
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "E minor",
+              "meter": "4/4",
+              "tempo_bpm": 140,
+              "form": "8-bar period (8 bars): A opening 4 bars, A' answer 4 bars (repeats A)",
+              "mood": "restless, pacing the room at midnight, unable to sleep",
+              "range": "D4 to G5, scale tones of E minor only",
+              "character": "a simple, singable melody with a clear shape"
+            },
+            "position": {
+              "bar": 2,
+              "of_bars": 8,
+              "beat": "2-and",
+              "beat_strength": "weak, off the beat",
+              "eighths_left_in_bar": 5,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-4)",
+              "bar_in_phrase": "2 of 4",
+              "bars_until_cadence": 2,
+              "cadence": "bar 4 holds the dominant (5th degree) for the whole bar: a half cadence"
+            },
+            "harmony": {
+              "this_bar": "Bm (v): B D F#",
+              "next_bar": "F#dim (ii°): F# A C"
+            },
+            "melody_so_far": [
+              "bar 1 (F#dim): F#4/e A4/q F#4/q A4/q F#4/e",
+              "bar 2 (Bm), so far: B4/e F#4/e B4/e"
+            ],
+            "recent": {
+              "last_note": "B4, half a beat",
+              "previous_motion": "leap up a perfect 4th",
+              "direction_run": "none",
+              "highest_so_far": "B4",
+              "lowest_so_far": "F#4",
+              "notes_since_rest": 8,
+              "notes_in_this_bar": 3
+            }
+          },
+          "questions": {
+            "next_pitch": {
+              "type": "choice",
+              "instructions": "The pitch a good songwriter would write next in this E minor melody for a song whose mood is \"restless, pacing the room at midnight, unable to sleep\": singable, shaped by what came before, fitting this bar's chord (Bm), and heading for the cadence described in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "A4": "A4, 4th degree (subdominant). step down from B4 (major 2nd). steps back after the leap, resolving it. not in Bm, a tension against the chord.",
+                "G4": "G4, 3rd degree (mediant). skip down from B4 (major 3rd). not in Bm, a tension against the chord.",
+                "C5": "C5, 6th degree (submediant). step up from B4 (minor 2nd). keeps going in the direction of the leap. not in Bm, a tension against the chord. a new high point for the piece.",
+                "B4": "B4, 5th degree (dominant). repeats B4. chord tone, the root of Bm.",
+                "D5": "D5, 7th degree (subtonic). skip up from B4 (minor 3rd). keeps going in the direction of the leap. chord tone, the third of Bm. a new high point for the piece.",
+                "F#4": "F#4, 2nd degree (supertonic). leap down from B4 (perfect 4th). chord tone, the fifth of Bm. returns to the note this phrase started on.",
+                "rest": "Rest: silence for the chosen length, a breath. 8 notes since the last rest.",
+                "D4": "D4, 7th degree (subtonic). leap down from B4 (major 6th). chord tone, the third of Bm. the bottom of the range.",
+                "E4": "E4, 1st degree (tonic). leap down from B4 (perfect 5th). not in Bm, a tension against the chord. a new low point for the piece.",
+                "F#5": "F#5, 2nd degree (supertonic). leap up from B4 (perfect 5th). keeps going in the direction of the leap. chord tone, the fifth of Bm. a new high point for the piece.",
+                "E5": "E5, 1st degree (tonic). leap up from B4 (perfect 4th). keeps going in the direction of the leap. not in Bm, a tension against the chord. a new high point for the piece.",
+                "G5": "G5, 3rd degree (mediant). leap up from B4 (minor 6th). keeps going in the direction of the leap. not in Bm, a tension against the chord. the top of the range."
+              }
+            },
+            "length": {
+              "type": "choice",
+              "instructions": "How long the next note should last for a song whose mood is \"restless, pacing the room at midnight, unable to sleep\", given the beat it starts on and the rhythm so far. Only lengths that fit in the bar are offered.",
+              "criteria": {
+                "eighth": "Eighth note, half a beat. starts on beat 2-and. ends on beat 3, leaving 2 beats in the bar. completes the current beat. same length as the previous note.",
+                "quarter": "Quarter note, one beat. starts on beat 2-and. ends on beat 3-and, leaving 1½ beats in the bar. starts off the beat and crosses the next beat (syncopated).",
+                "half": "Half note, two beats. starts on beat 2-and. ends on beat 4-and, leaving half a beat in the bar. starts off the beat and crosses the next beat (syncopated). leaves a lone eighth to end the bar.",
+                "dotted_quarter": "Dotted quarter, a beat and a half. starts on beat 2-and. ends on beat 4, leaving one beat in the bar. starts off the beat and crosses the next beat (syncopated)."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "next_pitch": {
+              "type": "choice",
+              "choice": "F#4",
+              "confidence": 0.38,
+              "probabilities": {
+                "E5": 0.01,
+                "G5": 0,
+                "B4": 0.05,
+                "D5": 0.38,
+                "C5": 0.01,
+                "F#4": 0.44,
+                "E4": 0,
+                "F#5": 0.03,
+                "D4": 0.02,
+                "G4": 0.01,
+                "A4": 0.05,
+                "rest": 0
+              }
+            },
+            "length": {
+              "type": "choice",
+              "choice": "quarter",
+              "confidence": 0.24,
+              "probabilities": {
+                "half": 0.08,
+                "quarter": 0.44,
+                "eighth": 0.35,
+                "dotted_quarter": 0.13
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1717,
+            "output_tokens": 164
+          }
+        }
+      },
+      "step": 17
+    },
+    {
+      "kind": "jev",
+      "bar": 2,
+      "beat": "3-and",
+      "onset": 5,
+      "pitch": "B4",
+      "length": "quarter",
+      "eighths": 2,
+      "note": null,
+      "source": "jev",
+      "pitchSource": "jev",
+      "lengthSource": "jev",
+      "answers": {
+        "next_pitch": {
+          "choice": "B4",
+          "confidence": 0.4,
+          "top": [
+            [
+              "B4",
+              0.46
+            ],
+            [
+              "D4",
+              0.22
+            ],
+            [
+              "D5",
+              0.13
+            ],
+            [
+              "F#4",
+              0.09
+            ],
+            [
+              "G4",
+              0.05
+            ]
+          ]
+        },
+        "length": {
+          "choice": "quarter",
+          "confidence": 0.32,
+          "top": [
+            [
+              "quarter",
+              0.54
+            ],
+            [
+              "dotted_quarter",
+              0.24
+            ],
+            [
+              "eighth",
+              0.22
+            ]
+          ]
+        }
+      },
+      "heuristicRank": 5,
+      "lengthRank": 2,
+      "optionCount": 11,
+      "confidence": 0.4,
+      "latencyMs": 304,
+      "usage": {
+        "input": 1586,
+        "output": 148
+      },
+      "model": "jev-1.13.0",
+      "noteIndices": [
+        9
+      ],
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "E minor",
+              "meter": "4/4",
+              "tempo_bpm": 140,
+              "form": "8-bar period (8 bars): A opening 4 bars, A' answer 4 bars (repeats A)",
+              "mood": "restless, pacing the room at midnight, unable to sleep",
+              "range": "D4 to G5, scale tones of E minor only",
+              "character": "a simple, singable melody with a clear shape"
+            },
+            "position": {
+              "bar": 2,
+              "of_bars": 8,
+              "beat": "3-and",
+              "beat_strength": "weak, off the beat",
+              "eighths_left_in_bar": 3,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-4)",
+              "bar_in_phrase": "2 of 4",
+              "bars_until_cadence": 2,
+              "cadence": "bar 4 holds the dominant (5th degree) for the whole bar: a half cadence"
+            },
+            "harmony": {
+              "this_bar": "Bm (v): B D F#",
+              "next_bar": "F#dim (ii°): F# A C"
+            },
+            "melody_so_far": [
+              "bar 1 (F#dim): F#4/e A4/q F#4/q A4/q F#4/e",
+              "bar 2 (Bm), so far: B4/e F#4/e B4/e F#4/q"
+            ],
+            "recent": {
+              "last_note": "F#4, one beat",
+              "previous_motion": "leap down a perfect 4th",
+              "direction_run": "none",
+              "highest_so_far": "B4",
+              "lowest_so_far": "F#4",
+              "notes_since_rest": 9,
+              "notes_in_this_bar": 4
+            }
+          },
+          "questions": {
+            "next_pitch": {
+              "type": "choice",
+              "instructions": "The pitch a good songwriter would write next in this E minor melody for a song whose mood is \"restless, pacing the room at midnight, unable to sleep\": singable, shaped by what came before, fitting this bar's chord (Bm), and heading for the cadence described in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "G4": "G4, 3rd degree (mediant). step up from F#4 (minor 2nd). steps back after the leap, resolving it. not in Bm, a tension against the chord.",
+                "E4": "E4, 1st degree (tonic). step down from F#4 (major 2nd). keeps going in the direction of the leap. not in Bm, a tension against the chord. a new low point for the piece.",
+                "A4": "A4, 4th degree (subdominant). skip up from F#4 (minor 3rd). not in Bm, a tension against the chord.",
+                "F#4": "F#4, 2nd degree (supertonic). repeats F#4. chord tone, the fifth of Bm. returns to the note this phrase started on.",
+                "B4": "B4, 5th degree (dominant). leap up from F#4 (perfect 4th). chord tone, the root of Bm.",
+                "D5": "D5, 7th degree (subtonic). leap up from F#4 (minor 6th). chord tone, the third of Bm. a new high point for the piece.",
+                "rest": "Rest: silence for the chosen length, a breath. 9 notes since the last rest.",
+                "D4": "D4, 7th degree (subtonic). skip down from F#4 (major 3rd). keeps going in the direction of the leap. chord tone, the third of Bm. the bottom of the range.",
+                "F#5": "F#5, 2nd degree (supertonic). octave leap up from F#4. chord tone, the fifth of Bm. a new high point for the piece.",
+                "C5": "C5, 6th degree (submediant). leap up from F#4 (tritone). not in Bm, a tension against the chord. a new high point for the piece.",
+                "E5": "E5, 1st degree (tonic). leap up from F#4 (minor 7th). not in Bm, a tension against the chord. a new high point for the piece."
+              }
+            },
+            "length": {
+              "type": "choice",
+              "instructions": "How long the next note should last for a song whose mood is \"restless, pacing the room at midnight, unable to sleep\", given the beat it starts on and the rhythm so far. Only lengths that fit in the bar are offered.",
+              "criteria": {
+                "eighth": "Eighth note, half a beat. starts on beat 3-and. ends on beat 4, leaving one beat in the bar. completes the current beat.",
+                "quarter": "Quarter note, one beat. starts on beat 3-and. ends on beat 4-and, leaving half a beat in the bar. starts off the beat and crosses the next beat (syncopated). same length as the previous note. leaves a lone eighth to end the bar.",
+                "dotted_quarter": "Dotted quarter, a beat and a half. starts on beat 3-and. fills the rest of the bar. starts off the beat and crosses the next beat (syncopated)."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "next_pitch": {
+              "type": "choice",
+              "choice": "B4",
+              "confidence": 0.4,
+              "probabilities": {
+                "D5": 0.13,
+                "E4": 0.01,
+                "rest": 0.01,
+                "D4": 0.22,
+                "C5": 0,
+                "G4": 0.05,
+                "B4": 0.46,
+                "E5": 0,
+                "F#4": 0.09,
+                "F#5": 0.01,
+                "A4": 0.02
+              }
+            },
+            "length": {
+              "type": "choice",
+              "choice": "quarter",
+              "confidence": 0.32,
+              "probabilities": {
+                "eighth": 0.22,
+                "quarter": 0.54,
+                "dotted_quarter": 0.24
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1586,
+            "output_tokens": 148
+          }
+        }
+      },
+      "step": 18
+    },
+    {
+      "kind": "jev",
+      "bar": 2,
+      "beat": "4-and",
+      "onset": 7,
+      "pitch": "F#4",
+      "length": "eighth",
+      "eighths": 1,
+      "note": "only one length fits the bar",
+      "source": "jev",
+      "pitchSource": "jev",
+      "lengthSource": "jev",
+      "answers": {
+        "next_pitch": {
+          "choice": "F#4",
+          "confidence": 0.37,
+          "top": [
+            [
+              "F#4",
+              0.41
+            ],
+            [
+              "D5",
+              0.33
+            ],
+            [
+              "B4",
+              0.06
+            ],
+            [
+              "A4",
+              0.05
+            ],
+            [
+              "F#5",
+              0.05
+            ]
+          ]
+        },
+        "length": null
+      },
+      "heuristicRank": 6,
+      "lengthRank": null,
+      "optionCount": 12,
+      "confidence": 0.37,
+      "latencyMs": 252,
+      "usage": {
+        "input": 1431,
+        "output": 117
+      },
+      "model": "jev-1.13.0",
+      "noteIndices": [
+        10
+      ],
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "E minor",
+              "meter": "4/4",
+              "tempo_bpm": 140,
+              "form": "8-bar period (8 bars): A opening 4 bars, A' answer 4 bars (repeats A)",
+              "mood": "restless, pacing the room at midnight, unable to sleep",
+              "range": "D4 to G5, scale tones of E minor only",
+              "character": "a simple, singable melody with a clear shape"
+            },
+            "position": {
+              "bar": 2,
+              "of_bars": 8,
+              "beat": "4-and",
+              "beat_strength": "weak, off the beat",
+              "eighths_left_in_bar": 1,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-4)",
+              "bar_in_phrase": "2 of 4",
+              "bars_until_cadence": 2,
+              "cadence": "bar 4 holds the dominant (5th degree) for the whole bar: a half cadence"
+            },
+            "harmony": {
+              "this_bar": "Bm (v): B D F#",
+              "next_bar": "F#dim (ii°): F# A C"
+            },
+            "melody_so_far": [
+              "bar 1 (F#dim): F#4/e A4/q F#4/q A4/q F#4/e",
+              "bar 2 (Bm), so far: B4/e F#4/e B4/e F#4/q B4/q"
+            ],
+            "recent": {
+              "last_note": "B4, one beat",
+              "previous_motion": "leap up a perfect 4th",
+              "direction_run": "none",
+              "highest_so_far": "B4",
+              "lowest_so_far": "F#4",
+              "notes_since_rest": 10,
+              "notes_in_this_bar": 5
+            }
+          },
+          "questions": {
+            "next_pitch": {
+              "type": "choice",
+              "instructions": "The pitch a good songwriter would write next in this E minor melody for a song whose mood is \"restless, pacing the room at midnight, unable to sleep\": singable, shaped by what came before, fitting this bar's chord (Bm), and heading for the cadence described in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "A4": "A4, 4th degree (subdominant). step down from B4 (major 2nd). steps back after the leap, resolving it. not in Bm, a tension against the chord.",
+                "G4": "G4, 3rd degree (mediant). skip down from B4 (major 3rd). not in Bm, a tension against the chord.",
+                "C5": "C5, 6th degree (submediant). step up from B4 (minor 2nd). keeps going in the direction of the leap. not in Bm, a tension against the chord. a new high point for the piece.",
+                "B4": "B4, 5th degree (dominant). repeats B4. chord tone, the root of Bm.",
+                "D5": "D5, 7th degree (subtonic). skip up from B4 (minor 3rd). keeps going in the direction of the leap. chord tone, the third of Bm. a new high point for the piece.",
+                "F#4": "F#4, 2nd degree (supertonic). leap down from B4 (perfect 4th). chord tone, the fifth of Bm. returns to the note this phrase started on.",
+                "rest": "Rest: silence for the chosen length, a breath. 10 notes since the last rest.",
+                "D4": "D4, 7th degree (subtonic). leap down from B4 (major 6th). chord tone, the third of Bm. the bottom of the range.",
+                "E4": "E4, 1st degree (tonic). leap down from B4 (perfect 5th). not in Bm, a tension against the chord. a new low point for the piece.",
+                "F#5": "F#5, 2nd degree (supertonic). leap up from B4 (perfect 5th). keeps going in the direction of the leap. chord tone, the fifth of Bm. a new high point for the piece.",
+                "E5": "E5, 1st degree (tonic). leap up from B4 (perfect 4th). keeps going in the direction of the leap. not in Bm, a tension against the chord. a new high point for the piece.",
+                "G5": "G5, 3rd degree (mediant). leap up from B4 (minor 6th). keeps going in the direction of the leap. not in Bm, a tension against the chord. the top of the range."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "next_pitch": {
+              "type": "choice",
+              "choice": "F#4",
+              "confidence": 0.37,
+              "probabilities": {
+                "A4": 0.05,
+                "D4": 0.03,
+                "E4": 0.01,
+                "E5": 0.02,
+                "D5": 0.33,
+                "C5": 0.01,
+                "G4": 0.01,
+                "G5": 0.01,
+                "rest": 0.01,
+                "F#4": 0.41,
+                "F#5": 0.05,
+                "B4": 0.06
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1431,
+            "output_tokens": 117
+          }
+        }
+      },
+      "step": 19
+    },
+    {
+      "kind": "jev",
+      "bar": 3,
+      "beat": "1",
+      "onset": 0,
+      "pitch": "A4",
+      "length": "eighth",
+      "eighths": 1,
+      "note": null,
+      "source": "jev",
+      "pitchSource": "jev",
+      "lengthSource": "jev",
+      "answers": {
+        "next_pitch": {
+          "choice": "A4",
+          "confidence": 0.61,
+          "top": [
+            [
+              "A4",
+              0.65
+            ],
+            [
+              "G4",
+              0.11
+            ],
+            [
+              "F#4",
+              0.1
+            ],
+            [
+              "C5",
+              0.06
+            ],
+            [
+              "E4",
+              0.04
+            ]
+          ]
+        },
+        "length": {
+          "choice": "eighth",
+          "confidence": 0.65,
+          "top": [
+            [
+              "eighth",
+              0.71
+            ],
+            [
+              "quarter",
+              0.17
+            ],
+            [
+              "half",
+              0.07
+            ],
+            [
+              "dotted_quarter",
+              0.03
+            ],
+            [
+              "whole",
+              0.01
+            ]
+          ]
+        }
+      },
+      "heuristicRank": 1,
+      "lengthRank": 1,
+      "optionCount": 10,
+      "confidence": 0.61,
+      "latencyMs": 354,
+      "usage": {
+        "input": 1796,
+        "output": 165
+      },
+      "model": "jev-1.13.0",
+      "noteIndices": [
+        11
+      ],
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "E minor",
+              "meter": "4/4",
+              "tempo_bpm": 140,
+              "form": "8-bar period (8 bars): A opening 4 bars, A' answer 4 bars (repeats A)",
+              "mood": "restless, pacing the room at midnight, unable to sleep",
+              "range": "D4 to G5, scale tones of E minor only",
+              "character": "a simple, singable melody with a clear shape"
+            },
+            "position": {
+              "bar": 3,
+              "of_bars": 8,
+              "beat": "1",
+              "beat_strength": "strong",
+              "eighths_left_in_bar": 8,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-4)",
+              "bar_in_phrase": "3 of 4",
+              "bars_until_cadence": 1,
+              "cadence": "bar 4 holds the dominant (5th degree) for the whole bar: a half cadence"
+            },
+            "harmony": {
+              "this_bar": "F#dim (ii°): F# A C",
+              "next_bar": "Bm (v): B D F#"
+            },
+            "melody_so_far": [
+              "bar 1 (F#dim): F#4/e A4/q F#4/q A4/q F#4/e",
+              "bar 2 (Bm): B4/e F#4/e B4/e F#4/q B4/q F#4/e",
+              "bar 3 (F#dim), so far: (nothing yet)"
+            ],
+            "recent": {
+              "last_note": "F#4, half a beat",
+              "previous_motion": "leap down a perfect 4th",
+              "direction_run": "none",
+              "highest_so_far": "B4",
+              "lowest_so_far": "F#4",
+              "notes_since_rest": 11,
+              "notes_in_this_bar": 0
+            }
+          },
+          "questions": {
+            "next_pitch": {
+              "type": "choice",
+              "instructions": "The pitch a good songwriter would write next in this E minor melody for a song whose mood is \"restless, pacing the room at midnight, unable to sleep\": singable, shaped by what came before, fitting this bar's chord (F#dim), and heading for the cadence described in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "A4": "A4, 4th degree (subdominant). skip up from F#4 (minor 3rd). chord tone, the third of F#dim. a major 2nd below the coming cadence note B4.",
+                "G4": "G4, 3rd degree (mediant). step up from F#4 (minor 2nd). steps back after the leap, resolving it. not in F#dim, a tension against the chord. a major 3rd below the coming cadence note B4.",
+                "C5": "C5, 6th degree (submediant). leap up from F#4 (tritone). chord tone, the fifth of F#dim. a new high point for the piece. a minor 2nd above the coming cadence note B4.",
+                "F#4": "F#4, 2nd degree (supertonic). repeats F#4. chord tone, the root of F#dim. returns to the note this phrase started on. a perfect 4th below the coming cadence note B4.",
+                "F#5": "F#5, 2nd degree (supertonic). octave leap up from F#4. chord tone, the root of F#dim. a new high point for the piece. a perfect 5th above the coming cadence note B4.",
+                "B4": "B4, 5th degree (dominant). leap up from F#4 (perfect 4th). not in F#dim, a tension against the chord. the cadence note itself, one bar early.",
+                "E4": "E4, 1st degree (tonic). step down from F#4 (major 2nd). keeps going in the direction of the leap. not in F#dim, a tension against the chord. a new low point for the piece. a perfect 5th below the coming cadence note B4.",
+                "D5": "D5, 7th degree (subtonic). leap up from F#4 (minor 6th). not in F#dim, a tension against the chord. a new high point for the piece. a minor 3rd above the coming cadence note B4.",
+                "E5": "E5, 1st degree (tonic). leap up from F#4 (minor 7th). not in F#dim, a tension against the chord. a new high point for the piece. a perfect 4th above the coming cadence note B4.",
+                "D4": "D4, 7th degree (subtonic). skip down from F#4 (major 3rd). keeps going in the direction of the leap. not in F#dim, a tension against the chord. the bottom of the range. a major 6th below the coming cadence note B4."
+              }
+            },
+            "length": {
+              "type": "choice",
+              "instructions": "How long the next note should last for a song whose mood is \"restless, pacing the room at midnight, unable to sleep\", given the beat it starts on and the rhythm so far. Only lengths that fit in the bar are offered.",
+              "criteria": {
+                "eighth": "Eighth note, half a beat. starts on beat 1. ends on beat 1-and, leaving 3½ beats in the bar. same length as the previous note.",
+                "quarter": "Quarter note, one beat. starts on beat 1. ends on beat 2, leaving 3 beats in the bar.",
+                "half": "Half note, two beats. starts on beat 1. ends on beat 3, leaving 2 beats in the bar.",
+                "dotted_quarter": "Dotted quarter, a beat and a half. starts on beat 1. ends on beat 2-and, leaving 2½ beats in the bar.",
+                "dotted_half": "Dotted half, three beats. starts on beat 1. ends on beat 4, leaving one beat in the bar.",
+                "whole": "Whole note, the full bar. starts on beat 1. fills the whole bar."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "next_pitch": {
+              "type": "choice",
+              "choice": "A4",
+              "confidence": 0.61,
+              "probabilities": {
+                "E4": 0.04,
+                "A4": 0.65,
+                "F#4": 0.1,
+                "B4": 0.02,
+                "D4": 0.01,
+                "G4": 0.11,
+                "C5": 0.06,
+                "F#5": 0.01,
+                "E5": 0,
+                "D5": 0
+              }
+            },
+            "length": {
+              "type": "choice",
+              "choice": "eighth",
+              "confidence": 0.65,
+              "probabilities": {
+                "whole": 0.01,
+                "half": 0.07,
+                "quarter": 0.17,
+                "eighth": 0.71,
+                "dotted_quarter": 0.03,
+                "dotted_half": 0.01
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1796,
+            "output_tokens": 165
+          }
+        }
+      },
+      "step": 20
+    },
+    {
+      "kind": "jev",
+      "bar": 3,
+      "beat": "1-and",
+      "onset": 1,
+      "pitch": "C5",
+      "length": "quarter",
+      "eighths": 2,
+      "note": null,
+      "source": "jev",
+      "pitchSource": "jev",
+      "lengthSource": "jev",
+      "answers": {
+        "next_pitch": {
+          "choice": "C5",
+          "confidence": 0.41,
+          "top": [
+            [
+              "C5",
+              0.47
+            ],
+            [
+              "F#4",
+              0.29
+            ],
+            [
+              "A4",
+              0.11
+            ],
+            [
+              "G4",
+              0.05
+            ],
+            [
+              "B4",
+              0.04
+            ]
+          ]
+        },
+        "length": {
+          "choice": "quarter",
+          "confidence": 0.24,
+          "top": [
+            [
+              "quarter",
+              0.39
+            ],
+            [
+              "eighth",
+              0.38
+            ],
+            [
+              "dotted_quarter",
+              0.1
+            ],
+            [
+              "half",
+              0.08
+            ],
+            [
+              "dotted_half",
+              0.05
+            ]
+          ]
+        }
+      },
+      "heuristicRank": 2,
+      "lengthRank": 2,
+      "optionCount": 11,
+      "confidence": 0.41,
+      "latencyMs": 408,
+      "usage": {
+        "input": 1881,
+        "output": 165
+      },
+      "model": "jev-1.13.0",
+      "noteIndices": [
+        12
+      ],
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "E minor",
+              "meter": "4/4",
+              "tempo_bpm": 140,
+              "form": "8-bar period (8 bars): A opening 4 bars, A' answer 4 bars (repeats A)",
+              "mood": "restless, pacing the room at midnight, unable to sleep",
+              "range": "D4 to G5, scale tones of E minor only",
+              "character": "a simple, singable melody with a clear shape"
+            },
+            "position": {
+              "bar": 3,
+              "of_bars": 8,
+              "beat": "1-and",
+              "beat_strength": "weak, off the beat",
+              "eighths_left_in_bar": 7,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-4)",
+              "bar_in_phrase": "3 of 4",
+              "bars_until_cadence": 1,
+              "cadence": "bar 4 holds the dominant (5th degree) for the whole bar: a half cadence"
+            },
+            "harmony": {
+              "this_bar": "F#dim (ii°): F# A C",
+              "next_bar": "Bm (v): B D F#"
+            },
+            "melody_so_far": [
+              "bar 1 (F#dim): F#4/e A4/q F#4/q A4/q F#4/e",
+              "bar 2 (Bm): B4/e F#4/e B4/e F#4/q B4/q F#4/e",
+              "bar 3 (F#dim), so far: A4/e"
+            ],
+            "recent": {
+              "last_note": "A4, half a beat",
+              "previous_motion": "skip up a minor 3rd",
+              "direction_run": "none",
+              "highest_so_far": "B4",
+              "lowest_so_far": "F#4",
+              "notes_since_rest": 12,
+              "notes_in_this_bar": 1
+            }
+          },
+          "questions": {
+            "next_pitch": {
+              "type": "choice",
+              "instructions": "The pitch a good songwriter would write next in this E minor melody for a song whose mood is \"restless, pacing the room at midnight, unable to sleep\": singable, shaped by what came before, fitting this bar's chord (F#dim), and heading for the cadence described in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "B4": "B4, 5th degree (dominant). step up from A4 (major 2nd). not in F#dim, a tension against the chord. the cadence note itself, one bar early.",
+                "C5": "C5, 6th degree (submediant). skip up from A4 (minor 3rd). chord tone, the fifth of F#dim. a new high point for the piece. a minor 2nd above the coming cadence note B4.",
+                "G4": "G4, 3rd degree (mediant). step down from A4 (major 2nd). not in F#dim, a tension against the chord. a major 3rd below the coming cadence note B4.",
+                "F#4": "F#4, 2nd degree (supertonic). skip down from A4 (minor 3rd). chord tone, the root of F#dim. returns to the note this phrase started on. a perfect 4th below the coming cadence note B4.",
+                "A4": "A4, 4th degree (subdominant). repeats A4. chord tone, the third of F#dim. a major 2nd below the coming cadence note B4.",
+                "D5": "D5, 7th degree (subtonic). leap up from A4 (perfect 4th). not in F#dim, a tension against the chord. a new high point for the piece. a minor 3rd above the coming cadence note B4.",
+                "E5": "E5, 1st degree (tonic). leap up from A4 (perfect 5th). not in F#dim, a tension against the chord. a new high point for the piece. a perfect 4th above the coming cadence note B4.",
+                "F#5": "F#5, 2nd degree (supertonic). leap up from A4 (major 6th). chord tone, the root of F#dim. a new high point for the piece. a perfect 5th above the coming cadence note B4.",
+                "E4": "E4, 1st degree (tonic). leap down from A4 (perfect 4th). not in F#dim, a tension against the chord. a new low point for the piece. a perfect 5th below the coming cadence note B4.",
+                "D4": "D4, 7th degree (subtonic). leap down from A4 (perfect 5th). not in F#dim, a tension against the chord. the bottom of the range. a major 6th below the coming cadence note B4.",
+                "G5": "G5, 3rd degree (mediant). leap up from A4 (minor 7th). not in F#dim, a tension against the chord. the top of the range. a minor 6th above the coming cadence note B4."
+              }
+            },
+            "length": {
+              "type": "choice",
+              "instructions": "How long the next note should last for a song whose mood is \"restless, pacing the room at midnight, unable to sleep\", given the beat it starts on and the rhythm so far. Only lengths that fit in the bar are offered.",
+              "criteria": {
+                "eighth": "Eighth note, half a beat. starts on beat 1-and. ends on beat 2, leaving 3 beats in the bar. completes the current beat. same length as the previous note.",
+                "quarter": "Quarter note, one beat. starts on beat 1-and. ends on beat 2-and, leaving 2½ beats in the bar. starts off the beat and crosses the next beat (syncopated).",
+                "half": "Half note, two beats. starts on beat 1-and. ends on beat 3-and, leaving 1½ beats in the bar. starts off the beat and crosses the next beat (syncopated).",
+                "dotted_quarter": "Dotted quarter, a beat and a half. starts on beat 1-and. ends on beat 3, leaving 2 beats in the bar. starts off the beat and crosses the next beat (syncopated).",
+                "dotted_half": "Dotted half, three beats. starts on beat 1-and. ends on beat 4-and, leaving half a beat in the bar. starts off the beat and crosses the next beat (syncopated). leaves a lone eighth to end the bar."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "next_pitch": {
+              "type": "choice",
+              "choice": "C5",
+              "confidence": 0.41,
+              "probabilities": {
+                "F#5": 0.01,
+                "D5": 0.02,
+                "E5": 0,
+                "G4": 0.05,
+                "G5": 0,
+                "E4": 0.01,
+                "D4": 0,
+                "C5": 0.47,
+                "A4": 0.11,
+                "B4": 0.04,
+                "F#4": 0.29
+              }
+            },
+            "length": {
+              "type": "choice",
+              "choice": "quarter",
+              "confidence": 0.24,
+              "probabilities": {
+                "dotted_quarter": 0.1,
+                "dotted_half": 0.05,
+                "quarter": 0.39,
+                "eighth": 0.38,
+                "half": 0.08
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1881,
+            "output_tokens": 165
+          }
+        }
+      },
+      "step": 21
+    },
+    {
+      "kind": "jev",
+      "bar": 3,
+      "beat": "2-and",
+      "onset": 3,
+      "pitch": "A4",
+      "length": "quarter",
+      "eighths": 2,
+      "note": null,
+      "source": "jev",
+      "pitchSource": "jev",
+      "lengthSource": "jev",
+      "answers": {
+        "next_pitch": {
+          "choice": "A4",
+          "confidence": 0.59,
+          "top": [
+            [
+              "A4",
+              0.63
+            ],
+            [
+              "F#4",
+              0.17
+            ],
+            [
+              "B4",
+              0.1
+            ],
+            [
+              "C5",
+              0.05
+            ],
+            [
+              "D5",
+              0.02
+            ]
+          ]
+        },
+        "length": {
+          "choice": "quarter",
+          "confidence": 0.32,
+          "top": [
+            [
+              "quarter",
+              0.48
+            ],
+            [
+              "eighth",
+              0.24
+            ],
+            [
+              "dotted_quarter",
+              0.18
+            ],
+            [
+              "half",
+              0.1
+            ]
+          ]
+        }
+      },
+      "heuristicRank": 2,
+      "lengthRank": 2,
+      "optionCount": 12,
+      "confidence": 0.59,
+      "latencyMs": 267,
+      "usage": {
+        "input": 1948,
+        "output": 163
+      },
+      "model": "jev-1.13.0",
+      "noteIndices": [
+        13
+      ],
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "E minor",
+              "meter": "4/4",
+              "tempo_bpm": 140,
+              "form": "8-bar period (8 bars): A opening 4 bars, A' answer 4 bars (repeats A)",
+              "mood": "restless, pacing the room at midnight, unable to sleep",
+              "range": "D4 to G5, scale tones of E minor only",
+              "character": "a simple, singable melody with a clear shape"
+            },
+            "position": {
+              "bar": 3,
+              "of_bars": 8,
+              "beat": "2-and",
+              "beat_strength": "weak, off the beat",
+              "eighths_left_in_bar": 5,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-4)",
+              "bar_in_phrase": "3 of 4",
+              "bars_until_cadence": 1,
+              "cadence": "bar 4 holds the dominant (5th degree) for the whole bar: a half cadence"
+            },
+            "harmony": {
+              "this_bar": "F#dim (ii°): F# A C",
+              "next_bar": "Bm (v): B D F#"
+            },
+            "melody_so_far": [
+              "bar 1 (F#dim): F#4/e A4/q F#4/q A4/q F#4/e",
+              "bar 2 (Bm): B4/e F#4/e B4/e F#4/q B4/q F#4/e",
+              "bar 3 (F#dim), so far: A4/e C5/q"
+            ],
+            "recent": {
+              "last_note": "C5, one beat",
+              "previous_motion": "skip up a minor 3rd",
+              "direction_run": "3 notes upward in a row",
+              "highest_so_far": "C5",
+              "lowest_so_far": "F#4",
+              "notes_since_rest": 13,
+              "notes_in_this_bar": 2
+            }
+          },
+          "questions": {
+            "next_pitch": {
+              "type": "choice",
+              "instructions": "The pitch a good songwriter would write next in this E minor melody for a song whose mood is \"restless, pacing the room at midnight, unable to sleep\": singable, shaped by what came before, fitting this bar's chord (F#dim), and heading for the cadence described in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "B4": "B4, 5th degree (dominant). step down from C5 (minor 2nd). turns the line around after 3 notes upward. not in F#dim, a tension against the chord. the cadence note itself, one bar early.",
+                "A4": "A4, 4th degree (subdominant). skip down from C5 (minor 3rd). turns the line around after 3 notes upward. chord tone, the third of F#dim. a major 2nd below the coming cadence note B4.",
+                "D5": "D5, 7th degree (subtonic). step up from C5 (major 2nd). extends the 4-note run upward. not in F#dim, a tension against the chord. a new high point for the piece. a minor 3rd above the coming cadence note B4.",
+                "C5": "C5, 6th degree (submediant). repeats C5. chord tone, the fifth of F#dim. a minor 2nd above the coming cadence note B4.",
+                "E5": "E5, 1st degree (tonic). skip up from C5 (major 3rd). extends the 4-note run upward. not in F#dim, a tension against the chord. a new high point for the piece. a perfect 4th above the coming cadence note B4.",
+                "F#4": "F#4, 2nd degree (supertonic). leap down from C5 (tritone). turns the line around after 3 notes upward. chord tone, the root of F#dim. returns to the note this phrase started on. a perfect 4th below the coming cadence note B4.",
+                "G4": "G4, 3rd degree (mediant). leap down from C5 (perfect 4th). turns the line around after 3 notes upward. not in F#dim, a tension against the chord. a major 3rd below the coming cadence note B4.",
+                "F#5": "F#5, 2nd degree (supertonic). leap up from C5 (tritone). extends the 4-note run upward. chord tone, the root of F#dim. a new high point for the piece. a perfect 5th above the coming cadence note B4.",
+                "rest": "Rest: silence for the chosen length, a breath. 13 notes since the last rest. the cadence is next bar.",
+                "E4": "E4, 1st degree (tonic). leap down from C5 (minor 6th). turns the line around after 3 notes upward. not in F#dim, a tension against the chord. a new low point for the piece. a perfect 5th below the coming cadence note B4.",
+                "D4": "D4, 7th degree (subtonic). leap down from C5 (minor 7th). turns the line around after 3 notes upward. not in F#dim, a tension against the chord. the bottom of the range. a major 6th below the coming cadence note B4.",
+                "G5": "G5, 3rd degree (mediant). leap up from C5 (perfect 5th). extends the 4-note run upward. not in F#dim, a tension against the chord. the top of the range. a minor 6th above the coming cadence note B4."
+              }
+            },
+            "length": {
+              "type": "choice",
+              "instructions": "How long the next note should last for a song whose mood is \"restless, pacing the room at midnight, unable to sleep\", given the beat it starts on and the rhythm so far. Only lengths that fit in the bar are offered.",
+              "criteria": {
+                "eighth": "Eighth note, half a beat. starts on beat 2-and. ends on beat 3, leaving 2 beats in the bar. completes the current beat.",
+                "quarter": "Quarter note, one beat. starts on beat 2-and. ends on beat 3-and, leaving 1½ beats in the bar. starts off the beat and crosses the next beat (syncopated). same length as the previous note.",
+                "half": "Half note, two beats. starts on beat 2-and. ends on beat 4-and, leaving half a beat in the bar. starts off the beat and crosses the next beat (syncopated). leaves a lone eighth to end the bar.",
+                "dotted_quarter": "Dotted quarter, a beat and a half. starts on beat 2-and. ends on beat 4, leaving one beat in the bar. starts off the beat and crosses the next beat (syncopated)."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "next_pitch": {
+              "type": "choice",
+              "choice": "A4",
+              "confidence": 0.59,
+              "probabilities": {
+                "rest": 0.01,
+                "G5": 0,
+                "B4": 0.1,
+                "D5": 0.02,
+                "C5": 0.05,
+                "F#4": 0.17,
+                "E4": 0,
+                "F#5": 0.01,
+                "D4": 0,
+                "G4": 0,
+                "A4": 0.63,
+                "E5": 0.01
+              }
+            },
+            "length": {
+              "type": "choice",
+              "choice": "quarter",
+              "confidence": 0.32,
+              "probabilities": {
+                "half": 0.1,
+                "quarter": 0.48,
+                "dotted_quarter": 0.18,
+                "eighth": 0.24
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1948,
+            "output_tokens": 163
+          }
+        }
+      },
+      "step": 22
+    },
+    {
+      "kind": "jev",
+      "bar": 3,
+      "beat": "3-and",
+      "onset": 5,
+      "pitch": "F#4",
+      "length": "quarter",
+      "eighths": 2,
+      "note": null,
+      "source": "jev",
+      "pitchSource": "jev",
+      "lengthSource": "jev",
+      "answers": {
+        "next_pitch": {
+          "choice": "F#4",
+          "confidence": 0.35,
+          "top": [
+            [
+              "F#4",
+              0.41
+            ],
+            [
+              "C5",
+              0.34
+            ],
+            [
+              "A4",
+              0.1
+            ],
+            [
+              "D5",
+              0.06
+            ],
+            [
+              "B4",
+              0.05
+            ]
+          ]
+        },
+        "length": {
+          "choice": "quarter",
+          "confidence": 0.36,
+          "top": [
+            [
+              "quarter",
+              0.57
+            ],
+            [
+              "eighth",
+              0.22
+            ],
+            [
+              "dotted_quarter",
+              0.21
+            ]
+          ]
+        }
+      },
+      "heuristicRank": 4,
+      "lengthRank": 2,
+      "optionCount": 12,
+      "confidence": 0.35,
+      "latencyMs": 346,
+      "usage": {
+        "input": 1797,
+        "output": 157
+      },
+      "model": "jev-1.13.0",
+      "noteIndices": [
+        14
+      ],
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "E minor",
+              "meter": "4/4",
+              "tempo_bpm": 140,
+              "form": "8-bar period (8 bars): A opening 4 bars, A' answer 4 bars (repeats A)",
+              "mood": "restless, pacing the room at midnight, unable to sleep",
+              "range": "D4 to G5, scale tones of E minor only",
+              "character": "a simple, singable melody with a clear shape"
+            },
+            "position": {
+              "bar": 3,
+              "of_bars": 8,
+              "beat": "3-and",
+              "beat_strength": "weak, off the beat",
+              "eighths_left_in_bar": 3,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-4)",
+              "bar_in_phrase": "3 of 4",
+              "bars_until_cadence": 1,
+              "cadence": "bar 4 holds the dominant (5th degree) for the whole bar: a half cadence"
+            },
+            "harmony": {
+              "this_bar": "F#dim (ii°): F# A C",
+              "next_bar": "Bm (v): B D F#"
+            },
+            "melody_so_far": [
+              "bar 1 (F#dim): F#4/e A4/q F#4/q A4/q F#4/e",
+              "bar 2 (Bm): B4/e F#4/e B4/e F#4/q B4/q F#4/e",
+              "bar 3 (F#dim), so far: A4/e C5/q A4/q"
+            ],
+            "recent": {
+              "last_note": "A4, one beat",
+              "previous_motion": "skip down a minor 3rd",
+              "direction_run": "none",
+              "highest_so_far": "C5",
+              "lowest_so_far": "F#4",
+              "notes_since_rest": 14,
+              "notes_in_this_bar": 3
+            }
+          },
+          "questions": {
+            "next_pitch": {
+              "type": "choice",
+              "instructions": "The pitch a good songwriter would write next in this E minor melody for a song whose mood is \"restless, pacing the room at midnight, unable to sleep\": singable, shaped by what came before, fitting this bar's chord (F#dim), and heading for the cadence described in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "B4": "B4, 5th degree (dominant). step up from A4 (major 2nd). not in F#dim, a tension against the chord. the cadence note itself, one bar early.",
+                "C5": "C5, 6th degree (submediant). skip up from A4 (minor 3rd). chord tone, the fifth of F#dim. a minor 2nd above the coming cadence note B4.",
+                "G4": "G4, 3rd degree (mediant). step down from A4 (major 2nd). not in F#dim, a tension against the chord. a major 3rd below the coming cadence note B4.",
+                "F#4": "F#4, 2nd degree (supertonic). skip down from A4 (minor 3rd). chord tone, the root of F#dim. returns to the note this phrase started on. a perfect 4th below the coming cadence note B4.",
+                "A4": "A4, 4th degree (subdominant). repeats A4. chord tone, the third of F#dim. a major 2nd below the coming cadence note B4.",
+                "D5": "D5, 7th degree (subtonic). leap up from A4 (perfect 4th). not in F#dim, a tension against the chord. a new high point for the piece. a minor 3rd above the coming cadence note B4.",
+                "E5": "E5, 1st degree (tonic). leap up from A4 (perfect 5th). not in F#dim, a tension against the chord. a new high point for the piece. a perfect 4th above the coming cadence note B4.",
+                "F#5": "F#5, 2nd degree (supertonic). leap up from A4 (major 6th). chord tone, the root of F#dim. a new high point for the piece. a perfect 5th above the coming cadence note B4.",
+                "rest": "Rest: silence for the chosen length, a breath. 14 notes since the last rest. the cadence is next bar.",
+                "E4": "E4, 1st degree (tonic). leap down from A4 (perfect 4th). not in F#dim, a tension against the chord. a new low point for the piece. a perfect 5th below the coming cadence note B4.",
+                "D4": "D4, 7th degree (subtonic). leap down from A4 (perfect 5th). not in F#dim, a tension against the chord. the bottom of the range. a major 6th below the coming cadence note B4.",
+                "G5": "G5, 3rd degree (mediant). leap up from A4 (minor 7th). not in F#dim, a tension against the chord. the top of the range. a minor 6th above the coming cadence note B4."
+              }
+            },
+            "length": {
+              "type": "choice",
+              "instructions": "How long the next note should last for a song whose mood is \"restless, pacing the room at midnight, unable to sleep\", given the beat it starts on and the rhythm so far. Only lengths that fit in the bar are offered.",
+              "criteria": {
+                "eighth": "Eighth note, half a beat. starts on beat 3-and. ends on beat 4, leaving one beat in the bar. completes the current beat.",
+                "quarter": "Quarter note, one beat. starts on beat 3-and. ends on beat 4-and, leaving half a beat in the bar. starts off the beat and crosses the next beat (syncopated). same length as the previous note. leaves a lone eighth to end the bar.",
+                "dotted_quarter": "Dotted quarter, a beat and a half. starts on beat 3-and. fills the rest of the bar. starts off the beat and crosses the next beat (syncopated)."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "next_pitch": {
+              "type": "choice",
+              "choice": "F#4",
+              "confidence": 0.35,
+              "probabilities": {
+                "G4": 0.01,
+                "G5": 0,
+                "F#4": 0.41,
+                "A4": 0.1,
+                "E4": 0,
+                "D4": 0,
+                "C5": 0.34,
+                "D5": 0.06,
+                "B4": 0.05,
+                "E5": 0,
+                "rest": 0.02,
+                "F#5": 0.01
+              }
+            },
+            "length": {
+              "type": "choice",
+              "choice": "quarter",
+              "confidence": 0.36,
+              "probabilities": {
+                "dotted_quarter": 0.21,
+                "quarter": 0.57,
+                "eighth": 0.22
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1797,
+            "output_tokens": 157
+          }
+        }
+      },
+      "step": 23
+    },
+    {
+      "kind": "jev",
+      "bar": 3,
+      "beat": "4-and",
+      "onset": 7,
+      "pitch": "A4",
+      "length": "eighth",
+      "eighths": 1,
+      "note": "only one length fits the bar",
+      "source": "jev",
+      "pitchSource": "jev",
+      "lengthSource": "jev",
+      "answers": {
+        "next_pitch": {
+          "choice": "A4",
+          "confidence": 0.69,
+          "top": [
+            [
+              "A4",
+              0.72
+            ],
+            [
+              "C5",
+              0.13
+            ],
+            [
+              "F#4",
+              0.05
+            ],
+            [
+              "G4",
+              0.03
+            ],
+            [
+              "B4",
+              0.02
+            ]
+          ]
+        },
+        "length": null
+      },
+      "heuristicRank": 1,
+      "lengthRank": null,
+      "optionCount": 11,
+      "confidence": 0.69,
+      "latencyMs": 242,
+      "usage": {
+        "input": 1598,
+        "output": 108
+      },
+      "model": "jev-1.13.0",
+      "noteIndices": [
+        15
+      ],
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "E minor",
+              "meter": "4/4",
+              "tempo_bpm": 140,
+              "form": "8-bar period (8 bars): A opening 4 bars, A' answer 4 bars (repeats A)",
+              "mood": "restless, pacing the room at midnight, unable to sleep",
+              "range": "D4 to G5, scale tones of E minor only",
+              "character": "a simple, singable melody with a clear shape"
+            },
+            "position": {
+              "bar": 3,
+              "of_bars": 8,
+              "beat": "4-and",
+              "beat_strength": "weak, off the beat",
+              "eighths_left_in_bar": 1,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-4)",
+              "bar_in_phrase": "3 of 4",
+              "bars_until_cadence": 1,
+              "cadence": "bar 4 holds the dominant (5th degree) for the whole bar: a half cadence"
+            },
+            "harmony": {
+              "this_bar": "F#dim (ii°): F# A C",
+              "next_bar": "Bm (v): B D F#"
+            },
+            "melody_so_far": [
+              "bar 1 (F#dim): F#4/e A4/q F#4/q A4/q F#4/e",
+              "bar 2 (Bm): B4/e F#4/e B4/e F#4/q B4/q F#4/e",
+              "bar 3 (F#dim), so far: A4/e C5/q A4/q F#4/q"
+            ],
+            "recent": {
+              "last_note": "F#4, one beat",
+              "previous_motion": "skip down a minor 3rd",
+              "direction_run": "3 notes downward in a row",
+              "highest_so_far": "C5",
+              "lowest_so_far": "F#4",
+              "notes_since_rest": 15,
+              "notes_in_this_bar": 4
+            }
+          },
+          "questions": {
+            "next_pitch": {
+              "type": "choice",
+              "instructions": "The pitch a good songwriter would write next in this E minor melody for a song whose mood is \"restless, pacing the room at midnight, unable to sleep\": singable, shaped by what came before, fitting this bar's chord (F#dim), and heading for the cadence described in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "A4": "A4, 4th degree (subdominant). skip up from F#4 (minor 3rd). turns the line around after 3 notes downward. chord tone, the third of F#dim. a major 2nd below the coming cadence note B4.",
+                "G4": "G4, 3rd degree (mediant). step up from F#4 (minor 2nd). turns the line around after 3 notes downward. not in F#dim, a tension against the chord. a major 3rd below the coming cadence note B4.",
+                "C5": "C5, 6th degree (submediant). leap up from F#4 (tritone). turns the line around after 3 notes downward. chord tone, the fifth of F#dim. a minor 2nd above the coming cadence note B4.",
+                "E4": "E4, 1st degree (tonic). step down from F#4 (major 2nd). extends the 4-note run downward. not in F#dim, a tension against the chord. a new low point for the piece. a perfect 5th below the coming cadence note B4.",
+                "F#4": "F#4, 2nd degree (supertonic). repeats F#4. chord tone, the root of F#dim. returns to the note this phrase started on. a perfect 4th below the coming cadence note B4.",
+                "B4": "B4, 5th degree (dominant). leap up from F#4 (perfect 4th). turns the line around after 3 notes downward. not in F#dim, a tension against the chord. the cadence note itself, one bar early.",
+                "D5": "D5, 7th degree (subtonic). leap up from F#4 (minor 6th). turns the line around after 3 notes downward. not in F#dim, a tension against the chord. a new high point for the piece. a minor 3rd above the coming cadence note B4.",
+                "E5": "E5, 1st degree (tonic). leap up from F#4 (minor 7th). turns the line around after 3 notes downward. not in F#dim, a tension against the chord. a new high point for the piece. a perfect 4th above the coming cadence note B4.",
+                "D4": "D4, 7th degree (subtonic). skip down from F#4 (major 3rd). extends the 4-note run downward. not in F#dim, a tension against the chord. the bottom of the range. a major 6th below the coming cadence note B4.",
+                "rest": "Rest: silence for the chosen length, a breath. 15 notes since the last rest. the cadence is next bar.",
+                "F#5": "F#5, 2nd degree (supertonic). octave leap up from F#4. turns the line around after 3 notes downward. chord tone, the root of F#dim. a new high point for the piece. a perfect 5th above the coming cadence note B4."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "next_pitch": {
+              "type": "choice",
+              "choice": "A4",
+              "confidence": 0.69,
+              "probabilities": {
+                "rest": 0.01,
+                "A4": 0.72,
+                "G4": 0.03,
+                "E5": 0.01,
+                "D4": 0,
+                "F#4": 0.05,
+                "F#5": 0.01,
+                "B4": 0.02,
+                "D5": 0.01,
+                "E4": 0.01,
+                "C5": 0.13
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1598,
+            "output_tokens": 108
+          }
+        }
+      },
+      "step": 24
+    },
+    {
+      "kind": "forced",
+      "bar": 4,
+      "beat": "1",
+      "onset": 0,
+      "pitch": "B4",
+      "length": "whole",
+      "eighths": 8,
+      "note": "half cadence: B4, the dominant, held for the bar",
+      "noteIndices": [
+        16
+      ],
+      "step": 25
+    },
+    {
+      "kind": "reuse",
+      "bar": 5,
+      "beat": "1",
+      "onset": 0,
+      "pitch": null,
+      "length": null,
+      "eighths": 8,
+      "note": "bar 5 repeats bar 1: phrase A' repeats A",
+      "noteIndices": [
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "step": 26
+    },
+    {
+      "kind": "reuse",
+      "bar": 6,
+      "beat": "1",
+      "onset": 0,
+      "pitch": null,
+      "length": null,
+      "eighths": 8,
+      "note": "bar 6 repeats bar 2: phrase A' repeats A",
+      "noteIndices": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "step": 27
+    },
+    {
+      "kind": "reuse",
+      "bar": 7,
+      "beat": "1",
+      "onset": 0,
+      "pitch": null,
+      "length": null,
+      "eighths": 8,
+      "note": "bar 7 repeats bar 3: phrase A' repeats A",
+      "noteIndices": [
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "step": 28
+    },
+    {
+      "kind": "forced",
+      "bar": 8,
+      "beat": "1",
+      "onset": 0,
+      "pitch": "E4",
+      "length": "whole",
+      "eighths": 8,
+      "note": "full cadence: E4, the tonic, held for the bar",
+      "noteIndices": [
+        33
+      ],
+      "step": 29
+    }
+  ],
+  "setupCall": {
+    "picks": {
+      "mode": "minor",
+      "tempo": 140,
+      "form": "mini_8"
+    },
+    "answers": {
+      "mode": {
+        "choice": "minor",
+        "confidence": 1,
+        "top": [
+          [
+            "minor",
+            1
+          ],
+          [
+            "major",
+            0
+          ]
+        ]
+      },
+      "tempo": {
+        "choice": "fast_140",
+        "confidence": 0.68,
+        "top": [
+          [
+            "fast_140",
+            0.74
+          ],
+          [
+            "upbeat_120",
+            0.17
+          ],
+          [
+            "medium_104",
+            0.06
+          ],
+          [
+            "slow_72",
+            0.02
+          ],
+          [
+            "easy_88",
+            0.01
+          ]
+        ]
+      },
+      "form": {
+        "choice": "mini_8",
+        "confidence": 0.21,
+        "top": [
+          [
+            "mini_8",
+            0.41
+          ],
+          [
+            "short_16",
+            0.36
+          ],
+          [
+            "aabb_16",
+            0.17
+          ],
+          [
+            "aaba_32",
+            0.06
+          ]
+        ]
+      }
+    },
+    "confidence": 0.63,
+    "latencyMs": 685,
+    "usage": {
+      "input": 861,
+      "output": 161
+    },
+    "model": "jev-1.13.0",
+    "io": {
+      "request": {
+        "model": "jev-latest",
+        "state": {
+          "piece": {
+            "key": "E",
+            "meter": "4/4",
+            "purpose": "a short instrumental melody written for fun; the listener hears it once",
+            "mood": "restless, pacing the room at midnight, unable to sleep"
+          },
+          "pinned_by_the_user": "nothing"
+        },
+        "questions": {
+          "mode": {
+            "type": "choice",
+            "instructions": "The mode for a song whose mood is \"restless, pacing the room at midnight, unable to sleep\".",
+            "criteria": {
+              "minor": "minor: darker and more inward; suits sad, tense, mysterious or dramatic songs",
+              "major": "major: bright and open; the default for warm, cheerful or plain-spoken songs"
+            }
+          },
+          "tempo": {
+            "type": "choice",
+            "instructions": "The tempo for a song whose mood is \"restless, pacing the room at midnight, unable to sleep\". Each option states the pulse.",
+            "criteria": {
+              "slow_72": "72 bpm: slow, a ballad",
+              "easy_88": "88 bpm: relaxed, a stroll",
+              "medium_104": "104 bpm: medium, an easy sing-along",
+              "upbeat_120": "120 bpm: upbeat, a steady dance pulse",
+              "fast_140": "140 bpm: fast, driving"
+            }
+          },
+          "form": {
+            "type": "choice",
+            "instructions": "The song form to write for the mood \"restless, pacing the room at midnight, unable to sleep\". Each option states its length and structure.",
+            "criteria": {
+              "aaba_32": "AABA: 32 bars, the classic song form: opening, its answer, a bridge, and the return. 32 bars, about 77 seconds at 100 bpm.",
+              "aabb_16": "AABB: 16 bars: a 4-bar question and answer, then a contrasting 4-bar question and answer. 16 bars, about 38 seconds at 100 bpm.",
+              "short_16": "16-bar period: 16 bars: an 8-bar question and its 8-bar answer. 16 bars, about 38 seconds at 100 bpm.",
+              "mini_8": "8-bar period: 8 bars: a 4-bar question and its 4-bar answer. 8 bars, about 19 seconds at 100 bpm."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "mode": {
+            "type": "choice",
+            "choice": "minor",
+            "confidence": 1,
+            "probabilities": {
+              "minor": 1,
+              "major": 0
+            }
+          },
+          "tempo": {
+            "type": "choice",
+            "choice": "fast_140",
+            "confidence": 0.68,
+            "probabilities": {
+              "upbeat_120": 0.17,
+              "slow_72": 0.02,
+              "fast_140": 0.74,
+              "medium_104": 0.06,
+              "easy_88": 0.01
+            }
+          },
+          "form": {
+            "type": "choice",
+            "choice": "mini_8",
+            "confidence": 0.21,
+            "probabilities": {
+              "aaba_32": 0.06,
+              "aabb_16": 0.17,
+              "short_16": 0.36,
+              "mini_8": 0.41
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 861,
+          "output_tokens": 161
+        }
+      }
+    }
+  },
+  "stats": {
+    "calls": 20,
+    "inputTokens": 30213,
+    "outputTokens": 2802,
+    "ms": 6616,
+    "costUsd": 0.0012689460000000002,
+    "jevSteps": 16,
+    "chordCalls": 3,
+    "chordSteps": 8,
+    "forcedSteps": 2,
+    "reusedBars": 3,
+    "fallbacks": 0,
+    "agreement": 0.1875,
+    "chordAgreement": 0,
+    "meanConfidence": 0.4675
+  },
+  "abc": "X:1\nT:Restless, pacing the room at midnight, unable to sleep\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=140\nK:Em\n\"F#dim\"FA2F2 A2F | \"Bm\"BFBF2 B2F | \"F#dim\"Ac2A2 F2A | \"Bm\"B8 |\n\"F#dim\"FA2F2 A2F | \"Bm\"BFBF2 B2F | \"F#dim\"Ac2A2 F2A | \"Em\"E8 |]\n"
+}

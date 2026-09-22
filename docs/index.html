@@ -80,19 +80,34 @@ a { color: var(--accent); }
   <div class="transport"><div class="audio" id="audio-0"></div></div>
 </article>
 
-<article class="demo" id="demo-morning">
+<article class="demo" id="demo-playful-16">
   <div class="demo-head">
     <div>
       <span class="tag">Jev wrote everything</span>
-      <h3>Bright and hopeful, a morning walk</h3>
-      <p class="meta">C major · 88 bpm · 16-bar period · 16 bars, about 44 s · mood: “bright and hopeful, a morning walk”</p>
-      <p class="blurb">“Bright and hopeful, a morning walk”: major at 100% confidence, 88 bpm, a 16-bar period rocking between C and F with one motif carried through.</p>
-      <p class="meta">Jev chose mode major (100%), tempo 88 bpm (47%), form short_16 (41%). First phrase: C F C F C F F G. 7 chord calls, 35 note calls, about $0.0027; Jev agreed with code's first choice on 26% of notes and 86% of chords.</p>
+      <h3>Playful, skipping down the street on a spring afternoon</h3>
+      <p class="meta">G major · 120 bpm · AABB · 16 bars, about 32 s · mood: “playful, skipping down the street on a spring afternoon”</p>
+      <p class="blurb">“Playful, skipping down the street on a spring afternoon”: major at 100% confidence, 120 bpm, a two-note skip in eighths that never sits down, and a second pair of phrases that lifts it a third.</p>
+      <p class="meta">Jev chose mode major (100%), tempo 120 bpm (84%). First phrase: G C C D. 6 chord calls, 48 note calls, about $0.0037; Jev agreed with code's first choice on 21% of notes and 83% of chords.</p>
     </div>
-    <a class="button" href="demos/demo-morning.html?replay=1">Watch it being built in Jev's real time · 0:19 →</a>
+    <a class="button" href="demos/demo-playful-16.html?replay=1">Watch it being built in Jev's real time · 0:24 →</a>
   </div>
   <div class="paper" id="paper-1"></div>
   <div class="transport"><div class="audio" id="audio-1"></div></div>
+</article>
+
+<article class="demo" id="demo-restless">
+  <div class="demo-head">
+    <div>
+      <span class="tag">Jev wrote everything</span>
+      <h3>Restless, pacing the room at midnight, unable to sleep</h3>
+      <p class="meta">E minor · 140 bpm · 8-bar period · 8 bars, about 14 s · mood: “restless, pacing the room at midnight, unable to sleep”</p>
+      <p class="blurb">“Restless, pacing the room at midnight, unable to sleep”: E minor at 100%, 140 bpm, and Jev opened on F#dim, the one tense chord in the key, which code had ranked last of seven.</p>
+      <p class="meta">Jev chose mode minor (100%), tempo 140 bpm (68%), form mini_8 (21%). First phrase: F#dim Bm F#dim Bm. 3 chord calls, 16 note calls, about $0.0013; Jev agreed with code's first choice on 19% of notes and 0% of chords.</p>
+    </div>
+    <a class="button" href="demos/demo-restless.html?replay=1">Watch it being built in Jev's real time · 0:10 →</a>
+  </div>
+  <div class="paper" id="paper-2"></div>
+  <div class="transport"><div class="audio" id="audio-2"></div></div>
 </article>
 
 <article class="demo" id="demo-fanfare">
@@ -106,8 +121,8 @@ a { color: var(--accent); }
     </div>
     <a class="button" href="demos/demo-fanfare.html?replay=1">Watch it being built in Jev's real time · 0:13 →</a>
   </div>
-  <div class="paper" id="paper-2"></div>
-  <div class="transport"><div class="audio" id="audio-2"></div></div>
+  <div class="paper" id="paper-3"></div>
+  <div class="transport"><div class="audio" id="audio-3"></div></div>
 </article>
 
 <article class="demo" id="demo-pop-loop">
@@ -121,8 +136,8 @@ a { color: var(--accent); }
     </div>
     <a class="button" href="demos/demo-pop-loop.html?replay=1">Watch it being built in Jev's real time · 0:29 →</a>
   </div>
-  <div class="paper" id="paper-3"></div>
-  <div class="transport"><div class="audio" id="audio-3"></div></div>
+  <div class="paper" id="paper-4"></div>
+  <div class="transport"><div class="audio" id="audio-4"></div></div>
 </article>
 
 <section class="how">
@@ -142,7 +157,7 @@ a { color: var(--accent); }
 <ul>
 <li><strong>Jev has a preference, and it is consistency.</strong> With the same options in front of it, it favours the chord tone, the same rhythm as the last bar, the same chord as the last bar. That gives motifs for free, and it also gives chains: the first bridge we got was seven whole notes, and Jev's probability for “hold again” climbed from 64% to 94% over three bars even when told the previous bars were held. A jazz bridge later sat on C7 for five bars.</li>
 <li><strong>So code got two rules of the game.</strong> A whole note is not offered in the first bar of a phrase or right after a bar that held one note. A chord root is not offered for a third bar in a row. Everything else is Jev's.</li>
-<li><strong>Mood reaches the music.</strong> “Wistful, late night” came back minor at 100% confidence and 72 bpm. “Jazz” came back F major at 97% and walked ii–V–I in sevenths. “Bossa nova” split the mode almost evenly, which is fair, and leaned the whole tune on off-beats. Tempo answers are softer, 30% to 70%, so pin the tempo if you care.</li>
+<li><strong>Mood reaches the music.</strong> “Wistful, late night” came back minor at 100% confidence and 72 bpm; “playful, skipping down the street” came back major at 100% and 120 bpm in skipping eighths. “Restless, pacing the room at midnight” made Jev open on the diminished chord, the one tense chord in the key, which code's own ranking had put last of seven. In testing, “jazz” walked ii–V–I in sevenths and “bossa nova” split the mode almost evenly, which is fair. Tempo answers are softer, 30% to 90%, so pin the tempo if you care.</li>
 <li><strong>Jev is not echoing code's ranking.</strong> Code ranks every option with a one-ply score of its own; Jev's pick was code's first choice between 35% and 80% of the time depending on the tune, and the page shows the rank of every pick.</li>
 <li><strong>It is fast and nearly free.</strong> A call takes about 250 ms and about 1,600 input tokens; a 32-bar AABA is 60 to 80 calls, roughly twenty seconds and half a cent.</li>
 </ul>
@@ -163,7 +178,7 @@ npm run serve                                             # http://localhost:322
 </main>
 <script src="https://cdn.jsdelivr.net/npm/abcjs@6.7.1/dist/abcjs-basic-min.js" integrity="sha384-gO9mym1Z3WJwxNm4ZpC6ZQbMyiu+72akLTHzztpwTs6KYVd3NnfkQigzPk+Oqzqy" crossorigin="anonymous"></script>
 <script>
-const DEMOS = [{"abc":"X:1\nT:Wistful, late night\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=72\nK:Am\n\"Am\"C4 E4 | \"Dm\"D4 F4 | \"Em\"E4 G4 | \"Am\"A4 E4 |\n\"Dm\"F4 D4 | \"Em\"E4 G4 | \"Dm\"F4 D4 | \"Em\"E8 |\n\"Am\"C4 E4 | \"Dm\"D4 F4 | \"Em\"E4 G4 | \"Am\"A4 E4 |\n\"Dm\"F4 D4 | \"Em\"E4 G4 | \"Dm\"F4 D4 | \"Am\"A,8 |]\n","seconds":53},{"abc":"X:1\nT:Bright and hopeful, a morning walk\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=88\nK:C\n\"C\"C2E2 G2EG | \"F\"F2A2 F2AF | \"C\"G2E2 G2EG | \"F\"F2A2 F2AF |\n\"C\"G2E2 G2EG | \"F\"F2A2 F2AF | \"F\"A2F2 A2FA | \"G\"G8 |\n\"C\"C2E2 G2EG | \"F\"F2A2 F2AF | \"C\"G2E2 G2EG | \"F\"F2A2 F2AF |\n\"C\"G2E2 G2EG | \"F\"F2A2 F2AF | \"F\"A2F2 A2FA | \"C\"c8 |]\n","seconds":44},{"abc":"X:1\nT:Triumphant, a fanfare\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=140\nK:D\n\"D\"A2d2 f4 | \"G\"d2B2 d4 | \"D\"A4 d4 | \"G\"B2d2 B4 |\n\"D\"A2d2 A4 | \"A\"c4 A4 | \"G\"B2d4 Bd | \"A\"A8 |\n\"D\"A2d2 f4 | \"G\"d2B2 d4 | \"D\"A4 d4 | \"G\"B2d2 B4 |\n\"D\"A2d2 A4 | \"A\"c4 A4 | \"G\"B2d4 Bd | \"D\"d8 |]\n","seconds":27},{"abc":"X:1\nT:A bright pop chorus everyone can sing\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=120\nK:C\n\"C\"C2E2 G2EC | \"G\"G2B2 G2BG | \"Am\"A2c2 A2cA | \"F\"F2A2 F2AF |\n\"C\"G2E2 G2EG | \"G\"B2G2 B2GB | \"Am\"A2E2 A2EA | \"F\"G8 |\n\"C\"C2E2 G2EC | \"G\"G2B2 G2BG | \"Am\"A2c2 A2cA | \"F\"F2A2 F2AF |\n\"C\"G2E2 G2EG | \"G\"B2G2 B2GB | \"Am\"A2E2 A2EA | \"F\"c8 |\n\"C\"G2E2 G2EG | \"G\"B2G2 B2GB | \"Am\"A2c2 A2cA | \"F\"F2A2 F2AF |\n\"C\"G2E2 G2EG | \"G\"B2G2 B2GB | \"Am\"A2E2 A2EA | \"F\"G8 |\n\"C\"C2E2 G2EC | \"G\"G2B2 G2BG | \"Am\"A2c2 A2cA | \"F\"F2A2 F2AF |\n\"C\"G2E2 G2EG | \"G\"B2G2 B2GB | \"Am\"A2E2 A2EA | \"F\"c8 |]\n","seconds":64}];
+const DEMOS = [{"abc":"X:1\nT:Wistful, late night\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=72\nK:Am\n\"Am\"C4 E4 | \"Dm\"D4 F4 | \"Em\"E4 G4 | \"Am\"A4 E4 |\n\"Dm\"F4 D4 | \"Em\"E4 G4 | \"Dm\"F4 D4 | \"Em\"E8 |\n\"Am\"C4 E4 | \"Dm\"D4 F4 | \"Em\"E4 G4 | \"Am\"A4 E4 |\n\"Dm\"F4 D4 | \"Em\"E4 G4 | \"Dm\"F4 D4 | \"Am\"A,8 |]\n","seconds":53},{"abc":"X:1\nT:Playful, skipping down the street on a spring afternoon\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=120\nK:G\n\"G\"G,B,DB, G,B,G,B, | \"C\"CECE CECE | \"C\"CECE CECE | \"D\"D8 |\n\"G\"G,B,DB, G,B,G,B, | \"C\"CECE CECE | \"C\"CECE CECE | \"G\"G8 |\n\"C\"EGEG EGEG | \"G\"EDGD B,DB,D | \"C\"ECEC ECEC | \"D\"D8 |\n\"C\"EGEG EGEG | \"G\"EDGD B,DB,D | \"C\"ECEC ECEC | \"G\"G,8 |]\n","seconds":32},{"abc":"X:1\nT:Restless, pacing the room at midnight, unable to sleep\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=140\nK:Em\n\"F#dim\"FA2F2 A2F | \"Bm\"BFBF2 B2F | \"F#dim\"Ac2A2 F2A | \"Bm\"B8 |\n\"F#dim\"FA2F2 A2F | \"Bm\"BFBF2 B2F | \"F#dim\"Ac2A2 F2A | \"Em\"E8 |]\n","seconds":14},{"abc":"X:1\nT:Triumphant, a fanfare\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=140\nK:D\n\"D\"A2d2 f4 | \"G\"d2B2 d4 | \"D\"A4 d4 | \"G\"B2d2 B4 |\n\"D\"A2d2 A4 | \"A\"c4 A4 | \"G\"B2d4 Bd | \"A\"A8 |\n\"D\"A2d2 f4 | \"G\"d2B2 d4 | \"D\"A4 d4 | \"G\"B2d2 B4 |\n\"D\"A2d2 A4 | \"A\"c4 A4 | \"G\"B2d4 Bd | \"D\"d8 |]\n","seconds":27},{"abc":"X:1\nT:A bright pop chorus everyone can sing\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=120\nK:C\n\"C\"C2E2 G2EC | \"G\"G2B2 G2BG | \"Am\"A2c2 A2cA | \"F\"F2A2 F2AF |\n\"C\"G2E2 G2EG | \"G\"B2G2 B2GB | \"Am\"A2E2 A2EA | \"F\"G8 |\n\"C\"C2E2 G2EC | \"G\"G2B2 G2BG | \"Am\"A2c2 A2cA | \"F\"F2A2 F2AF |\n\"C\"G2E2 G2EG | \"G\"B2G2 B2GB | \"Am\"A2E2 A2EA | \"F\"c8 |\n\"C\"G2E2 G2EG | \"G\"B2G2 B2GB | \"Am\"A2c2 A2cA | \"F\"F2A2 F2AF |\n\"C\"G2E2 G2EG | \"G\"B2G2 B2GB | \"Am\"A2E2 A2EA | \"F\"G8 |\n\"C\"C2E2 G2EC | \"G\"G2B2 G2BG | \"Am\"A2c2 A2cA | \"F\"F2A2 F2AF |\n\"C\"G2E2 G2EG | \"G\"B2G2 B2GB | \"Am\"A2E2 A2EA | \"F\"c8 |]\n","seconds":64}];
 const fmtClock = (s) => Math.floor(s / 60) + ":" + String(Math.round(s % 60)).padStart(2, "0");
 function addTotal(container, seconds) {
   const clock = container.querySelector(".abcjs-midi-clock"); if (!clock) return;

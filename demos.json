@@ -5,9 +5,14 @@
     "blurb": "“Wistful, late night”: minor at 100% confidence, 72 bpm, an all-minor i–iv–v, two long notes a bar."
   },
   {
-    "name": "demo-morning",
+    "name": "demo-playful-16",
     "tag": "Jev wrote everything",
-    "blurb": "“Bright and hopeful, a morning walk”: major at 100% confidence, 88 bpm, a 16-bar period rocking between C and F with one motif carried through."
+    "blurb": "“Playful, skipping down the street on a spring afternoon”: major at 100% confidence, 120 bpm, a two-note skip in eighths that never sits down, and a second pair of phrases that lifts it a third."
+  },
+  {
+    "name": "demo-restless",
+    "tag": "Jev wrote everything",
+    "blurb": "“Restless, pacing the room at midnight, unable to sleep”: E minor at 100%, 140 bpm, and Jev opened on F#dim, the one tense chord in the key, which code had ranked last of seven."
   },
   {
     "name": "demo-fanfare",
