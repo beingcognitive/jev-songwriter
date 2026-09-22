@@ -28,7 +28,8 @@ So the doctrine is the same as in [jev-go](../jev-go): **code computes, Jev judg
   in testing); a chord root is not offered to Jev for a third bar in a row (a jazz bridge sat on C7 for five
   bars; the form's cadence chord and a repeated phrase can still extend a run, by design). The third: a rest is
   never longer than a half note, and since pitch and length are one call, the rest is only offered when every
-  length on offer fits that cap.
+  length on offer fits that cap, which means a rest can only start on beat 2-and or later and no bar begins
+  with silence.
 
 Output is real [ABC notation](https://abcnotation.com), a JSON trace of every call, and an HTML page that
 renders the score, plays it with abcjs (chords under the melody, optional), and lists every decision with Jev's
@@ -103,7 +104,7 @@ what was done. All fixes carry a regression test.
 
 | Finding | Raised by | Done |
 |---|---|---|
-| `serve.mjs` served the repository root (so any `.dev.vars`), admitted sibling directories through an encoded `..`, listened on all interfaces, threw on `/%` | 7/7 | serves only `out/` and `docs/`, on localhost, resolved and checked with `path.relative`; bad escapes are 400; the index escapes filenames |
+| `serve.mjs` served the repository root (so any `.dev.vars`), admitted sibling directories through an encoded `..`, listened on all interfaces, threw on `/%` | 7/7 | serves only `out/` and `docs/`, on localhost, resolved and checked with `path.relative` and again after following symlinks; a bad escape is a 404 rather than a throw; the index escapes filenames |
 | Odd answers corrupted the stats: an empty distribution scored 100% confidence, a supplied confidence was not clamped, a null envelope crashed, fallbacks counted as agreement | 7/7 | `confidenceFrom({})` is 0; confidence clamped to 0..1; every transport hands back a plain object; agreement and mean confidence are computed over answered steps only; probabilities are filtered to offered keys with finite values |
 | Response keys reached `innerHTML` unescaped in the table and the replay panel | 6/7 | escaped in the page, and foreign keys are dropped at `readAnswer` |
 | Setup: a prototype-key answer such as `constructor` crashed; fallbacks picked values never offered; the mode question offered modes the key cannot take; the cheap checks ran after the paid call | 6/7 | own-property lookups; option lists ranked by code so the first key is the fallback; only legal modes offered; key, pinned mode, tempo and form are checked before any call |
@@ -126,3 +127,25 @@ Codex reviewers); a legitimate choice with one missing key would be thrown away,
 and the map is sanitised. Backlog: the page re-derives the bar layout that `lib/abc.js` owns, and `toAbc` writes
 spans back into `result.notes` (guarded by an assertion for now); a cadence chord or a repeated phrase can still
 put three bars on one root, which the rule about what Jev is offered does not try to prevent.
+
+### Round two: breaking the fix
+
+The fix batch itself went to one Codex and one Opus reviewer with a narrower brief, break this diff only. Both
+found real regressions, applied with tests:
+
+| Finding | Raised by | Done |
+|---|---|---|
+| Dropping foreign probability keys before computing confidence shrank the denominator, so a thin distribution with one recognised key read as certainty | Opus | `confidenceFrom` takes the number of options offered |
+| Sanitising probabilities coerced values: `null` became 0 and an object with a broken `toString` threw | Codex | only numbers are accepted |
+| A supplied confidence outside 0..1 was clamped, so nonsense read as certainty | both | out-of-range values are ignored and the map decides |
+| A symlink inside `out/` could still serve a file outside it | Codex | the real path is checked again after following links |
+| The server's new main-module guard compared an encoded URL path with a raw one, so `npm run serve` did nothing from a directory with a space or non-ASCII characters | Opus | `fileURLToPath` |
+| One `source` field covered two questions: a length-only fallback dropped the whole step from the agreement figure (the CLI printed "notes 0%"), while Codex wanted every fallback at zero confidence | both, opposite ways | `pitchSource` and `lengthSource`; the pitch answer carries rank and confidence, and only a pitch fallback zeroes it |
+| The tempo answer was read once per searched tempo inside `find()`, so the setup confidence was averaged over five copies | Codex | read once |
+| `keyInfo("constructor")` produced NaN pitches after passing the new preflight | Codex | own-property lookups |
+| The replay's option panel drew from the raw response and could throw on a junk map | Codex | offered keys with sane numbers only |
+| The `setTune` "sequencing" only guarded a label; two loads could still finish out of order | Codex | loads are queued and superseded ones skipped |
+| A typo in `--chords` was caught only after the paid setup call | Opus | parsed before any call |
+| Semantic CLI errors exited 7 with a stack trace | Opus | message and exit 2 |
+| `--out` elsewhere printed a link the server cannot serve; the site said Node 20 | Opus | fixed |
+| The rest rule left two dead branches and means no bar begins with silence; the published demos predate the rule | Opus | branches removed, consequence documented here and on the site |

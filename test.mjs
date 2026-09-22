@@ -8,7 +8,7 @@ import { MOODS, resolveMood } from "./lib/moods.js";
 import { toAbc, abcPitch } from "./lib/abc.js";
 import { renderPage } from "./lib/page.js";
 import { rng, mockChoice, readAnswer, confidenceFrom, cleanProbs } from "./lib/jev.js";
-import { resolveFile } from "./serve.mjs";
+import { resolveFile, safeFile } from "./serve.mjs";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
@@ -116,7 +116,8 @@ async function check(result) {
   for (const t of result.trace) if (t.kind === "jev") {
     const q = t.io.request.questions;
     if (q.length && "rest" in q.next_pitch.criteria) for (const k of Object.keys(q.length.criteria)) assert.ok(DURATIONS.find((d) => d.key === k).e <= 4, `bar ${t.bar} beat ${t.beat}: rest offered next to ${k}`);
-    assert.ok(t.source !== "fallback" || t.confidence === 0, "a fallback carries no confidence");
+    assert.ok(t.pitchSource !== "fallback" || t.confidence === 0, "a pitch fallback carries no confidence");
+    assert.equal(t.source, t.pitchSource === "jev" && t.lengthSource === "jev" ? "jev" : "fallback");
   }
   for (const t of result.trace) if (t.kind === "chord" && t.io) {
     const cad = /bar (\d+) is (\S+) /.exec(t.io.request.state.position.cadence);
@@ -287,8 +288,15 @@ test("fake backend: unknown answers fall back to code's first choice, long rests
 
 test("odd answers: empty or junk distributions, wild confidence, prototype keys, null envelopes", async () => {
   assert.equal(readAnswer({ choice: "G", probabilities: {} }, ["C", "G"]).conf, 0, "an empty distribution is no information");
-  assert.equal(readAnswer({ choice: "G", probabilities: { C: 0.2, G: 0.8 }, confidence: 42 }, ["C", "G"]).conf, 1, "confidence is clamped");
-  assert.equal(readAnswer({ choice: "G", probabilities: { C: 0.2, G: 0.8 }, confidence: -3 }, ["C", "G"]).conf, 0);
+  const near = (x, y) => Math.abs(x - y) < 1e-9;
+  assert.ok(near(readAnswer({ choice: "G", probabilities: { C: 0.2, G: 0.8 }, confidence: 42 }, ["C", "G"]).conf, 0.6), "an out-of-range confidence is ignored, the map decides");
+  assert.ok(near(readAnswer({ choice: "G", probabilities: { C: 0.2, G: 0.8 }, confidence: -3 }, ["C", "G"]).conf, 0.6));
+  assert.equal(readAnswer({ choice: "G", probabilities: { G: null } }, ["C", "G"]).conf, 0, "null is not a probability");
+  assert.doesNotThrow(() => readAnswer({ probabilities: { foreign: { toString: 0 } } }, ["C", "G"]));
+  const twelve = ["C4", "D4", "E4", "F4", "G4", "A4", "B4", "C5", "D5", "E5", "F5", "rest"];
+  assert.ok(readAnswer({ choice: "C4", probabilities: { Cb4: 0.5, C4: 0.3, Fb4: 0.2 } }, twelve).conf < 0.3, "dropping foreign keys must not inflate confidence");
+  assert.ok(near(confidenceFrom({ C4: 0.3 }, 12), (12 * 0.3 - 1) / 11), "the offered count is the denominator");
+  assert.throws(() => keyInfo("constructor", "major"), /unknown key/); assert.throws(() => keyInfo("C", "constructor"), /mode must be/);
   assert.equal(readAnswer({ choice: "G", probabilities: { C: 0.2, G: 0.8 }, confidence: Infinity }, ["C", "G"]).conf, readAnswer({ choice: "G", probabilities: { C: 0.2, G: 0.8 } }).conf);
   assert.equal(readAnswer({ choice: "nonsense", probabilities: { C: 0.2, G: 0.8 } }, ["C", "G"]).conf, 0, "a choice that was not offered carries no confidence");
   assert.deepEqual(readAnswer({ choice: "G", probabilities: { C: "high", G: 0.8, "<img src=x onerror=alert(1)>": 0.9 } }, ["C", "G"]).top, [["G", 0.8]], "junk and foreign keys are dropped");
@@ -306,6 +314,17 @@ test("odd answers: empty or junk distributions, wild confidence, prototype keys,
   await check(await compose({ key: "G", form: "mini_8", seed: 3 }, arrays));
 });
 
+test("answers: a length-only fallback keeps the pitch answer, and setup reads each answer once", async () => {
+  const halfbad = { kind: "fake", answer: async (p) => { const out = {}; for (const [q, def] of Object.entries(p.questions)) { const keys = Object.keys(def.criteria); out[q] = q === "length" ? { choice: "nonsense", probabilities: {} } : { choice: keys[0], probabilities: Object.fromEntries(keys.map((k) => [k, k === keys[0] ? 0.9 : 0.1 / (keys.length - 1)])) }; } return out; } };
+  const r = await compose({ key: "C", form: "mini_8", seed: 1 }, halfbad);
+  await check(r);
+  assert.equal(r.stats.agreement, 1, "every pitch answer was code's first choice"); assert.ok(r.stats.meanConfidence > 0.5);
+  assert.ok(r.trace.every((t) => t.kind !== "jev" || t.lengthRank == null || t.lengthSource === "fallback" || t.lengthRank >= 1));
+  const tempoConf = { kind: "fake", answer: async (p) => Object.fromEntries(Object.entries(p.questions).map(([q, def]) => { const keys = Object.keys(def.criteria); const pick = q === "tempo" ? "fast_140" : keys[0]; return [q, { choice: pick, probabilities: Object.fromEntries(keys.map((k) => [k, k === pick ? 1 : 0])), confidence: q === "tempo" ? 1 : 0 }]; })) };
+  const r2 = await compose({ key: "C", form: "mini_8", seed: 1, mood: "x" }, tempoConf);
+  assert.equal(r2.setupCall.confidence, 0.5, "mode 0 and tempo 1, each read once"); assert.equal(r2.tempo, 140);
+});
+
 test("setup: only modes the key can take, and no paid call before the cheap checks", async () => {
   const eb = await compose({ key: "Eb", seed: 1, form: "mini_8", mood: "sad, dark, lonely" }, mock);
   assert.equal(eb.mode, "major"); assert.ok(!("mode" in (eb.setupCall?.io.request.questions ?? {})), "Eb has one legal mode, so no question");
@@ -316,6 +335,8 @@ test("setup: only modes the key can take, and no paid call before the cheap chec
   await assert.rejects(compose({ key: "F#", mode: "major", mood: "x" }, counting), /six accidentals/);
   await assert.rejects(compose({ key: "C", tempo: 10, mood: "x" }, counting), /tempo/);
   await assert.rejects(compose({ key: "C", form: "nope", mood: "x" }, counting), /unknown form/);
+  await assert.rejects(compose({ key: "C", chords: "Zz Q9", mood: "x" }, counting), /cannot read chord/);
+  await assert.rejects(compose({ key: "C", chords: "   ", mood: "x" }, counting), /progression/);
   assert.equal(calls, 0, "nothing was asked before the checks failed");
   const r = await compose({ key: "D", seed: 8, mood: "wistful, late night" }, mock);
   for (const [q, def] of Object.entries(r.setupCall.io.request.questions)) assert.ok(Object.keys(def.criteria).length >= 2, `${q} offers real options`);
@@ -403,6 +424,11 @@ test("serve: only out/ and docs/ files, never the root, dotfiles, siblings or ba
   assert.equal(ok("/out/%2e%2e/.dev.vars"), null); assert.equal(ok("/..%2f" + path.basename(root) + "-sibling%2fx.html"), null);
   assert.equal(ok("/%"), null, "a bad escape is refused, not thrown"); assert.equal(ok("/out/.hidden.html"), null); assert.equal(ok("/out/notes.txt"), null, "unknown types are not served");
   assert.equal(ok("/out/../docs/index.html"), path.join(root, "docs", "index.html"), "normalised paths that stay inside are fine");
+  fs.mkdirSync(path.join(root, "out")); fs.writeFileSync(path.join(root, ".dev.vars"), "SECRET"); fs.writeFileSync(path.join(root, "out", "real.json"), "{}");
+  fs.symlinkSync(path.join(root, ".dev.vars"), path.join(root, "out", "leak.json"));
+  assert.equal(safeFile(root, "/out/leak.json"), null, "a symlink out of the served tree is refused");
+  assert.equal(safeFile(root, "/out/real.json"), fs.realpathSync(path.join(root, "out", "real.json")));
+  assert.equal(safeFile(root, "/out/none.json"), null);
 });
 
 test("site: refuses to publish without every demo's trace; cli: bad arguments fail before any call", () => {
@@ -416,7 +442,7 @@ test("site: refuses to publish without every demo's trace; cli: bad arguments fa
   fs.writeFileSync(path.join(dir, "demos.json"), JSON.stringify([{ name: "../escape", tag: "x", blurb: "x" }]));
   assert.notEqual(spawnSync(process.execPath, [site], { cwd: dir, encoding: "utf8" }).status, 0);
   const cli = path.resolve("compose.mjs"), env = { ...process.env, TYPESAFE_API_KEY: "" };
-  for (const [args, re] of [[["--mood"], /needs a value/], [["--seed", "abc"], /--seed/], [["--bogus", "1"], /unknown option/], [["--form", "constructor"], /unknown form/], [["--tempo", "fast"], /--tempo/], [["extra"], /unexpected argument/]]) {
+  for (const [args, re] of [[["--mood"], /needs a value/], [["--seed", "abc"], /--seed/], [["--bogus", "1"], /unknown option/], [["--form", "constructor"], /unknown form/], [["--tempo", "fast"], /--tempo/], [["extra"], /unexpected argument/], [["--key", "H", "--mood", "x"], /unknown key/], [["--mode", "dorian"], /mode must be/], [["--chords", "Zz"], /cannot read chord/]]) {
     const c = spawnSync(process.execPath, [cli, ...args, "--out", dir], { encoding: "utf8", env });
     assert.equal(c.status, 2, args.join(" ")); assert.match(c.stderr, re);
   }

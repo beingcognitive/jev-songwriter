@@ -55,7 +55,7 @@ process.on("uncaughtException", (e) => {
 });
 const t0 = Date.now();
 let phase = "";
-const result = await compose(opts, be, (t) => {
+const onStep = (t) => {
   if (args.quiet) return;
   const next = opts.chords !== "jev" ? "melody" : opts.order === "interleaved" ? "both" : t.kind === "chord" ? "chords" : "melody";
   if (next === "melody" && phase === "" && opts.chords !== "jev") console.log(opts.chords === "fixed" ? "Chords from the fixed tables." : `Chords given: ${opts.chords}`);
@@ -67,7 +67,10 @@ const result = await compose(opts, be, (t) => {
   } else if (t.kind === "jev") {
     console.log(`  ${where}  ${t.pitch.padEnd(5)} ${t.length.padEnd(14)} ${t.source === "jev" ? "Jev " : "code"}  conf ${`${Math.round(t.confidence * 100)}%`.padStart(4)}  rank #${t.heuristicRank}/${t.optionCount}  ${t.latencyMs} ms${t.note ? `  (${t.note})` : ""}`);
   } else console.log(`  ${where}  ${t.kind === "forced" ? "code" : "repeat"}: ${t.note}`);
-});
+};
+let result;
+try { result = await compose(opts, be, onStep); }
+catch (e) { if (e?.cause?.code === "SELF_SIGNED_CERT_IN_CHAIN" || e?.code === "SELF_SIGNED_CERT_IN_CHAIN") throw e; fail(String(e.message || e)); }
 const abc = toAbc(result);
 const name = args.name ?? `${result.abcKey}-${result.form}-${result.seed}-${be.kind === "native" ? "jev" : "mock"}`;
 const base = path.join(outDir, name);
@@ -78,6 +81,8 @@ const s = result.stats;
 if (result.setupCall) console.log(`\nSetup: Jev read the mood and chose ${Object.entries(result.setupCall.picks).map(([q, v]) => `${q} ${v}${q === "tempo" ? " bpm" : ""} (${Math.round(result.setupCall.answers[q].confidence * 100)}%)`).join(", ")} in ${result.setupCall.latencyMs} ms.`);
 if (result.moodPreset) console.log(`Mood preset "${result.moodPreset}": ${result.mood}`);
 console.log(`\n${result.key}, ${result.tempo} bpm, ${result.formName}: ${result.bars} bars, about ${result.seconds} s. Jev chose ${s.chordCalls} chords and ${s.jevSteps} notes in ${((Date.now() - t0) / 1000).toFixed(1)} s; code played ${s.forcedSteps} cadences and repeated ${s.reusedBars} bars.`);
-if (be.kind === "native") console.log(`${s.calls} calls, ${s.inputTokens.toLocaleString()} input tokens, about $${s.costUsd.toFixed(4)}. Agreement with code's first choice: notes ${Math.round(s.agreement * 100)}%${s.chordCalls ? `, chords ${Math.round(s.chordAgreement * 100)}%` : ""}.`);
+const pctOf = (x) => (x == null ? "–" : `${Math.round(x * 100)}%`);
+if (be.kind === "native") console.log(`${s.calls} calls, ${s.inputTokens.toLocaleString()} input tokens, about $${s.costUsd.toFixed(4)}. Agreement with code's first choice: notes ${pctOf(s.agreement)}${s.chordCalls ? `, chords ${pctOf(s.chordAgreement)}` : ""}.`);
 console.log(`\n${abc}`);
-console.log(`Wrote ${base}.abc, .json, .html\nListen: npm run serve, then http://localhost:3222/${base}.html  (or open ${base}.html)`);
+const servable = path.relative(process.cwd(), path.resolve(base)).startsWith(`out${path.sep}`);
+console.log(`Wrote ${base}.abc, .json, .html\n${servable ? `Listen: npm run serve, then http://localhost:3222/${base}.html  (or open ${base}.html)` : `Open ${base}.html (npm run serve serves only out/ and docs/)`}`);

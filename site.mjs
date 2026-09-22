@@ -89,7 +89,7 @@ a { color: var(--accent); }
 <nav><a href="#demos">The demos</a><a href="#how">How we built it</a><a href="#found">What we found</a><a href="#run">Run it yourself</a><a href="https://jev-go.chardonn.ai">Beat Jev at Go</a></nav>
 
 <h2 id="demos">The demos</h2>
-<p class="meta">Press play on any score; the cursor follows the notes. “Watch it being built” opens the replay: the empty grid, then the chords landing, then the notes, with Jev's probabilities and raw responses for every call.</p>
+<p class="meta">Press play on any score; the cursor follows the notes. “Watch it being built” opens the replay: the empty grid, then the chords landing, then the notes, with Jev's probabilities and raw responses for every call. These were recorded on 22 September 2026 against jev-1.13.0, before the engine gained its rest rule, so a replay can show a rest offered next to a long length; the notes played are the ones Jev chose then.</p>
 ${cards}
 
 <section class="how">
@@ -123,7 +123,7 @@ npm run compose -- --mood jazz --key F                    # named moods: jazz, b
 npm run compose -- --chords "C G Am F" --mood "a bright pop chorus" --tempo 120 --form aaba_32
 npm run compose -- --mood "triumphant" --order interleaved
 npm run serve                                             # http://localhost:3222</pre>
-<p class="meta">Needs Node 20+ and a TypeSafe API key in <code>.dev.vars</code>; without one a seeded mock plays Jev's part so the whole pipeline runs offline. Jev bills input only, $0.042 per million tokens.</p>
+<p class="meta">Needs Node 22.15+ (for <code>--use-system-ca</code>) and a TypeSafe API key in <code>.dev.vars</code>; without one a seeded mock plays Jev's part so the whole pipeline runs offline. Jev bills input only, $0.042 per million tokens.</p>
 </section>
 
 <footer>Built with Claude Code, for fun. Jev is <a href="https://typesafe.ai">TypeSafe AI</a>'s System One decision model; scores and audio by <a href="https://www.abcjs.net">abcjs</a>.</footer>

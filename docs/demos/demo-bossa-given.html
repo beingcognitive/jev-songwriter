@@ -204,11 +204,14 @@ const cursorControl = {
     if (c && ev.left != null) { c.setAttribute("x1", ev.left - 2); c.setAttribute("x2", ev.left - 2); c.setAttribute("y1", ev.top); c.setAttribute("y2", ev.top + ev.height); }
   },
 };
-let synthControl = null, loadSeq = 0;
+// setTune is asynchronous, so loads are queued: a newer request waits for the older one and a request that
+// has been superseded is skipped, so the controller always ends up bound to the latest score.
+let synthControl = null, loadSeq = 0, audioQueue = Promise.resolve();
 const loadAudio = () => {
   if (!synthControl) return;
-  const mine = ++loadSeq;
-  synthControl.setTune(visualObj, false, { chordsOff: !$("chords").checked })
+  const mine = ++loadSeq, tune = visualObj, options = { chordsOff: !$("chords").checked };
+  audioQueue = audioQueue
+    .then(() => (mine === loadSeq ? synthControl.setTune(tune, false, options) : undefined))
     .then(() => { if (mine === loadSeq) $("audio-note").textContent = ""; })
     .catch((e) => { if (mine === loadSeq) $("audio-note").textContent = "Audio failed to load: " + e; });
 };
@@ -298,9 +301,10 @@ function optionBlock(container, name, q, a, s, animate) {
   const block = document.createElement("div");
   const keys = Object.keys(q.criteria);
   block.innerHTML = "<h3>" + name + " · " + keys.length + " option" + (keys.length === 1 ? "" : "s") + "</h3>";
-  const probs = (a && a.probabilities) || Object.fromEntries((s.answers && s.answers[name] && s.answers[name].top) || []);
-  const entries = Object.entries(probs).sort((x, y) => y[1] - x[1]);
-  const pmax = entries.length ? entries[0][1] : 1;
+  // The raw response is shown as text elsewhere; here only offered keys with sane numbers are drawn.
+  const raw = a && a.probabilities && typeof a.probabilities === "object" && !Array.isArray(a.probabilities) ? a.probabilities : Object.fromEntries((s.answers && s.answers[name] && s.answers[name].top) || []);
+  const entries = Object.entries(raw).filter(([key, p]) => keys.includes(key) && typeof p === "number" && Number.isFinite(p) && p >= 0 && p <= 1).sort((x, y) => y[1] - x[1]);
+  const pmax = entries.length && entries[0][1] > 0 ? entries[0][1] : 1;
   const pick = (a && a.choice) || (s.answers && s.answers[name] && s.answers[name].choice);
   const fills = [];
   for (const [key, p] of entries) {
