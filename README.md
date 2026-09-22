@@ -15,7 +15,6 @@ Built with Claude **Fable 5.1** in one afternoon, for fun.
 
 - **https://beingcognitive.github.io/jev-songwriter/** — five tunes, each with a score, a player, and
   “Watch it being built in Jev's real time”.
-- The doctrine comes from [Beat Jev at Go](https://jev-go.chardonn.ai): **code computes, Jev judges.**
 
 ## Five tunes
 
