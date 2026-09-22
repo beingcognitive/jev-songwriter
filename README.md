@@ -40,12 +40,12 @@ real time, one call at a time**, with the probabilities and the raw response bes
 ## How it works
 
 ```mermaid
-flowchart LR
-  M["a mood<br/>“wistful, late night”"] --> S["setup · 1 call<br/>mode, tempo, form"]
-  S --> C["chords · 1 call per bar<br/>7 triads, each with facts"]
-  C --> N["notes · 1 call per note<br/>~12 pitches + rest, and a length"]
-  N --> O["ABC score + JSON trace<br/>of every request and response"]
-  O --> P["a page that plays it<br/>and replays every call"]
+flowchart TD
+  M["🎭 a mood: “wistful, late night”"] --> S["setup · one call<br/>mode, tempo, form"]
+  S --> C["chords · one call per bar<br/>seven triads, each described in facts"]
+  C --> N["notes · one call per note<br/>about twelve pitches and a rest, plus a length"]
+  N --> O["an ABC score, and a JSON trace of every request and response"]
+  O --> P["a page that plays the tune and replays every call"]
 ```
 
 - **Jev never writes.** It receives a state and a question with options, and returns one choice with a probability
