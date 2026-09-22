@@ -19,13 +19,23 @@ Built with Claude **Fable 5.1** in one afternoon, for fun.
 ## Five tunes
 
 Each was written from nothing but the mood in its title. Jev chose the mode, the tempo, the form, every chord and
-every note; code played the cadences and the repeats.
+every note; code played the cadences and the repeats. **Click any title to watch the song being written, in Jev's
+real time, one call at a time**, with the probabilities and the raw response beside the sheet.
 
-| | |
-|---|---|
-| **[Content and warm, a summer evening by the river](https://beingcognitive.github.io/jev-songwriter/demos/demo-river.html?replay=1)** · F major at 100% confidence, 88 bpm, a full AABA ![score](docs/img/score-demo-river.svg) | **[Wistful, late night](https://beingcognitive.github.io/jev-songwriter/demos/live-mood.html?replay=1)** · A minor at 100%, 72 bpm, two long notes a bar ![score](docs/img/score-live-mood.svg) |
-| **[Playful, skipping down the street on a spring afternoon](https://beingcognitive.github.io/jev-songwriter/demos/demo-playful-16.html?replay=1)** · G major at 100%, 120 bpm, skipping eighths ![score](docs/img/score-demo-playful-16.svg) | **[Restless, pacing the room at midnight, unable to sleep](https://beingcognitive.github.io/jev-songwriter/demos/demo-restless.html?replay=1)** · E minor at 100%, 140 bpm, and it opens on F♯dim, the one tense chord in the key ![score](docs/img/score-demo-restless.svg) |
-| **[Tender, rocking a child to sleep](https://beingcognitive.github.io/jev-songwriter/demos/demo-tender.html?replay=1)** · E♭ major, 72 bpm at 95%, two long notes a bar ![score](docs/img/score-demo-tender.svg) | |
+<table>
+  <tr>
+    <td valign="top" width="50%"><b><a href="https://beingcognitive.github.io/jev-songwriter/demos/demo-river.html?replay=1">Content and warm, a summer evening by the river</a></b><br>F major at 100% confidence, 88 bpm, a full AABA<br><a href="https://beingcognitive.github.io/jev-songwriter/demos/demo-river.html?replay=1">▶ watch it being written · 0:30</a><br><br><img src="docs/img/score-demo-river.svg" alt="score of Content and warm, a summer evening by the river" width="100%"></td>
+    <td valign="top" width="50%"><b><a href="https://beingcognitive.github.io/jev-songwriter/demos/live-mood.html?replay=1">Wistful, late night</a></b><br>A minor at 100%, 72 bpm, two long notes a bar<br><a href="https://beingcognitive.github.io/jev-songwriter/demos/live-mood.html?replay=1">▶ watch it being written · 0:11</a><br><br><img src="docs/img/score-live-mood.svg" alt="score of Wistful, late night" width="100%"></td>
+  </tr>
+  <tr>
+    <td valign="top" width="50%"><b><a href="https://beingcognitive.github.io/jev-songwriter/demos/demo-playful-16.html?replay=1">Playful, skipping down the street on a spring afternoon</a></b><br>G major at 100%, 120 bpm, skipping eighths<br><a href="https://beingcognitive.github.io/jev-songwriter/demos/demo-playful-16.html?replay=1">▶ watch it being written · 0:24</a><br><br><img src="docs/img/score-demo-playful-16.svg" alt="score of Playful, skipping down the street on a spring afternoon" width="100%"></td>
+    <td valign="top" width="50%"><b><a href="https://beingcognitive.github.io/jev-songwriter/demos/demo-restless.html?replay=1">Restless, pacing the room at midnight, unable to sleep</a></b><br>E minor at 100%, 140 bpm, and it opens on F♯dim, the one tense chord in the key<br><a href="https://beingcognitive.github.io/jev-songwriter/demos/demo-restless.html?replay=1">▶ watch it being written · 0:10</a><br><br><img src="docs/img/score-demo-restless.svg" alt="score of Restless, pacing the room at midnight, unable to sleep" width="100%"></td>
+  </tr>
+  <tr>
+    <td valign="top" width="50%"><b><a href="https://beingcognitive.github.io/jev-songwriter/demos/demo-tender.html?replay=1">Tender, rocking a child to sleep</a></b><br>E♭ major, 72 bpm at 95%, two long notes a bar<br><a href="https://beingcognitive.github.io/jev-songwriter/demos/demo-tender.html?replay=1">▶ watch it being written · 0:12</a><br><br><img src="docs/img/score-demo-tender.svg" alt="score of Tender, rocking a child to sleep" width="100%"></td>
+    <td></td>
+  </tr>
+</table>
 
 ## The prompt that started it
 
