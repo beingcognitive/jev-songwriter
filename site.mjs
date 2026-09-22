@@ -37,7 +37,7 @@ const cards = demos.map((d, i) => {
       <p class="blurb">${esc(d.blurb)}</p>
       <p class="meta">${chose ? `Jev chose ${esc(chose)}. ` : ""}First phrase: ${esc(chords)}. ${st.chordCalls ? `${st.chordCalls} chord calls, ` : ""}${st.jevSteps} note calls, ${r.model === "jev-latest" ? "" : "mock, "}about $${st.costUsd.toFixed(4)}; Jev agreed with code's first choice on ${pct(st.agreement)} of notes${st.chordCalls ? ` and ${pct(st.chordAgreement)} of chords` : ""}.</p>
     </div>
-    <a class="button" href="demos/${encodeURIComponent(d.name)}.html">Watch it being built →</a>
+    <a class="button" href="demos/${encodeURIComponent(d.name)}.html?replay=1">Watch it being built →</a>
   </div>
   <div class="paper" id="paper-${i}"></div>
   <div class="transport"><div class="audio" id="audio-${i}"></div></div>

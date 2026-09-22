@@ -239,6 +239,7 @@ test("abc: header, bar count, spans, and the page", async () => {
   for (const n of r.notes) { assert.ok(n.abcStart > last && n.abcEnd > n.abcStart); last = n.abcStart; assert.match(abc.slice(n.abcStart, n.abcEnd), /^([A-Ga-gz][,']*)(\d)?$/, "a span is exactly the note token"); }
   const html = renderPage(r, abc);
   assert.ok(html.includes("abcjs-basic-min.js") && html.includes('"abc":') && html.includes("Test tune") && html.includes("sunny"));
+  assert.ok(html.includes('has("replay")'), "the page starts the replay when opened with ?replay=1");
 });
 
 test("request: the note question Jev expects, and it stays small", () => {
