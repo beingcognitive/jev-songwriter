@@ -2,7 +2,7 @@
 // the write-up of how it was built, and a copy of each demo page. Reads demos.json and out/<name>.json; no API calls.
 import fs from "node:fs";
 import path from "node:path";
-import { renderPage, esc, pct, embedJson, TRANSPORT_CSS, TRANSPORT_JS } from "./lib/page.js";
+import { renderPage, esc, pct, embedJson, TRANSPORT_CSS, TRANSPORT_JS, replaySeconds, clock } from "./lib/page.js";
 import { toAbc } from "./lib/abc.js";
 
 // Each demo's trace is kept next to its page in docs/demos/<name>.json, so a fresh clone (out/ is git-ignored)
@@ -37,7 +37,7 @@ const cards = demos.map((d, i) => {
       <p class="blurb">${esc(d.blurb)}</p>
       <p class="meta">${chose ? `Jev chose ${esc(chose)}. ` : ""}First phrase: ${esc(chords)}. ${st.chordCalls ? `${st.chordCalls} chord calls, ` : ""}${st.jevSteps} note calls, ${r.model === "jev-latest" ? "" : "mock, "}about $${st.costUsd.toFixed(4)}; Jev agreed with code's first choice on ${pct(st.agreement)} of notes${st.chordCalls ? ` and ${pct(st.chordAgreement)} of chords` : ""}.</p>
     </div>
-    <a class="button" href="demos/${encodeURIComponent(d.name)}.html?replay=1">Watch it being built →</a>
+    <a class="button" href="demos/${encodeURIComponent(d.name)}.html?replay=1">Watch it being built in Jev's real time · ${clock(replaySeconds(r))} →</a>
   </div>
   <div class="paper" id="paper-${i}"></div>
   <div class="transport"><div class="audio" id="audio-${i}"></div></div>
@@ -88,7 +88,7 @@ a { color: var(--accent); }
 <nav><a href="#demos">The demos</a><a href="#how">How we built it</a><a href="#found">What we found</a><a href="#run">Run it yourself</a><a href="https://jev-go.chardonn.ai">Beat Jev at Go</a></nav>
 
 <h2 id="demos">The demos</h2>
-<p class="meta">Press play on any score; the cursor follows the notes. “Watch it being built” opens the replay: the empty grid, then the chords landing, then the notes, with Jev's probabilities and raw responses for every call. These were recorded on 22 September 2026 against jev-1.13.0, before the engine gained its rest rule, so a replay can show a rest offered next to a long length; the notes played are the ones Jev chose then.</p>
+<p class="meta">Press play on any score; the cursor follows the notes. “Watch it being built in Jev's real time” opens the replay: the empty grid, then the chords landing, then the notes, with Jev's probabilities and raw responses for every call, each taking exactly as long as Jev took (a speed control is there if you want the gist). These were recorded on 22 September 2026 against jev-1.13.0, before the engine gained its rest rule, so a replay can show a rest offered next to a long length; the notes played are the ones Jev chose then.</p>
 ${cards}
 
 <section class="how">
