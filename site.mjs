@@ -52,7 +52,7 @@ const index = `<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jev, the songwriter</title>
 <meta name="description" content="A decision model writes songs: code computes the legal notes, Jev judges which one comes next. Demos with every call replayable.">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/abcjs@6/abcjs-audio.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/abcjs@6.7.1/abcjs-audio.css" integrity="sha384-eK1u60r2vqfWom2CLxO79qAvQKkjn5j1PjFslU5/+6gScaYuFJ92tkZ1N4z0hXbF" crossorigin="anonymous">
 <style>
 :root { color-scheme: light dark; --bg: #f7f6f2; --card: #ffffff; --ink: #1d1c1a; --muted: #6b675f; --line: #e4e1da; --accent: #2f6f4e; --accent-soft: #d9ece1; --hl: #f3c969; --chord: #a0522d; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #171614; --card: #201f1c; --ink: #ebe7df; --muted: #a09a8f; --line: #35322d; --accent: #7fc9a0; --accent-soft: #23392d; --hl: #b8892b; --chord: #e0956a; } }
@@ -127,7 +127,7 @@ npm run serve                                             # http://localhost:322
 
 <footer>Built with Claude Code, for fun. Jev is <a href="https://typesafe.ai">TypeSafe AI</a>'s System One decision model; scores and audio by <a href="https://www.abcjs.net">abcjs</a>.</footer>
 </main>
-<script src="https://cdn.jsdelivr.net/npm/abcjs@6/dist/abcjs-basic-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/abcjs@6.7.1/dist/abcjs-basic-min.js" integrity="sha384-gO9mym1Z3WJwxNm4ZpC6ZQbMyiu+72akLTHzztpwTs6KYVd3NnfkQigzPk+Oqzqy" crossorigin="anonymous"></script>
 <script>
 const DEMOS = ${data};
 ${TRANSPORT_JS}

@@ -239,6 +239,7 @@ test("abc: header, bar count, spans, and the page", async () => {
   for (const n of r.notes) { assert.ok(n.abcStart > last && n.abcEnd > n.abcStart); last = n.abcStart; assert.match(abc.slice(n.abcStart, n.abcEnd), /^([A-Ga-gz][,']*)(\d)?$/, "a span is exactly the note token"); }
   const html = renderPage(r, abc);
   assert.ok(html.includes("abcjs-basic-min.js") && html.includes('"abc":') && html.includes("Test tune") && html.includes("sunny"));
+  assert.match(html, /abcjs@\d+\.\d+\.\d+\/dist\/abcjs-basic-min\.js" integrity="sha384-/, "abcjs is pinned to an exact version with an integrity hash");
   assert.ok(html.includes('has("replay")'), "the page starts the replay when opened with ?replay=1");
 });
 
