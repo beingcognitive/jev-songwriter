@@ -10,5 +10,5 @@
     "serve": "node serve.mjs",
     "test": "node --test test.mjs"
   },
-  "engines": { "node": ">=20" }
+  "engines": { "node": ">=22.15" }
 }

@@ -22,10 +22,13 @@ So the doctrine is the same as in [jev-go](../jev-go): **code computes, Jev judg
 - Forced moves are played by code without a call: the cadence bar of every phrase holds the closing degree,
   and a repeated phrase repeats its model verbatim except for that last bar. Repetition is what makes eight
   bars of notes sound like a song.
-- Two rules of the game, both against the same trait: Jev prizes consistency. A whole note is not offered in
-  the first bar of a phrase, nor right after a bar that held a single note (its probability for "hold again"
-  climbed from 64% to 94% over three bars in testing). A chord root is not offered for a third bar in a row
-  (a jazz bridge sat on C7 for five bars).
+- Three rules of the game, all about what is offered, so every answer is legal by construction. Two are against
+  the same trait, Jev prizes consistency: a whole note is not offered in the first bar of a phrase, nor right
+  after a bar that held a single note (its probability for "hold again" climbed from 64% to 94% over three bars
+  in testing); a chord root is not offered to Jev for a third bar in a row (a jazz bridge sat on C7 for five
+  bars; the form's cadence chord and a repeated phrase can still extend a run, by design). The third: a rest is
+  never longer than a half note, and since pitch and length are one call, the rest is only offered when every
+  length on offer fits that cap.
 
 Output is real [ABC notation](https://abcnotation.com), a JSON trace of every call, and an HTML page that
 renders the score, plays it with abcjs (chords under the melody, optional), and lists every decision with Jev's
@@ -48,7 +51,7 @@ npm run serve                                      # http://localhost:3222 lists
 ```
 
 `npm run compose` is `node --use-system-ca compose.mjs`: behind a proxy that re-signs TLS, plain `node` rejects
-the API's certificate chain. Everything after `--` is passed to the CLI.
+the API's certificate chain. That flag needs Node 22.15 or newer. Everything after `--` is passed to the CLI.
 
 ```bash
 ```
@@ -64,8 +67,10 @@ Jev's part, so the whole pipeline runs offline and the same seed always gives th
 ## The site
 
 `npm run site` builds `docs/` for GitHub Pages: an index with every demo in `demos.json` (score, player, facts,
-a link to its replay page), the write-up of how it was built and what we found, and a copy of each demo page.
-Point GitHub Pages at the `docs/` folder of `main`.
+a link to its replay page), the write-up of how it was built and what we found, and a copy of each demo page
+with its JSON trace next to it (`docs/demos/<name>.json`), so a fresh clone can rebuild the site although `out/`
+is git-ignored. A demo with no trace anywhere stops the build; `--partial` overrides. Point GitHub Pages at the
+`docs/` folder of `main`. `npm run serve` serves only `out/` and `docs/`, on localhost.
 
 ## Cost
 
@@ -89,3 +94,35 @@ lib/abc.js         ABC rendering with character spans per note
 lib/page.js        the HTML page
 test.mjs           node:test
 ```
+
+## Review log
+
+2026-09-22, after the first commit: one `/codex review` plus a 1+3+3 fan-out (self review, three Codex and three
+Opus reviewers on the same prompt, none seeing the others). Findings by how many of the seven raised them, with
+what was done. All fixes carry a regression test.
+
+| Finding | Raised by | Done |
+|---|---|---|
+| `serve.mjs` served the repository root (so any `.dev.vars`), admitted sibling directories through an encoded `..`, listened on all interfaces, threw on `/%` | 7/7 | serves only `out/` and `docs/`, on localhost, resolved and checked with `path.relative`; bad escapes are 400; the index escapes filenames |
+| Odd answers corrupted the stats: an empty distribution scored 100% confidence, a supplied confidence was not clamped, a null envelope crashed, fallbacks counted as agreement | 7/7 | `confidenceFrom({})` is 0; confidence clamped to 0..1; every transport hands back a plain object; agreement and mean confidence are computed over answered steps only; probabilities are filtered to offered keys with finite values |
+| Response keys reached `innerHTML` unescaped in the table and the replay panel | 6/7 | escaped in the page, and foreign keys are dropped at `readAnswer` |
+| Setup: a prototype-key answer such as `constructor` crashed; fallbacks picked values never offered; the mode question offered modes the key cannot take; the cheap checks ran after the paid call | 6/7 | own-property lookups; option lists ranked by code so the first key is the fallback; only legal modes offered; key, pinned mode, tempo and form are checked before any call |
+| With sevenths, the chord state named the triad cadence chord while code placed the seventh | 6/7 | the same `cadChord` everywhere; a test compares the state's cadence chord with the one placed |
+| A newline in the title or mood injected ABC header fields | 6/7 | header fields are one line, always |
+| The page: finishing or stepping past the end re-rendered the score under the player; an in-flight `setTune` was never sequenced; the dimmed player was keyboard-reachable; the chords checkbox could load a partial score | 7/7 in parts | rendering is idempotent per ABC string; `setTune` results are sequenced; the player is `inert` while partial; the checkbox reloads only a full score |
+| A rest was offered next to lengths longer than the rest cap, then silently clamped, so the length facts were false | 5/7 | the rest is withheld whenever a long length is offered; the clamp is gone |
+| `Cb`, `E#`, `B#`, `Fb` parsed to NaN pitch classes | 5/7 | rejected with the enharmonic to use |
+| Natural-minor VII described as a leading-tone chord | 3/7 | subtonic wording in minor |
+| Valueless flags became `true` and crashed after the paid calls; a non-numeric seed became NaN | 6/7 | strict argument parser, exits 2 before any call |
+| `render.mjs` on `.JSON` overwrote its input | 3/7 | extension checked, case-insensitive |
+| `npm run site` on a fresh clone overwrote the index with zero demos; demo names unvalidated; hrefs not URL-encoded | 3/7 (Opus) + 3/7 (Codex) | traces copied into `docs/demos/`, refusal without them unless `--partial`, names restricted, hrefs encoded |
+| In minor keys the advertised range named two notes outside the key, and the range-edge facts were dead | 2/7 (Opus) | edges are the actual first and last scale tones |
+| `--chords fixed` or a given progression with a sevenths mood claimed seventh chords | 1/7, verified | sevenths only when Jev picks the chords |
+| `engines` said Node 20 while `--use-system-ca` needs 22.15 | 1/7, verified | engines bumped |
+| Padding: the held-bar run count was never read; two chord-repeat branches were unreachable (and would have printed "3th bar"); "the first pitch after the opening rest" could not happen; the mood hint was recomputed per option; `esc`, `pct`, the price and the script escaping were duplicated | most | all removed or shared |
+
+Declined: validating the whole distribution and discarding an answer whose probability map is incomplete (three
+Codex reviewers); a legitimate choice with one missing key would be thrown away, so validity stays choice-based
+and the map is sanitised. Backlog: the page re-derives the bar layout that `lib/abc.js` owns, and `toAbc` writes
+spans back into `result.notes` (guarded by an assertion for now); a cadence chord or a repeated phrase can still
+put three bars on one root, which the rule about what Jev is offered does not try to prevent.

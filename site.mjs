@@ -2,18 +2,27 @@
 // the write-up of how it was built, and a copy of each demo page. Reads demos.json and out/<name>.json; no API calls.
 import fs from "node:fs";
 import path from "node:path";
-import { renderPage } from "./lib/page.js";
+import { renderPage, esc, pct, embedJson } from "./lib/page.js";
+import { toAbc } from "./lib/abc.js";
 
+// Each demo's trace is kept next to its page in docs/demos/<name>.json, so a fresh clone (out/ is git-ignored)
+// can rebuild the site. A demo with no trace anywhere stops the build rather than publishing an emptier index.
 const manifest = JSON.parse(fs.readFileSync("demos.json", "utf8"));
-const demos = manifest.filter((d) => fs.existsSync(path.join("out", `${d.name}.json`))).map((d) => ({ ...d, r: JSON.parse(fs.readFileSync(path.join("out", `${d.name}.json`), "utf8")) }));
-const missing = manifest.filter((d) => !fs.existsSync(path.join("out", `${d.name}.json`))).map((d) => d.name);
-if (missing.length) console.warn("skipping demos with no JSON yet:", missing.join(", "));
+for (const d of manifest) if (typeof d.name !== "string" || !/^[A-Za-z0-9][A-Za-z0-9_-]*$/.test(d.name)) throw new Error(`invalid demo name ${JSON.stringify(d.name)}: letters, digits, - and _ only`);
 fs.mkdirSync("docs/demos", { recursive: true });
+const traceOf = (name) => [path.join("out", `${name}.json`), path.join("docs/demos", `${name}.json`)].find((f) => fs.existsSync(f));
+const missing = manifest.filter((d) => !traceOf(d.name)).map((d) => d.name);
+if (missing.length) {
+  console.error(`no trace (out/<name>.json or docs/demos/<name>.json) for: ${missing.join(", ")}`);
+  if (!process.argv.includes("--partial")) { console.error("refusing to publish an index without them; compose them first, or pass --partial"); process.exit(2); }
+}
+// The ABC and the per-note spans are recomputed from each trace, never trusted from the file.
+const demos = manifest.filter((d) => traceOf(d.name)).map((d) => { const r = JSON.parse(fs.readFileSync(traceOf(d.name), "utf8")); r.abc = toAbc(r); return { ...d, r }; });
 fs.writeFileSync("docs/.nojekyll", "");
-for (const d of demos) fs.writeFileSync(path.join("docs/demos", `${d.name}.html`), renderPage(d.r, d.r.abc));
-
-const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-const pct = (x) => (x == null ? "–" : `${Math.round(x * 100)}%`);
+for (const d of demos) {
+  fs.writeFileSync(path.join("docs/demos", `${d.name}.html`), renderPage(d.r, d.r.abc));
+  fs.writeFileSync(path.join("docs/demos", `${d.name}.json`), JSON.stringify(d.r, null, 2));
+}
 const cards = demos.map((d, i) => {
   const r = d.r, st = r.stats;
   const chords = r.barPlan.filter((b) => b.phrase === r.barPlan[0].phrase).map((b) => b.chord).join(" ");
@@ -28,14 +37,14 @@ const cards = demos.map((d, i) => {
       <p class="blurb">${esc(d.blurb)}</p>
       <p class="meta">${chose ? `Jev chose ${esc(chose)}. ` : ""}First phrase: ${esc(chords)}. ${st.chordCalls ? `${st.chordCalls} chord calls, ` : ""}${st.jevSteps} note calls, ${r.model === "jev-latest" ? "" : "mock, "}about $${st.costUsd.toFixed(4)}; Jev agreed with code's first choice on ${pct(st.agreement)} of notes${st.chordCalls ? ` and ${pct(st.chordAgreement)} of chords` : ""}.</p>
     </div>
-    <a class="button" href="demos/${esc(d.name)}.html">Watch it being built →</a>
+    <a class="button" href="demos/${encodeURIComponent(d.name)}.html">Watch it being built →</a>
   </div>
   <div class="paper" id="paper-${i}"></div>
   <div class="audio" id="audio-${i}"></div>
 </article>`;
 }).join("\n");
 
-const data = JSON.stringify(demos.map((d) => ({ abc: d.r.abc }))).replace(/<\/script/gi, "<\\/script");
+const data = embedJson(demos.map((d) => ({ abc: d.r.abc })));
 const index = `<!doctype html>
 <html lang="en">
 <head>

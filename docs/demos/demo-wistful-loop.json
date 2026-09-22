@@ -1,0 +1,3357 @@
+{
+  "title": "Wistful, looking back",
+  "key": "A minor",
+  "abcKey": "Am",
+  "flats": false,
+  "mode": "minor",
+  "tempo": 92,
+  "seed": 22,
+  "mood": "wistful, looking back",
+  "moodPreset": null,
+  "sevenths": false,
+  "chordsMode": "given",
+  "order": "chords-first",
+  "givenChords": "Am F C G",
+  "form": "short_16",
+  "formName": "16-bar period",
+  "formLabel": "16 bars: an 8-bar question and its 8-bar answer",
+  "bars": 16,
+  "seconds": 42,
+  "range": "F#3–C#5",
+  "model": "jev-latest",
+  "backend": "native",
+  "createdAt": "2026-09-22T03:08:08.608Z",
+  "barPlan": [
+    {
+      "bar": 1,
+      "phrase": "A",
+      "role": "opening",
+      "barInPhrase": 1,
+      "chord": "Am",
+      "roman": "i",
+      "isCadence": false
+    },
+    {
+      "bar": 2,
+      "phrase": "A",
+      "role": "opening",
+      "barInPhrase": 2,
+      "chord": "F",
+      "roman": "VI",
+      "isCadence": false
+    },
+    {
+      "bar": 3,
+      "phrase": "A",
+      "role": "opening",
+      "barInPhrase": 3,
+      "chord": "C",
+      "roman": "III",
+      "isCadence": false
+    },
+    {
+      "bar": 4,
+      "phrase": "A",
+      "role": "opening",
+      "barInPhrase": 4,
+      "chord": "G",
+      "roman": "VII",
+      "isCadence": false
+    },
+    {
+      "bar": 5,
+      "phrase": "A",
+      "role": "opening",
+      "barInPhrase": 5,
+      "chord": "Am",
+      "roman": "i",
+      "isCadence": false
+    },
+    {
+      "bar": 6,
+      "phrase": "A",
+      "role": "opening",
+      "barInPhrase": 6,
+      "chord": "F",
+      "roman": "VI",
+      "isCadence": false
+    },
+    {
+      "bar": 7,
+      "phrase": "A",
+      "role": "opening",
+      "barInPhrase": 7,
+      "chord": "C",
+      "roman": "III",
+      "isCadence": false
+    },
+    {
+      "bar": 8,
+      "phrase": "A",
+      "role": "opening",
+      "barInPhrase": 8,
+      "chord": "G",
+      "roman": "VII",
+      "isCadence": true
+    },
+    {
+      "bar": 9,
+      "phrase": "A'",
+      "role": "answer",
+      "barInPhrase": 1,
+      "chord": "Am",
+      "roman": "i",
+      "isCadence": false
+    },
+    {
+      "bar": 10,
+      "phrase": "A'",
+      "role": "answer",
+      "barInPhrase": 2,
+      "chord": "F",
+      "roman": "VI",
+      "isCadence": false
+    },
+    {
+      "bar": 11,
+      "phrase": "A'",
+      "role": "answer",
+      "barInPhrase": 3,
+      "chord": "C",
+      "roman": "III",
+      "isCadence": false
+    },
+    {
+      "bar": 12,
+      "phrase": "A'",
+      "role": "answer",
+      "barInPhrase": 4,
+      "chord": "G",
+      "roman": "VII",
+      "isCadence": false
+    },
+    {
+      "bar": 13,
+      "phrase": "A'",
+      "role": "answer",
+      "barInPhrase": 5,
+      "chord": "Am",
+      "roman": "i",
+      "isCadence": false
+    },
+    {
+      "bar": 14,
+      "phrase": "A'",
+      "role": "answer",
+      "barInPhrase": 6,
+      "chord": "F",
+      "roman": "VI",
+      "isCadence": false
+    },
+    {
+      "bar": 15,
+      "phrase": "A'",
+      "role": "answer",
+      "barInPhrase": 7,
+      "chord": "C",
+      "roman": "III",
+      "isCadence": false
+    },
+    {
+      "bar": 16,
+      "phrase": "A'",
+      "role": "answer",
+      "barInPhrase": 8,
+      "chord": "G",
+      "roman": "VII",
+      "isCadence": true
+    }
+  ],
+  "notes": [
+    {
+      "midi": 60,
+      "e": 4,
+      "bar": 1,
+      "onset": 0,
+      "source": "jev",
+      "traceIndex": 0,
+      "index": 0,
+      "abcStart": 86,
+      "abcEnd": 88
+    },
+    {
+      "midi": 64,
+      "e": 4,
+      "bar": 1,
+      "onset": 4,
+      "source": "jev",
+      "traceIndex": 1,
+      "index": 1,
+      "abcStart": 89,
+      "abcEnd": 91
+    },
+    {
+      "midi": 65,
+      "e": 4,
+      "bar": 2,
+      "onset": 0,
+      "source": "jev",
+      "traceIndex": 2,
+      "index": 2,
+      "abcStart": 97,
+      "abcEnd": 99
+    },
+    {
+      "midi": 69,
+      "e": 4,
+      "bar": 2,
+      "onset": 4,
+      "source": "jev",
+      "traceIndex": 3,
+      "index": 3,
+      "abcStart": 100,
+      "abcEnd": 102
+    },
+    {
+      "midi": 67,
+      "e": 4,
+      "bar": 3,
+      "onset": 0,
+      "source": "jev",
+      "traceIndex": 4,
+      "index": 4,
+      "abcStart": 108,
+      "abcEnd": 110
+    },
+    {
+      "midi": 64,
+      "e": 4,
+      "bar": 3,
+      "onset": 4,
+      "source": "jev",
+      "traceIndex": 5,
+      "index": 5,
+      "abcStart": 111,
+      "abcEnd": 113
+    },
+    {
+      "midi": 67,
+      "e": 4,
+      "bar": 4,
+      "onset": 0,
+      "source": "jev",
+      "traceIndex": 6,
+      "index": 6,
+      "abcStart": 119,
+      "abcEnd": 121
+    },
+    {
+      "midi": 71,
+      "e": 4,
+      "bar": 4,
+      "onset": 4,
+      "source": "jev",
+      "traceIndex": 7,
+      "index": 7,
+      "abcStart": 122,
+      "abcEnd": 124
+    },
+    {
+      "midi": 69,
+      "e": 4,
+      "bar": 5,
+      "onset": 0,
+      "source": "jev",
+      "traceIndex": 8,
+      "index": 8,
+      "abcStart": 131,
+      "abcEnd": 133
+    },
+    {
+      "midi": 64,
+      "e": 4,
+      "bar": 5,
+      "onset": 4,
+      "source": "jev",
+      "traceIndex": 9,
+      "index": 9,
+      "abcStart": 134,
+      "abcEnd": 136
+    },
+    {
+      "midi": 65,
+      "e": 4,
+      "bar": 6,
+      "onset": 0,
+      "source": "jev",
+      "traceIndex": 10,
+      "index": 10,
+      "abcStart": 142,
+      "abcEnd": 144
+    },
+    {
+      "midi": 69,
+      "e": 4,
+      "bar": 6,
+      "onset": 4,
+      "source": "jev",
+      "traceIndex": 11,
+      "index": 11,
+      "abcStart": 145,
+      "abcEnd": 147
+    },
+    {
+      "midi": 67,
+      "e": 4,
+      "bar": 7,
+      "onset": 0,
+      "source": "jev",
+      "traceIndex": 12,
+      "index": 12,
+      "abcStart": 153,
+      "abcEnd": 155
+    },
+    {
+      "midi": 64,
+      "e": 4,
+      "bar": 7,
+      "onset": 4,
+      "source": "jev",
+      "traceIndex": 13,
+      "index": 13,
+      "abcStart": 156,
+      "abcEnd": 158
+    },
+    {
+      "midi": 64,
+      "e": 8,
+      "bar": 8,
+      "onset": 0,
+      "source": "forced",
+      "traceIndex": 14,
+      "index": 14,
+      "abcStart": 164,
+      "abcEnd": 166
+    },
+    {
+      "midi": 60,
+      "e": 4,
+      "bar": 9,
+      "onset": 0,
+      "source": "reuse",
+      "traceIndex": 15,
+      "index": 15,
+      "abcStart": 173,
+      "abcEnd": 175
+    },
+    {
+      "midi": 64,
+      "e": 4,
+      "bar": 9,
+      "onset": 4,
+      "source": "reuse",
+      "traceIndex": 15,
+      "index": 16,
+      "abcStart": 176,
+      "abcEnd": 178
+    },
+    {
+      "midi": 65,
+      "e": 4,
+      "bar": 10,
+      "onset": 0,
+      "source": "reuse",
+      "traceIndex": 16,
+      "index": 17,
+      "abcStart": 184,
+      "abcEnd": 186
+    },
+    {
+      "midi": 69,
+      "e": 4,
+      "bar": 10,
+      "onset": 4,
+      "source": "reuse",
+      "traceIndex": 16,
+      "index": 18,
+      "abcStart": 187,
+      "abcEnd": 189
+    },
+    {
+      "midi": 67,
+      "e": 4,
+      "bar": 11,
+      "onset": 0,
+      "source": "reuse",
+      "traceIndex": 17,
+      "index": 19,
+      "abcStart": 195,
+      "abcEnd": 197
+    },
+    {
+      "midi": 64,
+      "e": 4,
+      "bar": 11,
+      "onset": 4,
+      "source": "reuse",
+      "traceIndex": 17,
+      "index": 20,
+      "abcStart": 198,
+      "abcEnd": 200
+    },
+    {
+      "midi": 67,
+      "e": 4,
+      "bar": 12,
+      "onset": 0,
+      "source": "reuse",
+      "traceIndex": 18,
+      "index": 21,
+      "abcStart": 206,
+      "abcEnd": 208
+    },
+    {
+      "midi": 71,
+      "e": 4,
+      "bar": 12,
+      "onset": 4,
+      "source": "reuse",
+      "traceIndex": 18,
+      "index": 22,
+      "abcStart": 209,
+      "abcEnd": 211
+    },
+    {
+      "midi": 69,
+      "e": 4,
+      "bar": 13,
+      "onset": 0,
+      "source": "reuse",
+      "traceIndex": 19,
+      "index": 23,
+      "abcStart": 218,
+      "abcEnd": 220
+    },
+    {
+      "midi": 64,
+      "e": 4,
+      "bar": 13,
+      "onset": 4,
+      "source": "reuse",
+      "traceIndex": 19,
+      "index": 24,
+      "abcStart": 221,
+      "abcEnd": 223
+    },
+    {
+      "midi": 65,
+      "e": 4,
+      "bar": 14,
+      "onset": 0,
+      "source": "reuse",
+      "traceIndex": 20,
+      "index": 25,
+      "abcStart": 229,
+      "abcEnd": 231
+    },
+    {
+      "midi": 69,
+      "e": 4,
+      "bar": 14,
+      "onset": 4,
+      "source": "reuse",
+      "traceIndex": 20,
+      "index": 26,
+      "abcStart": 232,
+      "abcEnd": 234
+    },
+    {
+      "midi": 67,
+      "e": 4,
+      "bar": 15,
+      "onset": 0,
+      "source": "reuse",
+      "traceIndex": 21,
+      "index": 27,
+      "abcStart": 240,
+      "abcEnd": 242
+    },
+    {
+      "midi": 64,
+      "e": 4,
+      "bar": 15,
+      "onset": 4,
+      "source": "reuse",
+      "traceIndex": 21,
+      "index": 28,
+      "abcStart": 243,
+      "abcEnd": 245
+    },
+    {
+      "midi": 69,
+      "e": 8,
+      "bar": 16,
+      "onset": 0,
+      "source": "forced",
+      "traceIndex": 22,
+      "index": 29,
+      "abcStart": 251,
+      "abcEnd": 253
+    }
+  ],
+  "trace": [
+    {
+      "kind": "jev",
+      "bar": 1,
+      "beat": "1",
+      "onset": 0,
+      "pitch": "C4",
+      "length": "half",
+      "eighths": 4,
+      "note": null,
+      "source": "jev",
+      "answers": {
+        "next_pitch": {
+          "choice": "C4",
+          "confidence": 0.39,
+          "top": [
+            [
+              "C4",
+              0.44
+            ],
+            [
+              "A3",
+              0.35
+            ],
+            [
+              "E4",
+              0.14
+            ],
+            [
+              "F4",
+              0.03
+            ],
+            [
+              "G3",
+              0.01
+            ]
+          ]
+        },
+        "length": {
+          "choice": "half",
+          "confidence": 0.29,
+          "top": [
+            [
+              "half",
+              0.43
+            ],
+            [
+              "quarter",
+              0.27
+            ],
+            [
+              "dotted_quarter",
+              0.18
+            ],
+            [
+              "dotted_half",
+              0.07
+            ],
+            [
+              "eighth",
+              0.05
+            ]
+          ]
+        }
+      },
+      "heuristicRank": 2,
+      "lengthRank": 2,
+      "optionCount": 11,
+      "confidence": 0.39,
+      "latencyMs": 593,
+      "usage": {
+        "input": 1423,
+        "output": 163
+      },
+      "model": "jev-1.13.0",
+      "noteIndices": [
+        0
+      ],
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "A minor",
+              "meter": "4/4",
+              "tempo_bpm": 92,
+              "form": "16-bar period (16 bars): A opening 8 bars, A' answer 8 bars (repeats A)",
+              "mood": "wistful, looking back",
+              "range": "F#3 to C#5, scale tones of A minor only",
+              "character": "a simple, singable melody with a clear shape"
+            },
+            "position": {
+              "bar": 1,
+              "of_bars": 16,
+              "beat": "1",
+              "beat_strength": "strong",
+              "eighths_left_in_bar": 8,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-8)",
+              "bar_in_phrase": "1 of 8",
+              "bars_until_cadence": 7,
+              "cadence": "bar 8 holds the dominant (5th degree) for the whole bar: a half cadence"
+            },
+            "harmony": {
+              "this_bar": "Am (i): A C E",
+              "next_bar": "F (VI): F A C"
+            },
+            "melody_so_far": [
+              "bar 1 (Am), so far: (nothing yet)"
+            ],
+            "recent": {
+              "last_note": "none, this is the first note",
+              "previous_motion": "none",
+              "direction_run": "none",
+              "highest_so_far": "none",
+              "lowest_so_far": "none",
+              "notes_since_rest": 0,
+              "notes_in_this_bar": 0
+            }
+          },
+          "questions": {
+            "next_pitch": {
+              "type": "choice",
+              "instructions": "The pitch a good songwriter would write next in this A minor melody for a song whose mood is \"wistful, looking back\": singable, shaped by what came before, fitting this bar's chord (Am), and heading for the cadence described in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "A3": "A3, 1st degree (tonic). the first note of the piece. chord tone, the root of Am.",
+                "C4": "C4, 3rd degree (mediant). the first note of the piece. chord tone, the third of Am.",
+                "E4": "E4, 5th degree (dominant). the first note of the piece. chord tone, the fifth of Am.",
+                "A4": "A4, 1st degree (tonic). the first note of the piece. chord tone, the root of Am.",
+                "C5": "C5, 3rd degree (mediant). the first note of the piece. chord tone, the third of Am.",
+                "G3": "G3, 7th degree (subtonic). the first note of the piece. not in Am, a tension against the chord.",
+                "B3": "B3, 2nd degree (supertonic). the first note of the piece. not in Am, a tension against the chord.",
+                "D4": "D4, 4th degree (subdominant). the first note of the piece. not in Am, a tension against the chord.",
+                "F4": "F4, 6th degree (submediant). the first note of the piece. not in Am, a tension against the chord.",
+                "G4": "G4, 7th degree (subtonic). the first note of the piece. not in Am, a tension against the chord.",
+                "B4": "B4, 2nd degree (supertonic). the first note of the piece. not in Am, a tension against the chord."
+              }
+            },
+            "length": {
+              "type": "choice",
+              "instructions": "How long the next note should last for a song whose mood is \"wistful, looking back\", given the beat it starts on and the rhythm so far. Only lengths that fit in the bar are offered.",
+              "criteria": {
+                "quarter": "Quarter note, one beat. starts on beat 1. ends on beat 2, leaving 3 beats in the bar.",
+                "half": "Half note, two beats. starts on beat 1. ends on beat 3, leaving 2 beats in the bar.",
+                "eighth": "Eighth note, half a beat. starts on beat 1. ends on beat 1-and, leaving 3½ beats in the bar.",
+                "dotted_quarter": "Dotted quarter, a beat and a half. starts on beat 1. ends on beat 2-and, leaving 2½ beats in the bar.",
+                "dotted_half": "Dotted half, three beats. starts on beat 1. ends on beat 4, leaving one beat in the bar."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "next_pitch": {
+              "type": "choice",
+              "choice": "C4",
+              "confidence": 0.39,
+              "probabilities": {
+                "G3": 0.01,
+                "G4": 0,
+                "B4": 0,
+                "A4": 0.01,
+                "A3": 0.35,
+                "C4": 0.44,
+                "C5": 0.01,
+                "E4": 0.14,
+                "D4": 0,
+                "F4": 0.03,
+                "B3": 0.01
+              }
+            },
+            "length": {
+              "type": "choice",
+              "choice": "half",
+              "confidence": 0.29,
+              "probabilities": {
+                "dotted_half": 0.07,
+                "half": 0.43,
+                "dotted_quarter": 0.18,
+                "eighth": 0.05,
+                "quarter": 0.27
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1423,
+            "output_tokens": 163
+          }
+        }
+      },
+      "step": 1
+    },
+    {
+      "kind": "jev",
+      "bar": 1,
+      "beat": "3",
+      "onset": 4,
+      "pitch": "E4",
+      "length": "half",
+      "eighths": 4,
+      "note": null,
+      "source": "jev",
+      "answers": {
+        "next_pitch": {
+          "choice": "E4",
+          "confidence": 0.55,
+          "top": [
+            [
+              "E4",
+              0.59
+            ],
+            [
+              "A3",
+              0.21
+            ],
+            [
+              "C4",
+              0.1
+            ],
+            [
+              "F4",
+              0.03
+            ],
+            [
+              "D4",
+              0.02
+            ]
+          ]
+        },
+        "length": {
+          "choice": "half",
+          "confidence": 0.37,
+          "top": [
+            [
+              "half",
+              0.53
+            ],
+            [
+              "dotted_quarter",
+              0.28
+            ],
+            [
+              "quarter",
+              0.12
+            ],
+            [
+              "eighth",
+              0.07
+            ]
+          ]
+        }
+      },
+      "heuristicRank": 2,
+      "lengthRank": 1,
+      "optionCount": 12,
+      "confidence": 0.55,
+      "latencyMs": 588,
+      "usage": {
+        "input": 1534,
+        "output": 161
+      },
+      "model": "jev-1.13.0",
+      "noteIndices": [
+        1
+      ],
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "A minor",
+              "meter": "4/4",
+              "tempo_bpm": 92,
+              "form": "16-bar period (16 bars): A opening 8 bars, A' answer 8 bars (repeats A)",
+              "mood": "wistful, looking back",
+              "range": "F#3 to C#5, scale tones of A minor only",
+              "character": "a simple, singable melody with a clear shape"
+            },
+            "position": {
+              "bar": 1,
+              "of_bars": 16,
+              "beat": "3",
+              "beat_strength": "strong",
+              "eighths_left_in_bar": 4,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-8)",
+              "bar_in_phrase": "1 of 8",
+              "bars_until_cadence": 7,
+              "cadence": "bar 8 holds the dominant (5th degree) for the whole bar: a half cadence"
+            },
+            "harmony": {
+              "this_bar": "Am (i): A C E",
+              "next_bar": "F (VI): F A C"
+            },
+            "melody_so_far": [
+              "bar 1 (Am), so far: C4/h"
+            ],
+            "recent": {
+              "last_note": "C4, 2 beats",
+              "previous_motion": "none",
+              "direction_run": "none",
+              "highest_so_far": "C4",
+              "lowest_so_far": "C4",
+              "notes_since_rest": 1,
+              "notes_in_this_bar": 1
+            }
+          },
+          "questions": {
+            "next_pitch": {
+              "type": "choice",
+              "instructions": "The pitch a good songwriter would write next in this A minor melody for a song whose mood is \"wistful, looking back\": singable, shaped by what came before, fitting this bar's chord (Am), and heading for the cadence described in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "A3": "A3, 1st degree (tonic). skip down from C4 (minor 3rd). chord tone, the root of Am. a new low point for the piece.",
+                "E4": "E4, 5th degree (dominant). skip up from C4 (major 3rd). chord tone, the fifth of Am. a new high point for the piece.",
+                "C4": "C4, 3rd degree (mediant). repeats C4. chord tone, the third of Am.",
+                "A4": "A4, 1st degree (tonic). leap up from C4 (major 6th). chord tone, the root of Am. a new high point for the piece.",
+                "B3": "B3, 2nd degree (supertonic). step down from C4 (minor 2nd). not in Am, a tension against the chord. a new low point for the piece.",
+                "D4": "D4, 4th degree (subdominant). step up from C4 (major 2nd). not in Am, a tension against the chord. a new high point for the piece.",
+                "C5": "C5, 3rd degree (mediant). octave leap up from C4. chord tone, the third of Am. a new high point for the piece.",
+                "G3": "G3, 7th degree (subtonic). leap down from C4 (perfect 4th). not in Am, a tension against the chord. a new low point for the piece.",
+                "F4": "F4, 6th degree (submediant). leap up from C4 (perfect 4th). not in Am, a tension against the chord. a new high point for the piece.",
+                "G4": "G4, 7th degree (subtonic). leap up from C4 (perfect 5th). not in Am, a tension against the chord. a new high point for the piece.",
+                "B4": "B4, 2nd degree (supertonic). leap up from C4 (major 7th). not in Am, a tension against the chord. a new high point for the piece.",
+                "rest": "Rest: silence for the chosen length, a breath. 1 notes since the last rest."
+              }
+            },
+            "length": {
+              "type": "choice",
+              "instructions": "How long the next note should last for a song whose mood is \"wistful, looking back\", given the beat it starts on and the rhythm so far. Only lengths that fit in the bar are offered.",
+              "criteria": {
+                "half": "Half note, two beats. starts on beat 3. fills the rest of the bar. same length as the previous note.",
+                "quarter": "Quarter note, one beat. starts on beat 3. ends on beat 4, leaving one beat in the bar.",
+                "eighth": "Eighth note, half a beat. starts on beat 3. ends on beat 3-and, leaving 1½ beats in the bar.",
+                "dotted_quarter": "Dotted quarter, a beat and a half. starts on beat 3. ends on beat 4-and, leaving half a beat in the bar. leaves a lone eighth to end the bar."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "next_pitch": {
+              "type": "choice",
+              "choice": "E4",
+              "confidence": 0.55,
+              "probabilities": {
+                "G3": 0,
+                "G4": 0.01,
+                "rest": 0.01,
+                "B4": 0,
+                "A3": 0.21,
+                "C4": 0.1,
+                "C5": 0,
+                "A4": 0.01,
+                "E4": 0.59,
+                "D4": 0.02,
+                "F4": 0.03,
+                "B3": 0.02
+              }
+            },
+            "length": {
+              "type": "choice",
+              "choice": "half",
+              "confidence": 0.37,
+              "probabilities": {
+                "quarter": 0.12,
+                "dotted_quarter": 0.28,
+                "eighth": 0.07,
+                "half": 0.53
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1534,
+            "output_tokens": 161
+          }
+        }
+      },
+      "step": 2
+    },
+    {
+      "kind": "jev",
+      "bar": 2,
+      "beat": "1",
+      "onset": 0,
+      "pitch": "F4",
+      "length": "half",
+      "eighths": 4,
+      "note": null,
+      "source": "jev",
+      "answers": {
+        "next_pitch": {
+          "choice": "F4",
+          "confidence": 0.66,
+          "top": [
+            [
+              "F4",
+              0.7
+            ],
+            [
+              "C4",
+              0.14
+            ],
+            [
+              "A3",
+              0.08
+            ],
+            [
+              "A4",
+              0.05
+            ],
+            [
+              "D4",
+              0.02
+            ]
+          ]
+        },
+        "length": {
+          "choice": "half",
+          "confidence": 0.68,
+          "top": [
+            [
+              "half",
+              0.73
+            ],
+            [
+              "dotted_quarter",
+              0.08
+            ],
+            [
+              "quarter",
+              0.08
+            ],
+            [
+              "dotted_half",
+              0.07
+            ],
+            [
+              "whole",
+              0.02
+            ]
+          ]
+        }
+      },
+      "heuristicRank": 1,
+      "lengthRank": 1,
+      "optionCount": 12,
+      "confidence": 0.66,
+      "latencyMs": 324,
+      "usage": {
+        "input": 1612,
+        "output": 177
+      },
+      "model": "jev-1.13.0",
+      "noteIndices": [
+        2
+      ],
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "A minor",
+              "meter": "4/4",
+              "tempo_bpm": 92,
+              "form": "16-bar period (16 bars): A opening 8 bars, A' answer 8 bars (repeats A)",
+              "mood": "wistful, looking back",
+              "range": "F#3 to C#5, scale tones of A minor only",
+              "character": "a simple, singable melody with a clear shape"
+            },
+            "position": {
+              "bar": 2,
+              "of_bars": 16,
+              "beat": "1",
+              "beat_strength": "strong",
+              "eighths_left_in_bar": 8,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-8)",
+              "bar_in_phrase": "2 of 8",
+              "bars_until_cadence": 6,
+              "cadence": "bar 8 holds the dominant (5th degree) for the whole bar: a half cadence"
+            },
+            "harmony": {
+              "this_bar": "F (VI): F A C",
+              "next_bar": "C (III): C E G"
+            },
+            "melody_so_far": [
+              "bar 1 (Am): C4/h E4/h",
+              "bar 2 (F), so far: (nothing yet)"
+            ],
+            "recent": {
+              "last_note": "E4, 2 beats",
+              "previous_motion": "skip up a major 3rd",
+              "direction_run": "none",
+              "highest_so_far": "E4",
+              "lowest_so_far": "C4",
+              "notes_since_rest": 2,
+              "notes_in_this_bar": 0
+            }
+          },
+          "questions": {
+            "next_pitch": {
+              "type": "choice",
+              "instructions": "The pitch a good songwriter would write next in this A minor melody for a song whose mood is \"wistful, looking back\": singable, shaped by what came before, fitting this bar's chord (F), and heading for the cadence described in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "F4": "F4, 6th degree (submediant). step up from E4 (minor 2nd). chord tone, the root of F. a new high point for the piece.",
+                "C4": "C4, 3rd degree (mediant). skip down from E4 (major 3rd). chord tone, the fifth of F.",
+                "A3": "A3, 1st degree (tonic). leap down from E4 (perfect 5th). chord tone, the third of F. a new low point for the piece.",
+                "A4": "A4, 1st degree (tonic). leap up from E4 (perfect 4th). chord tone, the third of F. a new high point for the piece.",
+                "C5": "C5, 3rd degree (mediant). leap up from E4 (minor 6th). chord tone, the fifth of F. a new high point for the piece.",
+                "D4": "D4, 4th degree (subdominant). step down from E4 (major 2nd). not in F, a tension against the chord.",
+                "G4": "G4, 7th degree (subtonic). skip up from E4 (minor 3rd). not in F, a tension against the chord. a new high point for the piece.",
+                "E4": "E4, 5th degree (dominant). repeats E4. not in F, a tension against the chord.",
+                "G3": "G3, 7th degree (subtonic). leap down from E4 (major 6th). not in F, a tension against the chord. a new low point for the piece.",
+                "B3": "B3, 2nd degree (supertonic). leap down from E4 (perfect 4th). not in F, a tension against the chord. a new low point for the piece.",
+                "B4": "B4, 2nd degree (supertonic). leap up from E4 (perfect 5th). not in F, a tension against the chord. a new high point for the piece.",
+                "rest": "Rest: silence for the chosen length, a breath. 2 notes since the last rest."
+              }
+            },
+            "length": {
+              "type": "choice",
+              "instructions": "How long the next note should last for a song whose mood is \"wistful, looking back\", given the beat it starts on and the rhythm so far. Only lengths that fit in the bar are offered.",
+              "criteria": {
+                "half": "Half note, two beats. starts on beat 1. ends on beat 3, leaving 2 beats in the bar. same length as the previous note.",
+                "quarter": "Quarter note, one beat. starts on beat 1. ends on beat 2, leaving 3 beats in the bar.",
+                "eighth": "Eighth note, half a beat. starts on beat 1. ends on beat 1-and, leaving 3½ beats in the bar.",
+                "dotted_quarter": "Dotted quarter, a beat and a half. starts on beat 1. ends on beat 2-and, leaving 2½ beats in the bar.",
+                "dotted_half": "Dotted half, three beats. starts on beat 1. ends on beat 4, leaving one beat in the bar.",
+                "whole": "Whole note, the full bar. starts on beat 1. fills the whole bar."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "next_pitch": {
+              "type": "choice",
+              "choice": "F4",
+              "confidence": 0.66,
+              "probabilities": {
+                "A3": 0.08,
+                "G3": 0,
+                "rest": 0,
+                "C4": 0.14,
+                "C5": 0,
+                "F4": 0.7,
+                "B4": 0,
+                "B3": 0,
+                "G4": 0.01,
+                "E4": 0,
+                "A4": 0.05,
+                "D4": 0.02
+              }
+            },
+            "length": {
+              "type": "choice",
+              "choice": "half",
+              "confidence": 0.68,
+              "probabilities": {
+                "whole": 0.02,
+                "half": 0.73,
+                "eighth": 0.02,
+                "dotted_quarter": 0.08,
+                "dotted_half": 0.07,
+                "quarter": 0.08
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1612,
+            "output_tokens": 177
+          }
+        }
+      },
+      "step": 3
+    },
+    {
+      "kind": "jev",
+      "bar": 2,
+      "beat": "3",
+      "onset": 4,
+      "pitch": "A4",
+      "length": "half",
+      "eighths": 4,
+      "note": null,
+      "source": "jev",
+      "answers": {
+        "next_pitch": {
+          "choice": "A4",
+          "confidence": 0.37,
+          "top": [
+            [
+              "A4",
+              0.42
+            ],
+            [
+              "C4",
+              0.2
+            ],
+            [
+              "A3",
+              0.12
+            ],
+            [
+              "E4",
+              0.11
+            ],
+            [
+              "F4",
+              0.08
+            ]
+          ]
+        },
+        "length": {
+          "choice": "half",
+          "confidence": 0.34,
+          "top": [
+            [
+              "half",
+              0.5
+            ],
+            [
+              "dotted_quarter",
+              0.27
+            ],
+            [
+              "quarter",
+              0.15
+            ],
+            [
+              "eighth",
+              0.08
+            ]
+          ]
+        }
+      },
+      "heuristicRank": 1,
+      "lengthRank": 1,
+      "optionCount": 12,
+      "confidence": 0.37,
+      "latencyMs": 265,
+      "usage": {
+        "input": 1628,
+        "output": 161
+      },
+      "model": "jev-1.13.0",
+      "noteIndices": [
+        3
+      ],
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "A minor",
+              "meter": "4/4",
+              "tempo_bpm": 92,
+              "form": "16-bar period (16 bars): A opening 8 bars, A' answer 8 bars (repeats A)",
+              "mood": "wistful, looking back",
+              "range": "F#3 to C#5, scale tones of A minor only",
+              "character": "a simple, singable melody with a clear shape"
+            },
+            "position": {
+              "bar": 2,
+              "of_bars": 16,
+              "beat": "3",
+              "beat_strength": "strong",
+              "eighths_left_in_bar": 4,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-8)",
+              "bar_in_phrase": "2 of 8",
+              "bars_until_cadence": 6,
+              "cadence": "bar 8 holds the dominant (5th degree) for the whole bar: a half cadence"
+            },
+            "harmony": {
+              "this_bar": "F (VI): F A C",
+              "next_bar": "C (III): C E G"
+            },
+            "melody_so_far": [
+              "bar 1 (Am): C4/h E4/h",
+              "bar 2 (F), so far: F4/h"
+            ],
+            "recent": {
+              "last_note": "F4, 2 beats",
+              "previous_motion": "step up a minor 2nd",
+              "direction_run": "3 notes upward in a row",
+              "highest_so_far": "F4",
+              "lowest_so_far": "C4",
+              "notes_since_rest": 3,
+              "notes_in_this_bar": 1
+            }
+          },
+          "questions": {
+            "next_pitch": {
+              "type": "choice",
+              "instructions": "The pitch a good songwriter would write next in this A minor melody for a song whose mood is \"wistful, looking back\": singable, shaped by what came before, fitting this bar's chord (F), and heading for the cadence described in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "A4": "A4, 1st degree (tonic). skip up from F4 (major 3rd). extends the 4-note run upward. chord tone, the third of F. a new high point for the piece.",
+                "F4": "F4, 6th degree (submediant). repeats F4. chord tone, the root of F.",
+                "A3": "A3, 1st degree (tonic). leap down from F4 (minor 6th). turns the line around after 3 notes upward. chord tone, the third of F. a new low point for the piece.",
+                "C4": "C4, 3rd degree (mediant). leap down from F4 (perfect 4th). turns the line around after 3 notes upward. chord tone, the fifth of F.",
+                "C5": "C5, 3rd degree (mediant). leap up from F4 (perfect 5th). extends the 4-note run upward. chord tone, the fifth of F. a new high point for the piece.",
+                "E4": "E4, 5th degree (dominant). step down from F4 (minor 2nd). turns the line around after 3 notes upward. not in F, a tension against the chord.",
+                "G4": "G4, 7th degree (subtonic). step up from F4 (major 2nd). extends the 4-note run upward. not in F, a tension against the chord. a new high point for the piece.",
+                "D4": "D4, 4th degree (subdominant). skip down from F4 (minor 3rd). turns the line around after 3 notes upward. not in F, a tension against the chord.",
+                "G3": "G3, 7th degree (subtonic). leap down from F4 (minor 7th). turns the line around after 3 notes upward. not in F, a tension against the chord. a new low point for the piece.",
+                "B3": "B3, 2nd degree (supertonic). leap down from F4 (tritone). turns the line around after 3 notes upward. not in F, a tension against the chord. a new low point for the piece.",
+                "B4": "B4, 2nd degree (supertonic). leap up from F4 (tritone). extends the 4-note run upward. not in F, a tension against the chord. a new high point for the piece.",
+                "rest": "Rest: silence for the chosen length, a breath. 3 notes since the last rest."
+              }
+            },
+            "length": {
+              "type": "choice",
+              "instructions": "How long the next note should last for a song whose mood is \"wistful, looking back\", given the beat it starts on and the rhythm so far. Only lengths that fit in the bar are offered.",
+              "criteria": {
+                "half": "Half note, two beats. starts on beat 3. fills the rest of the bar. same length as the previous note.",
+                "quarter": "Quarter note, one beat. starts on beat 3. ends on beat 4, leaving one beat in the bar.",
+                "eighth": "Eighth note, half a beat. starts on beat 3. ends on beat 3-and, leaving 1½ beats in the bar.",
+                "dotted_quarter": "Dotted quarter, a beat and a half. starts on beat 3. ends on beat 4-and, leaving half a beat in the bar. leaves a lone eighth to end the bar."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "next_pitch": {
+              "type": "choice",
+              "choice": "A4",
+              "confidence": 0.37,
+              "probabilities": {
+                "rest": 0.01,
+                "G3": 0,
+                "G4": 0.02,
+                "E4": 0.11,
+                "C5": 0.01,
+                "B4": 0,
+                "A4": 0.42,
+                "A3": 0.12,
+                "B3": 0.01,
+                "D4": 0.02,
+                "C4": 0.2,
+                "F4": 0.08
+              }
+            },
+            "length": {
+              "type": "choice",
+              "choice": "half",
+              "confidence": 0.34,
+              "probabilities": {
+                "quarter": 0.15,
+                "dotted_quarter": 0.27,
+                "half": 0.5,
+                "eighth": 0.08
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1628,
+            "output_tokens": 161
+          }
+        }
+      },
+      "step": 4
+    },
+    {
+      "kind": "jev",
+      "bar": 3,
+      "beat": "1",
+      "onset": 0,
+      "pitch": "G4",
+      "length": "half",
+      "eighths": 4,
+      "note": null,
+      "source": "jev",
+      "answers": {
+        "next_pitch": {
+          "choice": "G4",
+          "confidence": 0.35,
+          "top": [
+            [
+              "G4",
+              0.42
+            ],
+            [
+              "C4",
+              0.34
+            ],
+            [
+              "E4",
+              0.2
+            ],
+            [
+              "C5",
+              0.02
+            ],
+            [
+              "B4",
+              0.01
+            ]
+          ]
+        },
+        "length": {
+          "choice": "half",
+          "confidence": 0.67,
+          "top": [
+            [
+              "half",
+              0.72
+            ],
+            [
+              "quarter",
+              0.09
+            ],
+            [
+              "dotted_quarter",
+              0.06
+            ],
+            [
+              "dotted_half",
+              0.06
+            ],
+            [
+              "eighth",
+              0.05
+            ]
+          ]
+        }
+      },
+      "heuristicRank": 1,
+      "lengthRank": 1,
+      "optionCount": 11,
+      "confidence": 0.35,
+      "latencyMs": 249,
+      "usage": {
+        "input": 1648,
+        "output": 169
+      },
+      "model": "jev-1.13.0",
+      "noteIndices": [
+        4
+      ],
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "A minor",
+              "meter": "4/4",
+              "tempo_bpm": 92,
+              "form": "16-bar period (16 bars): A opening 8 bars, A' answer 8 bars (repeats A)",
+              "mood": "wistful, looking back",
+              "range": "F#3 to C#5, scale tones of A minor only",
+              "character": "a simple, singable melody with a clear shape"
+            },
+            "position": {
+              "bar": 3,
+              "of_bars": 16,
+              "beat": "1",
+              "beat_strength": "strong",
+              "eighths_left_in_bar": 8,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-8)",
+              "bar_in_phrase": "3 of 8",
+              "bars_until_cadence": 5,
+              "cadence": "bar 8 holds the dominant (5th degree) for the whole bar: a half cadence"
+            },
+            "harmony": {
+              "this_bar": "C (III): C E G",
+              "next_bar": "G (VII): G B D"
+            },
+            "melody_so_far": [
+              "bar 1 (Am): C4/h E4/h",
+              "bar 2 (F): F4/h A4/h",
+              "bar 3 (C), so far: (nothing yet)"
+            ],
+            "recent": {
+              "last_note": "A4, 2 beats",
+              "previous_motion": "skip up a major 3rd",
+              "direction_run": "4 notes upward in a row",
+              "highest_so_far": "A4",
+              "lowest_so_far": "C4",
+              "notes_since_rest": 4,
+              "notes_in_this_bar": 0
+            }
+          },
+          "questions": {
+            "next_pitch": {
+              "type": "choice",
+              "instructions": "The pitch a good songwriter would write next in this A minor melody for a song whose mood is \"wistful, looking back\": singable, shaped by what came before, fitting this bar's chord (C), and heading for the cadence described in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "G4": "G4, 7th degree (subtonic). step down from A4 (major 2nd). turns the line around after 4 notes upward. chord tone, the fifth of C.",
+                "C5": "C5, 3rd degree (mediant). skip up from A4 (minor 3rd). extends the 5-note run upward. chord tone, the root of C. a new high point for the piece.",
+                "C4": "C4, 3rd degree (mediant). leap down from A4 (major 6th). turns the line around after 4 notes upward. chord tone, the root of C. returns to the note this phrase started on.",
+                "E4": "E4, 5th degree (dominant). leap down from A4 (perfect 4th). turns the line around after 4 notes upward. chord tone, the third of C.",
+                "B4": "B4, 2nd degree (supertonic). step up from A4 (major 2nd). extends the 5-note run upward. not in C, a tension against the chord. a new high point for the piece.",
+                "F4": "F4, 6th degree (submediant). skip down from A4 (major 3rd). turns the line around after 4 notes upward. not in C, a tension against the chord.",
+                "A4": "A4, 1st degree (tonic). repeats A4. not in C, a tension against the chord.",
+                "B3": "B3, 2nd degree (supertonic). leap down from A4 (minor 7th). turns the line around after 4 notes upward. not in C, a tension against the chord. a new low point for the piece.",
+                "D4": "D4, 4th degree (subdominant). leap down from A4 (perfect 5th). turns the line around after 4 notes upward. not in C, a tension against the chord.",
+                "rest": "Rest: silence for the chosen length, a breath. 4 notes since the last rest.",
+                "A3": "A3, 1st degree (tonic). octave leap down from A4. turns the line around after 4 notes upward. not in C, a tension against the chord. a new low point for the piece."
+              }
+            },
+            "length": {
+              "type": "choice",
+              "instructions": "How long the next note should last for a song whose mood is \"wistful, looking back\", given the beat it starts on and the rhythm so far. Only lengths that fit in the bar are offered.",
+              "criteria": {
+                "half": "Half note, two beats. starts on beat 1. ends on beat 3, leaving 2 beats in the bar. same length as the previous note.",
+                "quarter": "Quarter note, one beat. starts on beat 1. ends on beat 2, leaving 3 beats in the bar.",
+                "eighth": "Eighth note, half a beat. starts on beat 1. ends on beat 1-and, leaving 3½ beats in the bar.",
+                "dotted_quarter": "Dotted quarter, a beat and a half. starts on beat 1. ends on beat 2-and, leaving 2½ beats in the bar.",
+                "dotted_half": "Dotted half, three beats. starts on beat 1. ends on beat 4, leaving one beat in the bar.",
+                "whole": "Whole note, the full bar. starts on beat 1. fills the whole bar."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "next_pitch": {
+              "type": "choice",
+              "choice": "G4",
+              "confidence": 0.35,
+              "probabilities": {
+                "E4": 0.2,
+                "B4": 0.01,
+                "C5": 0.02,
+                "rest": 0,
+                "F4": 0.01,
+                "A3": 0,
+                "D4": 0,
+                "B3": 0,
+                "C4": 0.34,
+                "A4": 0,
+                "G4": 0.42
+              }
+            },
+            "length": {
+              "type": "choice",
+              "choice": "half",
+              "confidence": 0.67,
+              "probabilities": {
+                "eighth": 0.05,
+                "dotted_quarter": 0.06,
+                "quarter": 0.09,
+                "dotted_half": 0.06,
+                "whole": 0.02,
+                "half": 0.72
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1648,
+            "output_tokens": 169
+          }
+        }
+      },
+      "step": 5
+    },
+    {
+      "kind": "jev",
+      "bar": 3,
+      "beat": "3",
+      "onset": 4,
+      "pitch": "E4",
+      "length": "half",
+      "eighths": 4,
+      "note": null,
+      "source": "jev",
+      "answers": {
+        "next_pitch": {
+          "choice": "E4",
+          "confidence": 0.45,
+          "top": [
+            [
+              "E4",
+              0.49
+            ],
+            [
+              "C4",
+              0.29
+            ],
+            [
+              "G4",
+              0.06
+            ],
+            [
+              "A4",
+              0.05
+            ],
+            [
+              "F4",
+              0.04
+            ]
+          ]
+        },
+        "length": {
+          "choice": "half",
+          "confidence": 0.31,
+          "top": [
+            [
+              "half",
+              0.49
+            ],
+            [
+              "dotted_quarter",
+              0.27
+            ],
+            [
+              "quarter",
+              0.18
+            ],
+            [
+              "eighth",
+              0.06
+            ]
+          ]
+        }
+      },
+      "heuristicRank": 1,
+      "lengthRank": 1,
+      "optionCount": 12,
+      "confidence": 0.45,
+      "latencyMs": 251,
+      "usage": {
+        "input": 1539,
+        "output": 161
+      },
+      "model": "jev-1.13.0",
+      "noteIndices": [
+        5
+      ],
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "A minor",
+              "meter": "4/4",
+              "tempo_bpm": 92,
+              "form": "16-bar period (16 bars): A opening 8 bars, A' answer 8 bars (repeats A)",
+              "mood": "wistful, looking back",
+              "range": "F#3 to C#5, scale tones of A minor only",
+              "character": "a simple, singable melody with a clear shape"
+            },
+            "position": {
+              "bar": 3,
+              "of_bars": 16,
+              "beat": "3",
+              "beat_strength": "strong",
+              "eighths_left_in_bar": 4,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-8)",
+              "bar_in_phrase": "3 of 8",
+              "bars_until_cadence": 5,
+              "cadence": "bar 8 holds the dominant (5th degree) for the whole bar: a half cadence"
+            },
+            "harmony": {
+              "this_bar": "C (III): C E G",
+              "next_bar": "G (VII): G B D"
+            },
+            "melody_so_far": [
+              "bar 1 (Am): C4/h E4/h",
+              "bar 2 (F): F4/h A4/h",
+              "bar 3 (C), so far: G4/h"
+            ],
+            "recent": {
+              "last_note": "G4, 2 beats",
+              "previous_motion": "step down a major 2nd",
+              "direction_run": "none",
+              "highest_so_far": "A4",
+              "lowest_so_far": "C4",
+              "notes_since_rest": 5,
+              "notes_in_this_bar": 1
+            }
+          },
+          "questions": {
+            "next_pitch": {
+              "type": "choice",
+              "instructions": "The pitch a good songwriter would write next in this A minor melody for a song whose mood is \"wistful, looking back\": singable, shaped by what came before, fitting this bar's chord (C), and heading for the cadence described in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "E4": "E4, 5th degree (dominant). skip down from G4 (minor 3rd). chord tone, the third of C.",
+                "G4": "G4, 7th degree (subtonic). repeats G4. chord tone, the fifth of C.",
+                "C4": "C4, 3rd degree (mediant). leap down from G4 (perfect 5th). chord tone, the root of C. returns to the note this phrase started on.",
+                "C5": "C5, 3rd degree (mediant). leap up from G4 (perfect 4th). chord tone, the root of C. a new high point for the piece.",
+                "F4": "F4, 6th degree (submediant). step down from G4 (major 2nd). not in C, a tension against the chord.",
+                "A4": "A4, 1st degree (tonic). step up from G4 (major 2nd). not in C, a tension against the chord.",
+                "G3": "G3, 7th degree (subtonic). octave leap down from G4. chord tone, the fifth of C. a new low point for the piece.",
+                "B4": "B4, 2nd degree (supertonic). skip up from G4 (major 3rd). not in C, a tension against the chord. a new high point for the piece.",
+                "A3": "A3, 1st degree (tonic). leap down from G4 (minor 7th). not in C, a tension against the chord. a new low point for the piece.",
+                "B3": "B3, 2nd degree (supertonic). leap down from G4 (minor 6th). not in C, a tension against the chord. a new low point for the piece.",
+                "D4": "D4, 4th degree (subdominant). leap down from G4 (perfect 4th). not in C, a tension against the chord.",
+                "rest": "Rest: silence for the chosen length, a breath. 5 notes since the last rest."
+              }
+            },
+            "length": {
+              "type": "choice",
+              "instructions": "How long the next note should last for a song whose mood is \"wistful, looking back\", given the beat it starts on and the rhythm so far. Only lengths that fit in the bar are offered.",
+              "criteria": {
+                "half": "Half note, two beats. starts on beat 3. fills the rest of the bar. same length as the previous note.",
+                "quarter": "Quarter note, one beat. starts on beat 3. ends on beat 4, leaving one beat in the bar.",
+                "eighth": "Eighth note, half a beat. starts on beat 3. ends on beat 3-and, leaving 1½ beats in the bar.",
+                "dotted_quarter": "Dotted quarter, a beat and a half. starts on beat 3. ends on beat 4-and, leaving half a beat in the bar. leaves a lone eighth to end the bar."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "next_pitch": {
+              "type": "choice",
+              "choice": "E4",
+              "confidence": 0.45,
+              "probabilities": {
+                "A3": 0,
+                "B4": 0.01,
+                "G4": 0.06,
+                "F4": 0.04,
+                "C4": 0.29,
+                "C5": 0.03,
+                "E4": 0.49,
+                "rest": 0.01,
+                "G3": 0.01,
+                "B3": 0.01,
+                "D4": 0,
+                "A4": 0.05
+              }
+            },
+            "length": {
+              "type": "choice",
+              "choice": "half",
+              "confidence": 0.31,
+              "probabilities": {
+                "dotted_quarter": 0.27,
+                "half": 0.49,
+                "quarter": 0.18,
+                "eighth": 0.06
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1539,
+            "output_tokens": 161
+          }
+        }
+      },
+      "step": 6
+    },
+    {
+      "kind": "jev",
+      "bar": 4,
+      "beat": "1",
+      "onset": 0,
+      "pitch": "G4",
+      "length": "half",
+      "eighths": 4,
+      "note": null,
+      "source": "jev",
+      "answers": {
+        "next_pitch": {
+          "choice": "G4",
+          "confidence": 0.71,
+          "top": [
+            [
+              "G4",
+              0.74
+            ],
+            [
+              "D4",
+              0.15
+            ],
+            [
+              "B3",
+              0.03
+            ],
+            [
+              "G3",
+              0.03
+            ],
+            [
+              "B4",
+              0.03
+            ]
+          ]
+        },
+        "length": {
+          "choice": "half",
+          "confidence": 0.65,
+          "top": [
+            [
+              "half",
+              0.7
+            ],
+            [
+              "dotted_quarter",
+              0.09
+            ],
+            [
+              "quarter",
+              0.08
+            ],
+            [
+              "dotted_half",
+              0.07
+            ],
+            [
+              "whole",
+              0.03
+            ]
+          ]
+        }
+      },
+      "heuristicRank": 2,
+      "lengthRank": 1,
+      "optionCount": 12,
+      "confidence": 0.71,
+      "latencyMs": 221,
+      "usage": {
+        "input": 1722,
+        "output": 177
+      },
+      "model": "jev-1.13.0",
+      "noteIndices": [
+        6
+      ],
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "A minor",
+              "meter": "4/4",
+              "tempo_bpm": 92,
+              "form": "16-bar period (16 bars): A opening 8 bars, A' answer 8 bars (repeats A)",
+              "mood": "wistful, looking back",
+              "range": "F#3 to C#5, scale tones of A minor only",
+              "character": "a simple, singable melody with a clear shape"
+            },
+            "position": {
+              "bar": 4,
+              "of_bars": 16,
+              "beat": "1",
+              "beat_strength": "strong",
+              "eighths_left_in_bar": 8,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-8)",
+              "bar_in_phrase": "4 of 8",
+              "bars_until_cadence": 4,
+              "cadence": "bar 8 holds the dominant (5th degree) for the whole bar: a half cadence"
+            },
+            "harmony": {
+              "this_bar": "G (VII): G B D",
+              "next_bar": "Am (i): A C E"
+            },
+            "melody_so_far": [
+              "bar 1 (Am): C4/h E4/h",
+              "bar 2 (F): F4/h A4/h",
+              "bar 3 (C): G4/h E4/h",
+              "bar 4 (G), so far: (nothing yet)"
+            ],
+            "recent": {
+              "last_note": "E4, 2 beats",
+              "previous_motion": "skip down a minor 3rd",
+              "direction_run": "3 notes downward in a row",
+              "highest_so_far": "A4",
+              "lowest_so_far": "C4",
+              "notes_since_rest": 6,
+              "notes_in_this_bar": 0
+            }
+          },
+          "questions": {
+            "next_pitch": {
+              "type": "choice",
+              "instructions": "The pitch a good songwriter would write next in this A minor melody for a song whose mood is \"wistful, looking back\": singable, shaped by what came before, fitting this bar's chord (G), and heading for the cadence described in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "D4": "D4, 4th degree (subdominant). step down from E4 (major 2nd). extends the 4-note run downward. chord tone, the fifth of G.",
+                "G4": "G4, 7th degree (subtonic). skip up from E4 (minor 3rd). turns the line around after 3 notes downward. chord tone, the root of G.",
+                "G3": "G3, 7th degree (subtonic). leap down from E4 (major 6th). extends the 4-note run downward. chord tone, the root of G. a new low point for the piece.",
+                "B3": "B3, 2nd degree (supertonic). leap down from E4 (perfect 4th). extends the 4-note run downward. chord tone, the third of G. a new low point for the piece.",
+                "B4": "B4, 2nd degree (supertonic). leap up from E4 (perfect 5th). turns the line around after 3 notes downward. chord tone, the third of G. a new high point for the piece.",
+                "F4": "F4, 6th degree (submediant). step up from E4 (minor 2nd). turns the line around after 3 notes downward. not in G, a tension against the chord.",
+                "C4": "C4, 3rd degree (mediant). skip down from E4 (major 3rd). extends the 4-note run downward. not in G, a tension against the chord. returns to the note this phrase started on.",
+                "E4": "E4, 5th degree (dominant). repeats E4. not in G, a tension against the chord.",
+                "A3": "A3, 1st degree (tonic). leap down from E4 (perfect 5th). extends the 4-note run downward. not in G, a tension against the chord. a new low point for the piece.",
+                "A4": "A4, 1st degree (tonic). leap up from E4 (perfect 4th). turns the line around after 3 notes downward. not in G, a tension against the chord.",
+                "C5": "C5, 3rd degree (mediant). leap up from E4 (minor 6th). turns the line around after 3 notes downward. not in G, a tension against the chord. a new high point for the piece.",
+                "rest": "Rest: silence for the chosen length, a breath. 6 notes since the last rest."
+              }
+            },
+            "length": {
+              "type": "choice",
+              "instructions": "How long the next note should last for a song whose mood is \"wistful, looking back\", given the beat it starts on and the rhythm so far. Only lengths that fit in the bar are offered.",
+              "criteria": {
+                "half": "Half note, two beats. starts on beat 1. ends on beat 3, leaving 2 beats in the bar. same length as the previous note.",
+                "quarter": "Quarter note, one beat. starts on beat 1. ends on beat 2, leaving 3 beats in the bar.",
+                "eighth": "Eighth note, half a beat. starts on beat 1. ends on beat 1-and, leaving 3½ beats in the bar.",
+                "dotted_quarter": "Dotted quarter, a beat and a half. starts on beat 1. ends on beat 2-and, leaving 2½ beats in the bar.",
+                "dotted_half": "Dotted half, three beats. starts on beat 1. ends on beat 4, leaving one beat in the bar.",
+                "whole": "Whole note, the full bar. starts on beat 1. fills the whole bar."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "next_pitch": {
+              "type": "choice",
+              "choice": "G4",
+              "confidence": 0.71,
+              "probabilities": {
+                "B3": 0.03,
+                "G3": 0.03,
+                "G4": 0.74,
+                "C4": 0,
+                "E4": 0,
+                "D4": 0.15,
+                "rest": 0,
+                "A3": 0,
+                "F4": 0.01,
+                "A4": 0.01,
+                "B4": 0.03,
+                "C5": 0
+              }
+            },
+            "length": {
+              "type": "choice",
+              "choice": "half",
+              "confidence": 0.65,
+              "probabilities": {
+                "half": 0.7,
+                "quarter": 0.08,
+                "whole": 0.03,
+                "dotted_half": 0.07,
+                "eighth": 0.03,
+                "dotted_quarter": 0.09
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1722,
+            "output_tokens": 177
+          }
+        }
+      },
+      "step": 7
+    },
+    {
+      "kind": "jev",
+      "bar": 4,
+      "beat": "3",
+      "onset": 4,
+      "pitch": "B4",
+      "length": "half",
+      "eighths": 4,
+      "note": null,
+      "source": "jev",
+      "answers": {
+        "next_pitch": {
+          "choice": "B4",
+          "confidence": 0.32,
+          "top": [
+            [
+              "B4",
+              0.38
+            ],
+            [
+              "G4",
+              0.25
+            ],
+            [
+              "D4",
+              0.11
+            ],
+            [
+              "E4",
+              0.06
+            ],
+            [
+              "A4",
+              0.05
+            ]
+          ]
+        },
+        "length": {
+          "choice": "half",
+          "confidence": 0.25,
+          "top": [
+            [
+              "half",
+              0.44
+            ],
+            [
+              "dotted_quarter",
+              0.34
+            ],
+            [
+              "quarter",
+              0.15
+            ],
+            [
+              "eighth",
+              0.07
+            ]
+          ]
+        }
+      },
+      "heuristicRank": 1,
+      "lengthRank": 1,
+      "optionCount": 12,
+      "confidence": 0.32,
+      "latencyMs": 269,
+      "usage": {
+        "input": 1554,
+        "output": 161
+      },
+      "model": "jev-1.13.0",
+      "noteIndices": [
+        7
+      ],
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "A minor",
+              "meter": "4/4",
+              "tempo_bpm": 92,
+              "form": "16-bar period (16 bars): A opening 8 bars, A' answer 8 bars (repeats A)",
+              "mood": "wistful, looking back",
+              "range": "F#3 to C#5, scale tones of A minor only",
+              "character": "a simple, singable melody with a clear shape"
+            },
+            "position": {
+              "bar": 4,
+              "of_bars": 16,
+              "beat": "3",
+              "beat_strength": "strong",
+              "eighths_left_in_bar": 4,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-8)",
+              "bar_in_phrase": "4 of 8",
+              "bars_until_cadence": 4,
+              "cadence": "bar 8 holds the dominant (5th degree) for the whole bar: a half cadence"
+            },
+            "harmony": {
+              "this_bar": "G (VII): G B D",
+              "next_bar": "Am (i): A C E"
+            },
+            "melody_so_far": [
+              "bar 1 (Am): C4/h E4/h",
+              "bar 2 (F): F4/h A4/h",
+              "bar 3 (C): G4/h E4/h",
+              "bar 4 (G), so far: G4/h"
+            ],
+            "recent": {
+              "last_note": "G4, 2 beats",
+              "previous_motion": "skip up a minor 3rd",
+              "direction_run": "none",
+              "highest_so_far": "A4",
+              "lowest_so_far": "C4",
+              "notes_since_rest": 7,
+              "notes_in_this_bar": 1
+            }
+          },
+          "questions": {
+            "next_pitch": {
+              "type": "choice",
+              "instructions": "The pitch a good songwriter would write next in this A minor melody for a song whose mood is \"wistful, looking back\": singable, shaped by what came before, fitting this bar's chord (G), and heading for the cadence described in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "B4": "B4, 2nd degree (supertonic). skip up from G4 (major 3rd). chord tone, the third of G. a new high point for the piece.",
+                "G4": "G4, 7th degree (subtonic). repeats G4. chord tone, the root of G.",
+                "B3": "B3, 2nd degree (supertonic). leap down from G4 (minor 6th). chord tone, the third of G. a new low point for the piece.",
+                "D4": "D4, 4th degree (subdominant). leap down from G4 (perfect 4th). chord tone, the fifth of G.",
+                "F4": "F4, 6th degree (submediant). step down from G4 (major 2nd). not in G, a tension against the chord.",
+                "A4": "A4, 1st degree (tonic). step up from G4 (major 2nd). not in G, a tension against the chord.",
+                "G3": "G3, 7th degree (subtonic). octave leap down from G4. chord tone, the root of G. a new low point for the piece.",
+                "E4": "E4, 5th degree (dominant). skip down from G4 (minor 3rd). not in G, a tension against the chord.",
+                "A3": "A3, 1st degree (tonic). leap down from G4 (minor 7th). not in G, a tension against the chord. a new low point for the piece.",
+                "C4": "C4, 3rd degree (mediant). leap down from G4 (perfect 5th). not in G, a tension against the chord. returns to the note this phrase started on.",
+                "C5": "C5, 3rd degree (mediant). leap up from G4 (perfect 4th). not in G, a tension against the chord. a new high point for the piece.",
+                "rest": "Rest: silence for the chosen length, a breath. 7 notes since the last rest."
+              }
+            },
+            "length": {
+              "type": "choice",
+              "instructions": "How long the next note should last for a song whose mood is \"wistful, looking back\", given the beat it starts on and the rhythm so far. Only lengths that fit in the bar are offered.",
+              "criteria": {
+                "half": "Half note, two beats. starts on beat 3. fills the rest of the bar. same length as the previous note.",
+                "quarter": "Quarter note, one beat. starts on beat 3. ends on beat 4, leaving one beat in the bar.",
+                "eighth": "Eighth note, half a beat. starts on beat 3. ends on beat 3-and, leaving 1½ beats in the bar.",
+                "dotted_quarter": "Dotted quarter, a beat and a half. starts on beat 3. ends on beat 4-and, leaving half a beat in the bar. leaves a lone eighth to end the bar."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "next_pitch": {
+              "type": "choice",
+              "choice": "B4",
+              "confidence": 0.32,
+              "probabilities": {
+                "B3": 0.04,
+                "A3": 0.01,
+                "C5": 0,
+                "B4": 0.38,
+                "G3": 0.01,
+                "F4": 0.03,
+                "E4": 0.06,
+                "C4": 0.04,
+                "D4": 0.11,
+                "G4": 0.25,
+                "A4": 0.05,
+                "rest": 0.02
+              }
+            },
+            "length": {
+              "type": "choice",
+              "choice": "half",
+              "confidence": 0.25,
+              "probabilities": {
+                "half": 0.44,
+                "quarter": 0.15,
+                "dotted_quarter": 0.34,
+                "eighth": 0.07
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1554,
+            "output_tokens": 161
+          }
+        }
+      },
+      "step": 8
+    },
+    {
+      "kind": "jev",
+      "bar": 5,
+      "beat": "1",
+      "onset": 0,
+      "pitch": "A4",
+      "length": "half",
+      "eighths": 4,
+      "note": null,
+      "source": "jev",
+      "answers": {
+        "next_pitch": {
+          "choice": "A4",
+          "confidence": 0.67,
+          "top": [
+            [
+              "A4",
+              0.71
+            ],
+            [
+              "C4",
+              0.17
+            ],
+            [
+              "E4",
+              0.1
+            ],
+            [
+              "G4",
+              0.01
+            ],
+            [
+              "C5",
+              0.01
+            ]
+          ]
+        },
+        "length": {
+          "choice": "half",
+          "confidence": 0.73,
+          "top": [
+            [
+              "half",
+              0.77
+            ],
+            [
+              "quarter",
+              0.08
+            ],
+            [
+              "dotted_quarter",
+              0.06
+            ],
+            [
+              "dotted_half",
+              0.04
+            ],
+            [
+              "eighth",
+              0.03
+            ]
+          ]
+        }
+      },
+      "heuristicRank": 1,
+      "lengthRank": 1,
+      "optionCount": 10,
+      "confidence": 0.67,
+      "latencyMs": 238,
+      "usage": {
+        "input": 1608,
+        "output": 161
+      },
+      "model": "jev-1.13.0",
+      "noteIndices": [
+        8
+      ],
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "A minor",
+              "meter": "4/4",
+              "tempo_bpm": 92,
+              "form": "16-bar period (16 bars): A opening 8 bars, A' answer 8 bars (repeats A)",
+              "mood": "wistful, looking back",
+              "range": "F#3 to C#5, scale tones of A minor only",
+              "character": "a simple, singable melody with a clear shape"
+            },
+            "position": {
+              "bar": 5,
+              "of_bars": 16,
+              "beat": "1",
+              "beat_strength": "strong",
+              "eighths_left_in_bar": 8,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-8)",
+              "bar_in_phrase": "5 of 8",
+              "bars_until_cadence": 3,
+              "cadence": "bar 8 holds the dominant (5th degree) for the whole bar: a half cadence"
+            },
+            "harmony": {
+              "this_bar": "Am (i): A C E",
+              "next_bar": "F (VI): F A C"
+            },
+            "melody_so_far": [
+              "bar 1 (Am): C4/h E4/h",
+              "bar 2 (F): F4/h A4/h",
+              "bar 3 (C): G4/h E4/h",
+              "bar 4 (G): G4/h B4/h",
+              "bar 5 (Am), so far: (nothing yet)"
+            ],
+            "recent": {
+              "last_note": "B4, 2 beats",
+              "previous_motion": "skip up a major 3rd",
+              "direction_run": "3 notes upward in a row",
+              "highest_so_far": "B4",
+              "lowest_so_far": "C4",
+              "notes_since_rest": 8,
+              "notes_in_this_bar": 0
+            }
+          },
+          "questions": {
+            "next_pitch": {
+              "type": "choice",
+              "instructions": "The pitch a good songwriter would write next in this A minor melody for a song whose mood is \"wistful, looking back\": singable, shaped by what came before, fitting this bar's chord (Am), and heading for the cadence described in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "A4": "A4, 1st degree (tonic). step down from B4 (major 2nd). turns the line around after 3 notes upward. chord tone, the root of Am.",
+                "C5": "C5, 3rd degree (mediant). step up from B4 (minor 2nd). extends the 4-note run upward. chord tone, the third of Am. a new high point for the piece.",
+                "C4": "C4, 3rd degree (mediant). leap down from B4 (major 7th). turns the line around after 3 notes upward. chord tone, the third of Am. returns to the note this phrase started on.",
+                "E4": "E4, 5th degree (dominant). leap down from B4 (perfect 5th). turns the line around after 3 notes upward. chord tone, the fifth of Am.",
+                "G4": "G4, 7th degree (subtonic). skip down from B4 (major 3rd). turns the line around after 3 notes upward. not in Am, a tension against the chord.",
+                "B4": "B4, 2nd degree (supertonic). repeats B4. not in Am, a tension against the chord.",
+                "D4": "D4, 4th degree (subdominant). leap down from B4 (major 6th). turns the line around after 3 notes upward. not in Am, a tension against the chord.",
+                "F4": "F4, 6th degree (submediant). leap down from B4 (tritone). turns the line around after 3 notes upward. not in Am, a tension against the chord.",
+                "rest": "Rest: silence for the chosen length, a breath. 8 notes since the last rest.",
+                "B3": "B3, 2nd degree (supertonic). octave leap down from B4. turns the line around after 3 notes upward. not in Am, a tension against the chord. a new low point for the piece."
+              }
+            },
+            "length": {
+              "type": "choice",
+              "instructions": "How long the next note should last for a song whose mood is \"wistful, looking back\", given the beat it starts on and the rhythm so far. Only lengths that fit in the bar are offered.",
+              "criteria": {
+                "half": "Half note, two beats. starts on beat 1. ends on beat 3, leaving 2 beats in the bar. same length as the previous note.",
+                "quarter": "Quarter note, one beat. starts on beat 1. ends on beat 2, leaving 3 beats in the bar.",
+                "eighth": "Eighth note, half a beat. starts on beat 1. ends on beat 1-and, leaving 3½ beats in the bar.",
+                "dotted_quarter": "Dotted quarter, a beat and a half. starts on beat 1. ends on beat 2-and, leaving 2½ beats in the bar.",
+                "dotted_half": "Dotted half, three beats. starts on beat 1. ends on beat 4, leaving one beat in the bar.",
+                "whole": "Whole note, the full bar. starts on beat 1. fills the whole bar."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "next_pitch": {
+              "type": "choice",
+              "choice": "A4",
+              "confidence": 0.67,
+              "probabilities": {
+                "C4": 0.17,
+                "D4": 0,
+                "B3": 0,
+                "B4": 0,
+                "F4": 0,
+                "G4": 0.01,
+                "C5": 0.01,
+                "A4": 0.71,
+                "rest": 0,
+                "E4": 0.1
+              }
+            },
+            "length": {
+              "type": "choice",
+              "choice": "half",
+              "confidence": 0.73,
+              "probabilities": {
+                "whole": 0.02,
+                "half": 0.77,
+                "quarter": 0.08,
+                "eighth": 0.03,
+                "dotted_quarter": 0.06,
+                "dotted_half": 0.04
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1608,
+            "output_tokens": 161
+          }
+        }
+      },
+      "step": 9
+    },
+    {
+      "kind": "jev",
+      "bar": 5,
+      "beat": "3",
+      "onset": 4,
+      "pitch": "E4",
+      "length": "half",
+      "eighths": 4,
+      "note": null,
+      "source": "jev",
+      "answers": {
+        "next_pitch": {
+          "choice": "E4",
+          "confidence": 0.29,
+          "top": [
+            [
+              "E4",
+              0.35
+            ],
+            [
+              "C4",
+              0.29
+            ],
+            [
+              "A4",
+              0.12
+            ],
+            [
+              "G4",
+              0.09
+            ],
+            [
+              "B4",
+              0.06
+            ]
+          ]
+        },
+        "length": {
+          "choice": "half",
+          "confidence": 0.35,
+          "top": [
+            [
+              "half",
+              0.51
+            ],
+            [
+              "dotted_quarter",
+              0.3
+            ],
+            [
+              "quarter",
+              0.14
+            ],
+            [
+              "eighth",
+              0.05
+            ]
+          ]
+        }
+      },
+      "heuristicRank": 4,
+      "lengthRank": 1,
+      "optionCount": 11,
+      "confidence": 0.29,
+      "latencyMs": 230,
+      "usage": {
+        "input": 1508,
+        "output": 153
+      },
+      "model": "jev-1.13.0",
+      "noteIndices": [
+        9
+      ],
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "A minor",
+              "meter": "4/4",
+              "tempo_bpm": 92,
+              "form": "16-bar period (16 bars): A opening 8 bars, A' answer 8 bars (repeats A)",
+              "mood": "wistful, looking back",
+              "range": "F#3 to C#5, scale tones of A minor only",
+              "character": "a simple, singable melody with a clear shape"
+            },
+            "position": {
+              "bar": 5,
+              "of_bars": 16,
+              "beat": "3",
+              "beat_strength": "strong",
+              "eighths_left_in_bar": 4,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-8)",
+              "bar_in_phrase": "5 of 8",
+              "bars_until_cadence": 3,
+              "cadence": "bar 8 holds the dominant (5th degree) for the whole bar: a half cadence"
+            },
+            "harmony": {
+              "this_bar": "Am (i): A C E",
+              "next_bar": "F (VI): F A C"
+            },
+            "melody_so_far": [
+              "bar 1 (Am): C4/h E4/h",
+              "bar 2 (F): F4/h A4/h",
+              "bar 3 (C): G4/h E4/h",
+              "bar 4 (G): G4/h B4/h",
+              "bar 5 (Am), so far: A4/h"
+            ],
+            "recent": {
+              "last_note": "A4, 2 beats",
+              "previous_motion": "step down a major 2nd",
+              "direction_run": "none",
+              "highest_so_far": "B4",
+              "lowest_so_far": "C4",
+              "notes_since_rest": 9,
+              "notes_in_this_bar": 1
+            }
+          },
+          "questions": {
+            "next_pitch": {
+              "type": "choice",
+              "instructions": "The pitch a good songwriter would write next in this A minor melody for a song whose mood is \"wistful, looking back\": singable, shaped by what came before, fitting this bar's chord (Am), and heading for the cadence described in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "C5": "C5, 3rd degree (mediant). skip up from A4 (minor 3rd). chord tone, the third of Am. a new high point for the piece.",
+                "A4": "A4, 1st degree (tonic). repeats A4. chord tone, the root of Am.",
+                "C4": "C4, 3rd degree (mediant). leap down from A4 (major 6th). chord tone, the third of Am. returns to the note this phrase started on.",
+                "E4": "E4, 5th degree (dominant). leap down from A4 (perfect 4th). chord tone, the fifth of Am.",
+                "G4": "G4, 7th degree (subtonic). step down from A4 (major 2nd). not in Am, a tension against the chord.",
+                "B4": "B4, 2nd degree (supertonic). step up from A4 (major 2nd). not in Am, a tension against the chord.",
+                "A3": "A3, 1st degree (tonic). octave leap down from A4. chord tone, the root of Am. a new low point for the piece.",
+                "F4": "F4, 6th degree (submediant). skip down from A4 (major 3rd). not in Am, a tension against the chord.",
+                "B3": "B3, 2nd degree (supertonic). leap down from A4 (minor 7th). not in Am, a tension against the chord. a new low point for the piece.",
+                "D4": "D4, 4th degree (subdominant). leap down from A4 (perfect 5th). not in Am, a tension against the chord.",
+                "rest": "Rest: silence for the chosen length, a breath. 9 notes since the last rest."
+              }
+            },
+            "length": {
+              "type": "choice",
+              "instructions": "How long the next note should last for a song whose mood is \"wistful, looking back\", given the beat it starts on and the rhythm so far. Only lengths that fit in the bar are offered.",
+              "criteria": {
+                "half": "Half note, two beats. starts on beat 3. fills the rest of the bar. same length as the previous note.",
+                "quarter": "Quarter note, one beat. starts on beat 3. ends on beat 4, leaving one beat in the bar.",
+                "eighth": "Eighth note, half a beat. starts on beat 3. ends on beat 3-and, leaving 1½ beats in the bar.",
+                "dotted_quarter": "Dotted quarter, a beat and a half. starts on beat 3. ends on beat 4-and, leaving half a beat in the bar. leaves a lone eighth to end the bar."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "next_pitch": {
+              "type": "choice",
+              "choice": "E4",
+              "confidence": 0.29,
+              "probabilities": {
+                "A3": 0.01,
+                "C5": 0.05,
+                "G4": 0.09,
+                "D4": 0,
+                "A4": 0.12,
+                "B4": 0.06,
+                "E4": 0.35,
+                "rest": 0.01,
+                "B3": 0,
+                "C4": 0.29,
+                "F4": 0.02
+              }
+            },
+            "length": {
+              "type": "choice",
+              "choice": "half",
+              "confidence": 0.35,
+              "probabilities": {
+                "half": 0.51,
+                "dotted_quarter": 0.3,
+                "quarter": 0.14,
+                "eighth": 0.05
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1508,
+            "output_tokens": 153
+          }
+        }
+      },
+      "step": 10
+    },
+    {
+      "kind": "jev",
+      "bar": 6,
+      "beat": "1",
+      "onset": 0,
+      "pitch": "F4",
+      "length": "half",
+      "eighths": 4,
+      "note": null,
+      "source": "jev",
+      "answers": {
+        "next_pitch": {
+          "choice": "F4",
+          "confidence": 0.82,
+          "top": [
+            [
+              "F4",
+              0.85
+            ],
+            [
+              "A4",
+              0.07
+            ],
+            [
+              "C4",
+              0.07
+            ],
+            [
+              "G4",
+              0.01
+            ],
+            [
+              "E4",
+              0
+            ]
+          ]
+        },
+        "length": {
+          "choice": "half",
+          "confidence": 0.71,
+          "top": [
+            [
+              "half",
+              0.76
+            ],
+            [
+              "dotted_quarter",
+              0.08
+            ],
+            [
+              "dotted_half",
+              0.07
+            ],
+            [
+              "quarter",
+              0.05
+            ],
+            [
+              "whole",
+              0.02
+            ]
+          ]
+        }
+      },
+      "heuristicRank": 1,
+      "lengthRank": 1,
+      "optionCount": 12,
+      "confidence": 0.82,
+      "latencyMs": 203,
+      "usage": {
+        "input": 1801,
+        "output": 177
+      },
+      "model": "jev-1.13.0",
+      "noteIndices": [
+        10
+      ],
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "A minor",
+              "meter": "4/4",
+              "tempo_bpm": 92,
+              "form": "16-bar period (16 bars): A opening 8 bars, A' answer 8 bars (repeats A)",
+              "mood": "wistful, looking back",
+              "range": "F#3 to C#5, scale tones of A minor only",
+              "character": "a simple, singable melody with a clear shape"
+            },
+            "position": {
+              "bar": 6,
+              "of_bars": 16,
+              "beat": "1",
+              "beat_strength": "strong",
+              "eighths_left_in_bar": 8,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-8)",
+              "bar_in_phrase": "6 of 8",
+              "bars_until_cadence": 2,
+              "cadence": "bar 8 holds the dominant (5th degree) for the whole bar: a half cadence"
+            },
+            "harmony": {
+              "this_bar": "F (VI): F A C",
+              "next_bar": "C (III): C E G"
+            },
+            "melody_so_far": [
+              "bar 1 (Am): C4/h E4/h",
+              "bar 2 (F): F4/h A4/h",
+              "bar 3 (C): G4/h E4/h",
+              "bar 4 (G): G4/h B4/h",
+              "bar 5 (Am): A4/h E4/h",
+              "bar 6 (F), so far: (nothing yet)"
+            ],
+            "recent": {
+              "last_note": "E4, 2 beats",
+              "previous_motion": "leap down a perfect 4th",
+              "direction_run": "3 notes downward in a row",
+              "highest_so_far": "B4",
+              "lowest_so_far": "C4",
+              "notes_since_rest": 10,
+              "notes_in_this_bar": 0
+            }
+          },
+          "questions": {
+            "next_pitch": {
+              "type": "choice",
+              "instructions": "The pitch a good songwriter would write next in this A minor melody for a song whose mood is \"wistful, looking back\": singable, shaped by what came before, fitting this bar's chord (F), and heading for the cadence described in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "F4": "F4, 6th degree (submediant). step up from E4 (minor 2nd). steps back after the leap, resolving it. turns the line around after 3 notes downward. chord tone, the root of F.",
+                "C4": "C4, 3rd degree (mediant). skip down from E4 (major 3rd). keeps going in the direction of the leap. extends the 4-note run downward. chord tone, the fifth of F. returns to the note this phrase started on.",
+                "A4": "A4, 1st degree (tonic). leap up from E4 (perfect 4th). turns the line around after 3 notes downward. chord tone, the third of F.",
+                "C5": "C5, 3rd degree (mediant). leap up from E4 (minor 6th). turns the line around after 3 notes downward. chord tone, the fifth of F. a new high point for the piece.",
+                "A3": "A3, 1st degree (tonic). leap down from E4 (perfect 5th). keeps going in the direction of the leap. extends the 4-note run downward. chord tone, the third of F. a new low point for the piece.",
+                "D4": "D4, 4th degree (subdominant). step down from E4 (major 2nd). keeps going in the direction of the leap. extends the 4-note run downward. not in F, a tension against the chord.",
+                "G4": "G4, 7th degree (subtonic). skip up from E4 (minor 3rd). turns the line around after 3 notes downward. not in F, a tension against the chord.",
+                "E4": "E4, 5th degree (dominant). repeats E4. not in F, a tension against the chord.",
+                "B4": "B4, 2nd degree (supertonic). leap up from E4 (perfect 5th). turns the line around after 3 notes downward. not in F, a tension against the chord.",
+                "rest": "Rest: silence for the chosen length, a breath. 10 notes since the last rest.",
+                "G3": "G3, 7th degree (subtonic). leap down from E4 (major 6th). keeps going in the direction of the leap. extends the 4-note run downward. not in F, a tension against the chord. a new low point for the piece.",
+                "B3": "B3, 2nd degree (supertonic). leap down from E4 (perfect 4th). keeps going in the direction of the leap. extends the 4-note run downward. not in F, a tension against the chord. a new low point for the piece."
+              }
+            },
+            "length": {
+              "type": "choice",
+              "instructions": "How long the next note should last for a song whose mood is \"wistful, looking back\", given the beat it starts on and the rhythm so far. Only lengths that fit in the bar are offered.",
+              "criteria": {
+                "half": "Half note, two beats. starts on beat 1. ends on beat 3, leaving 2 beats in the bar. same length as the previous note.",
+                "quarter": "Quarter note, one beat. starts on beat 1. ends on beat 2, leaving 3 beats in the bar.",
+                "eighth": "Eighth note, half a beat. starts on beat 1. ends on beat 1-and, leaving 3½ beats in the bar.",
+                "dotted_quarter": "Dotted quarter, a beat and a half. starts on beat 1. ends on beat 2-and, leaving 2½ beats in the bar.",
+                "dotted_half": "Dotted half, three beats. starts on beat 1. ends on beat 4, leaving one beat in the bar.",
+                "whole": "Whole note, the full bar. starts on beat 1. fills the whole bar."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "next_pitch": {
+              "type": "choice",
+              "choice": "F4",
+              "confidence": 0.82,
+              "probabilities": {
+                "E4": 0,
+                "A4": 0.07,
+                "A3": 0,
+                "G4": 0.01,
+                "G3": 0,
+                "C5": 0,
+                "rest": 0,
+                "F4": 0.85,
+                "D4": 0,
+                "C4": 0.07,
+                "B3": 0,
+                "B4": 0
+              }
+            },
+            "length": {
+              "type": "choice",
+              "choice": "half",
+              "confidence": 0.71,
+              "probabilities": {
+                "whole": 0.02,
+                "dotted_quarter": 0.08,
+                "dotted_half": 0.07,
+                "half": 0.76,
+                "eighth": 0.02,
+                "quarter": 0.05
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1801,
+            "output_tokens": 177
+          }
+        }
+      },
+      "step": 11
+    },
+    {
+      "kind": "jev",
+      "bar": 6,
+      "beat": "3",
+      "onset": 4,
+      "pitch": "A4",
+      "length": "half",
+      "eighths": 4,
+      "note": null,
+      "source": "jev",
+      "answers": {
+        "next_pitch": {
+          "choice": "A4",
+          "confidence": 0.47,
+          "top": [
+            [
+              "A4",
+              0.51
+            ],
+            [
+              "C4",
+              0.21
+            ],
+            [
+              "E4",
+              0.08
+            ],
+            [
+              "F4",
+              0.08
+            ],
+            [
+              "G4",
+              0.03
+            ]
+          ]
+        },
+        "length": {
+          "choice": "half",
+          "confidence": 0.42,
+          "top": [
+            [
+              "half",
+              0.57
+            ],
+            [
+              "dotted_quarter",
+              0.22
+            ],
+            [
+              "quarter",
+              0.15
+            ],
+            [
+              "eighth",
+              0.06
+            ]
+          ]
+        }
+      },
+      "heuristicRank": 1,
+      "lengthRank": 1,
+      "optionCount": 12,
+      "confidence": 0.47,
+      "latencyMs": 231,
+      "usage": {
+        "input": 1578,
+        "output": 161
+      },
+      "model": "jev-1.13.0",
+      "noteIndices": [
+        11
+      ],
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "A minor",
+              "meter": "4/4",
+              "tempo_bpm": 92,
+              "form": "16-bar period (16 bars): A opening 8 bars, A' answer 8 bars (repeats A)",
+              "mood": "wistful, looking back",
+              "range": "F#3 to C#5, scale tones of A minor only",
+              "character": "a simple, singable melody with a clear shape"
+            },
+            "position": {
+              "bar": 6,
+              "of_bars": 16,
+              "beat": "3",
+              "beat_strength": "strong",
+              "eighths_left_in_bar": 4,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-8)",
+              "bar_in_phrase": "6 of 8",
+              "bars_until_cadence": 2,
+              "cadence": "bar 8 holds the dominant (5th degree) for the whole bar: a half cadence"
+            },
+            "harmony": {
+              "this_bar": "F (VI): F A C",
+              "next_bar": "C (III): C E G"
+            },
+            "melody_so_far": [
+              "bar 1 (Am): C4/h E4/h",
+              "bar 2 (F): F4/h A4/h",
+              "bar 3 (C): G4/h E4/h",
+              "bar 4 (G): G4/h B4/h",
+              "bar 5 (Am): A4/h E4/h",
+              "bar 6 (F), so far: F4/h"
+            ],
+            "recent": {
+              "last_note": "F4, 2 beats",
+              "previous_motion": "step up a minor 2nd",
+              "direction_run": "none",
+              "highest_so_far": "B4",
+              "lowest_so_far": "C4",
+              "notes_since_rest": 11,
+              "notes_in_this_bar": 1
+            }
+          },
+          "questions": {
+            "next_pitch": {
+              "type": "choice",
+              "instructions": "The pitch a good songwriter would write next in this A minor melody for a song whose mood is \"wistful, looking back\": singable, shaped by what came before, fitting this bar's chord (F), and heading for the cadence described in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "A4": "A4, 1st degree (tonic). skip up from F4 (major 3rd). chord tone, the third of F.",
+                "F4": "F4, 6th degree (submediant). repeats F4. chord tone, the root of F.",
+                "A3": "A3, 1st degree (tonic). leap down from F4 (minor 6th). chord tone, the third of F. a new low point for the piece.",
+                "C4": "C4, 3rd degree (mediant). leap down from F4 (perfect 4th). chord tone, the fifth of F. returns to the note this phrase started on.",
+                "C5": "C5, 3rd degree (mediant). leap up from F4 (perfect 5th). chord tone, the fifth of F. a new high point for the piece.",
+                "E4": "E4, 5th degree (dominant). step down from F4 (minor 2nd). not in F, a tension against the chord.",
+                "G4": "G4, 7th degree (subtonic). step up from F4 (major 2nd). not in F, a tension against the chord.",
+                "D4": "D4, 4th degree (subdominant). skip down from F4 (minor 3rd). not in F, a tension against the chord.",
+                "G3": "G3, 7th degree (subtonic). leap down from F4 (minor 7th). not in F, a tension against the chord. a new low point for the piece.",
+                "B3": "B3, 2nd degree (supertonic). leap down from F4 (tritone). not in F, a tension against the chord. a new low point for the piece.",
+                "B4": "B4, 2nd degree (supertonic). leap up from F4 (tritone). not in F, a tension against the chord.",
+                "rest": "Rest: silence for the chosen length, a breath. 11 notes since the last rest."
+              }
+            },
+            "length": {
+              "type": "choice",
+              "instructions": "How long the next note should last for a song whose mood is \"wistful, looking back\", given the beat it starts on and the rhythm so far. Only lengths that fit in the bar are offered.",
+              "criteria": {
+                "half": "Half note, two beats. starts on beat 3. fills the rest of the bar. same length as the previous note.",
+                "quarter": "Quarter note, one beat. starts on beat 3. ends on beat 4, leaving one beat in the bar.",
+                "eighth": "Eighth note, half a beat. starts on beat 3. ends on beat 3-and, leaving 1½ beats in the bar.",
+                "dotted_quarter": "Dotted quarter, a beat and a half. starts on beat 3. ends on beat 4-and, leaving half a beat in the bar. leaves a lone eighth to end the bar."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "next_pitch": {
+              "type": "choice",
+              "choice": "A4",
+              "confidence": 0.47,
+              "probabilities": {
+                "E4": 0.08,
+                "G4": 0.03,
+                "C5": 0.02,
+                "C4": 0.21,
+                "B3": 0.01,
+                "D4": 0.01,
+                "G3": 0,
+                "rest": 0.02,
+                "B4": 0.01,
+                "F4": 0.08,
+                "A4": 0.51,
+                "A3": 0.02
+              }
+            },
+            "length": {
+              "type": "choice",
+              "choice": "half",
+              "confidence": 0.42,
+              "probabilities": {
+                "eighth": 0.06,
+                "dotted_quarter": 0.22,
+                "half": 0.5700000000000001,
+                "quarter": 0.15
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1578,
+            "output_tokens": 161
+          }
+        }
+      },
+      "step": 12
+    },
+    {
+      "kind": "jev",
+      "bar": 7,
+      "beat": "1",
+      "onset": 0,
+      "pitch": "G4",
+      "length": "half",
+      "eighths": 4,
+      "note": null,
+      "source": "jev",
+      "answers": {
+        "next_pitch": {
+          "choice": "G4",
+          "confidence": 0.66,
+          "top": [
+            [
+              "G4",
+              0.7
+            ],
+            [
+              "C4",
+              0.14
+            ],
+            [
+              "E4",
+              0.11
+            ],
+            [
+              "F4",
+              0.02
+            ],
+            [
+              "C5",
+              0.02
+            ]
+          ]
+        },
+        "length": {
+          "choice": "half",
+          "confidence": 0.64,
+          "top": [
+            [
+              "half",
+              0.69
+            ],
+            [
+              "dotted_quarter",
+              0.09
+            ],
+            [
+              "quarter",
+              0.08
+            ],
+            [
+              "dotted_half",
+              0.06
+            ],
+            [
+              "eighth",
+              0.04
+            ]
+          ]
+        }
+      },
+      "heuristicRank": 1,
+      "lengthRank": 1,
+      "optionCount": 11,
+      "confidence": 0.66,
+      "latencyMs": 232,
+      "usage": {
+        "input": 1845,
+        "output": 169
+      },
+      "model": "jev-1.13.0",
+      "noteIndices": [
+        12
+      ],
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "A minor",
+              "meter": "4/4",
+              "tempo_bpm": 92,
+              "form": "16-bar period (16 bars): A opening 8 bars, A' answer 8 bars (repeats A)",
+              "mood": "wistful, looking back",
+              "range": "F#3 to C#5, scale tones of A minor only",
+              "character": "a simple, singable melody with a clear shape"
+            },
+            "position": {
+              "bar": 7,
+              "of_bars": 16,
+              "beat": "1",
+              "beat_strength": "strong",
+              "eighths_left_in_bar": 8,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-8)",
+              "bar_in_phrase": "7 of 8",
+              "bars_until_cadence": 1,
+              "cadence": "bar 8 holds the dominant (5th degree) for the whole bar: a half cadence"
+            },
+            "harmony": {
+              "this_bar": "C (III): C E G",
+              "next_bar": "G (VII): G B D"
+            },
+            "melody_so_far": [
+              "bar 1 (Am): C4/h E4/h",
+              "bar 2 (F): F4/h A4/h",
+              "bar 3 (C): G4/h E4/h",
+              "bar 4 (G): G4/h B4/h",
+              "bar 5 (Am): A4/h E4/h",
+              "bar 6 (F): F4/h A4/h",
+              "bar 7 (C), so far: (nothing yet)"
+            ],
+            "recent": {
+              "last_note": "A4, 2 beats",
+              "previous_motion": "skip up a major 3rd",
+              "direction_run": "3 notes upward in a row",
+              "highest_so_far": "B4",
+              "lowest_so_far": "C4",
+              "notes_since_rest": 12,
+              "notes_in_this_bar": 0
+            }
+          },
+          "questions": {
+            "next_pitch": {
+              "type": "choice",
+              "instructions": "The pitch a good songwriter would write next in this A minor melody for a song whose mood is \"wistful, looking back\": singable, shaped by what came before, fitting this bar's chord (C), and heading for the cadence described in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "G4": "G4, 7th degree (subtonic). step down from A4 (major 2nd). turns the line around after 3 notes upward. chord tone, the fifth of C. a minor 3rd above the coming cadence note E4.",
+                "E4": "E4, 5th degree (dominant). leap down from A4 (perfect 4th). turns the line around after 3 notes upward. chord tone, the third of C. the cadence note itself, one bar early.",
+                "C5": "C5, 3rd degree (mediant). skip up from A4 (minor 3rd). extends the 4-note run upward. chord tone, the root of C. a new high point for the piece. a minor 6th above the coming cadence note E4.",
+                "C4": "C4, 3rd degree (mediant). leap down from A4 (major 6th). turns the line around after 3 notes upward. chord tone, the root of C. returns to the note this phrase started on. a major 3rd below the coming cadence note E4.",
+                "F4": "F4, 6th degree (submediant). skip down from A4 (major 3rd). turns the line around after 3 notes upward. not in C, a tension against the chord. a minor 2nd above the coming cadence note E4.",
+                "B4": "B4, 2nd degree (supertonic). step up from A4 (major 2nd). extends the 4-note run upward. not in C, a tension against the chord. a perfect 5th above the coming cadence note E4.",
+                "D4": "D4, 4th degree (subdominant). leap down from A4 (perfect 5th). turns the line around after 3 notes upward. not in C, a tension against the chord. a major 2nd below the coming cadence note E4.",
+                "A4": "A4, 1st degree (tonic). repeats A4. not in C, a tension against the chord. a perfect 4th above the coming cadence note E4.",
+                "B3": "B3, 2nd degree (supertonic). leap down from A4 (minor 7th). turns the line around after 3 notes upward. not in C, a tension against the chord. a new low point for the piece. a perfect 4th below the coming cadence note E4.",
+                "rest": "Rest: silence for the chosen length, a breath. 12 notes since the last rest. the cadence is next bar.",
+                "A3": "A3, 1st degree (tonic). octave leap down from A4. turns the line around after 3 notes upward. not in C, a tension against the chord. a new low point for the piece. a perfect 5th below the coming cadence note E4."
+              }
+            },
+            "length": {
+              "type": "choice",
+              "instructions": "How long the next note should last for a song whose mood is \"wistful, looking back\", given the beat it starts on and the rhythm so far. Only lengths that fit in the bar are offered.",
+              "criteria": {
+                "half": "Half note, two beats. starts on beat 1. ends on beat 3, leaving 2 beats in the bar. same length as the previous note.",
+                "quarter": "Quarter note, one beat. starts on beat 1. ends on beat 2, leaving 3 beats in the bar.",
+                "eighth": "Eighth note, half a beat. starts on beat 1. ends on beat 1-and, leaving 3½ beats in the bar.",
+                "dotted_quarter": "Dotted quarter, a beat and a half. starts on beat 1. ends on beat 2-and, leaving 2½ beats in the bar.",
+                "dotted_half": "Dotted half, three beats. starts on beat 1. ends on beat 4, leaving one beat in the bar.",
+                "whole": "Whole note, the full bar. starts on beat 1. fills the whole bar."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "next_pitch": {
+              "type": "choice",
+              "choice": "G4",
+              "confidence": 0.66,
+              "probabilities": {
+                "A4": 0,
+                "F4": 0.02,
+                "G4": 0.7,
+                "A3": 0,
+                "D4": 0,
+                "E4": 0.11,
+                "C5": 0.02,
+                "C4": 0.14,
+                "B4": 0.01,
+                "B3": 0,
+                "rest": 0
+              }
+            },
+            "length": {
+              "type": "choice",
+              "choice": "half",
+              "confidence": 0.64,
+              "probabilities": {
+                "dotted_quarter": 0.09,
+                "half": 0.69,
+                "quarter": 0.08,
+                "eighth": 0.04,
+                "dotted_half": 0.06,
+                "whole": 0.04
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1845,
+            "output_tokens": 169
+          }
+        }
+      },
+      "step": 13
+    },
+    {
+      "kind": "jev",
+      "bar": 7,
+      "beat": "3",
+      "onset": 4,
+      "pitch": "E4",
+      "length": "half",
+      "eighths": 4,
+      "note": null,
+      "source": "jev",
+      "answers": {
+        "next_pitch": {
+          "choice": "E4",
+          "confidence": 0.33,
+          "top": [
+            [
+              "E4",
+              0.4
+            ],
+            [
+              "C4",
+              0.31
+            ],
+            [
+              "G4",
+              0.13
+            ],
+            [
+              "F4",
+              0.05
+            ],
+            [
+              "C5",
+              0.03
+            ]
+          ]
+        },
+        "length": {
+          "choice": "half",
+          "confidence": 0.37,
+          "top": [
+            [
+              "half",
+              0.52
+            ],
+            [
+              "dotted_quarter",
+              0.26
+            ],
+            [
+              "quarter",
+              0.16
+            ],
+            [
+              "eighth",
+              0.06
+            ]
+          ]
+        }
+      },
+      "heuristicRank": 1,
+      "lengthRank": 1,
+      "optionCount": 12,
+      "confidence": 0.33,
+      "latencyMs": 367,
+      "usage": {
+        "input": 1750,
+        "output": 161
+      },
+      "model": "jev-1.13.0",
+      "noteIndices": [
+        13
+      ],
+      "io": {
+        "request": {
+          "model": "jev-latest",
+          "state": {
+            "piece": {
+              "key": "A minor",
+              "meter": "4/4",
+              "tempo_bpm": 92,
+              "form": "16-bar period (16 bars): A opening 8 bars, A' answer 8 bars (repeats A)",
+              "mood": "wistful, looking back",
+              "range": "F#3 to C#5, scale tones of A minor only",
+              "character": "a simple, singable melody with a clear shape"
+            },
+            "position": {
+              "bar": 7,
+              "of_bars": 16,
+              "beat": "3",
+              "beat_strength": "strong",
+              "eighths_left_in_bar": 4,
+              "phrase": "A: the opening phrase, which states the main idea and ends open (bars 1-8)",
+              "bar_in_phrase": "7 of 8",
+              "bars_until_cadence": 1,
+              "cadence": "bar 8 holds the dominant (5th degree) for the whole bar: a half cadence"
+            },
+            "harmony": {
+              "this_bar": "C (III): C E G",
+              "next_bar": "G (VII): G B D"
+            },
+            "melody_so_far": [
+              "bar 1 (Am): C4/h E4/h",
+              "bar 2 (F): F4/h A4/h",
+              "bar 3 (C): G4/h E4/h",
+              "bar 4 (G): G4/h B4/h",
+              "bar 5 (Am): A4/h E4/h",
+              "bar 6 (F): F4/h A4/h",
+              "bar 7 (C), so far: G4/h"
+            ],
+            "recent": {
+              "last_note": "G4, 2 beats",
+              "previous_motion": "step down a major 2nd",
+              "direction_run": "none",
+              "highest_so_far": "B4",
+              "lowest_so_far": "C4",
+              "notes_since_rest": 13,
+              "notes_in_this_bar": 1
+            }
+          },
+          "questions": {
+            "next_pitch": {
+              "type": "choice",
+              "instructions": "The pitch a good songwriter would write next in this A minor melody for a song whose mood is \"wistful, looking back\": singable, shaped by what came before, fitting this bar's chord (C), and heading for the cadence described in the state. Each option lists facts computed by code.",
+              "criteria": {
+                "E4": "E4, 5th degree (dominant). skip down from G4 (minor 3rd). chord tone, the third of C. the cadence note itself, one bar early.",
+                "F4": "F4, 6th degree (submediant). step down from G4 (major 2nd). not in C, a tension against the chord. a minor 2nd above the coming cadence note E4.",
+                "G4": "G4, 7th degree (subtonic). repeats G4. chord tone, the fifth of C. a minor 3rd above the coming cadence note E4.",
+                "C4": "C4, 3rd degree (mediant). leap down from G4 (perfect 5th). chord tone, the root of C. returns to the note this phrase started on. a major 3rd below the coming cadence note E4.",
+                "A4": "A4, 1st degree (tonic). step up from G4 (major 2nd). not in C, a tension against the chord. a perfect 4th above the coming cadence note E4.",
+                "C5": "C5, 3rd degree (mediant). leap up from G4 (perfect 4th). chord tone, the root of C. a new high point for the piece. a minor 6th above the coming cadence note E4.",
+                "G3": "G3, 7th degree (subtonic). octave leap down from G4. chord tone, the fifth of C. a new low point for the piece. a major 6th below the coming cadence note E4.",
+                "D4": "D4, 4th degree (subdominant). leap down from G4 (perfect 4th). not in C, a tension against the chord. a major 2nd below the coming cadence note E4.",
+                "B4": "B4, 2nd degree (supertonic). skip up from G4 (major 3rd). not in C, a tension against the chord. a perfect 5th above the coming cadence note E4.",
+                "B3": "B3, 2nd degree (supertonic). leap down from G4 (minor 6th). not in C, a tension against the chord. a new low point for the piece. a perfect 4th below the coming cadence note E4.",
+                "A3": "A3, 1st degree (tonic). leap down from G4 (minor 7th). not in C, a tension against the chord. a new low point for the piece. a perfect 5th below the coming cadence note E4.",
+                "rest": "Rest: silence for the chosen length, a breath. 13 notes since the last rest. the cadence is next bar."
+              }
+            },
+            "length": {
+              "type": "choice",
+              "instructions": "How long the next note should last for a song whose mood is \"wistful, looking back\", given the beat it starts on and the rhythm so far. Only lengths that fit in the bar are offered.",
+              "criteria": {
+                "half": "Half note, two beats. starts on beat 3. fills the rest of the bar. same length as the previous note.",
+                "quarter": "Quarter note, one beat. starts on beat 3. ends on beat 4, leaving one beat in the bar.",
+                "eighth": "Eighth note, half a beat. starts on beat 3. ends on beat 3-and, leaving 1½ beats in the bar.",
+                "dotted_quarter": "Dotted quarter, a beat and a half. starts on beat 3. ends on beat 4-and, leaving half a beat in the bar. leaves a lone eighth to end the bar."
+              }
+            }
+          }
+        },
+        "response": {
+          "model": "jev-1.13.0",
+          "answers": {
+            "next_pitch": {
+              "type": "choice",
+              "choice": "E4",
+              "confidence": 0.33,
+              "probabilities": {
+                "D4": 0.01,
+                "F4": 0.05,
+                "A3": 0,
+                "C5": 0.03,
+                "G3": 0,
+                "C4": 0.31,
+                "B3": 0,
+                "rest": 0.02,
+                "G4": 0.13,
+                "E4": 0.4,
+                "A4": 0.03,
+                "B4": 0.02
+              }
+            },
+            "length": {
+              "type": "choice",
+              "choice": "half",
+              "confidence": 0.37,
+              "probabilities": {
+                "half": 0.52,
+                "dotted_quarter": 0.26,
+                "quarter": 0.16,
+                "eighth": 0.06
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 1750,
+            "output_tokens": 161
+          }
+        }
+      },
+      "step": 14
+    },
+    {
+      "kind": "forced",
+      "bar": 8,
+      "beat": "1",
+      "onset": 0,
+      "pitch": "E4",
+      "length": "whole",
+      "eighths": 8,
+      "note": "half cadence: E4, the dominant, held for the bar",
+      "noteIndices": [
+        14
+      ],
+      "step": 15
+    },
+    {
+      "kind": "reuse",
+      "bar": 9,
+      "beat": "1",
+      "onset": 0,
+      "pitch": null,
+      "length": null,
+      "eighths": 8,
+      "note": "bar 9 repeats bar 1: phrase A' repeats A",
+      "noteIndices": [
+        15,
+        16
+      ],
+      "step": 16
+    },
+    {
+      "kind": "reuse",
+      "bar": 10,
+      "beat": "1",
+      "onset": 0,
+      "pitch": null,
+      "length": null,
+      "eighths": 8,
+      "note": "bar 10 repeats bar 2: phrase A' repeats A",
+      "noteIndices": [
+        17,
+        18
+      ],
+      "step": 17
+    },
+    {
+      "kind": "reuse",
+      "bar": 11,
+      "beat": "1",
+      "onset": 0,
+      "pitch": null,
+      "length": null,
+      "eighths": 8,
+      "note": "bar 11 repeats bar 3: phrase A' repeats A",
+      "noteIndices": [
+        19,
+        20
+      ],
+      "step": 18
+    },
+    {
+      "kind": "reuse",
+      "bar": 12,
+      "beat": "1",
+      "onset": 0,
+      "pitch": null,
+      "length": null,
+      "eighths": 8,
+      "note": "bar 12 repeats bar 4: phrase A' repeats A",
+      "noteIndices": [
+        21,
+        22
+      ],
+      "step": 19
+    },
+    {
+      "kind": "reuse",
+      "bar": 13,
+      "beat": "1",
+      "onset": 0,
+      "pitch": null,
+      "length": null,
+      "eighths": 8,
+      "note": "bar 13 repeats bar 5: phrase A' repeats A",
+      "noteIndices": [
+        23,
+        24
+      ],
+      "step": 20
+    },
+    {
+      "kind": "reuse",
+      "bar": 14,
+      "beat": "1",
+      "onset": 0,
+      "pitch": null,
+      "length": null,
+      "eighths": 8,
+      "note": "bar 14 repeats bar 6: phrase A' repeats A",
+      "noteIndices": [
+        25,
+        26
+      ],
+      "step": 21
+    },
+    {
+      "kind": "reuse",
+      "bar": 15,
+      "beat": "1",
+      "onset": 0,
+      "pitch": null,
+      "length": null,
+      "eighths": 8,
+      "note": "bar 15 repeats bar 7: phrase A' repeats A",
+      "noteIndices": [
+        27,
+        28
+      ],
+      "step": 22
+    },
+    {
+      "kind": "forced",
+      "bar": 16,
+      "beat": "1",
+      "onset": 0,
+      "pitch": "A4",
+      "length": "whole",
+      "eighths": 8,
+      "note": "full cadence: A4, the tonic, held for the bar",
+      "noteIndices": [
+        29
+      ],
+      "step": 23
+    }
+  ],
+  "setupCall": null,
+  "stats": {
+    "calls": 14,
+    "inputTokens": 22750,
+    "outputTokens": 2312,
+    "ms": 4261,
+    "costUsd": 0.0009555000000000001,
+    "jevSteps": 14,
+    "chordCalls": 0,
+    "chordSteps": 0,
+    "forcedSteps": 2,
+    "reusedBars": 7,
+    "fallbacks": 0,
+    "agreement": 0.7142857142857143,
+    "chordAgreement": null,
+    "meanConfidence": 0.5028571428571429
+  },
+  "abc": "X:1\nT:Wistful, looking back\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=92\nK:Am\n\"Am\"C4 E4 | \"F\"F4 A4 | \"C\"G4 E4 | \"G\"G4 B4 |\n\"Am\"A4 E4 | \"F\"F4 A4 | \"C\"G4 E4 | \"G\"E8 |\n\"Am\"C4 E4 | \"F\"F4 A4 | \"C\"G4 E4 | \"G\"G4 B4 |\n\"Am\"A4 E4 | \"F\"F4 A4 | \"C\"G4 E4 | \"G\"A8 |]\n"
+}

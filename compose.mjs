@@ -16,18 +16,29 @@ const { toAbc } = await import("./lib/abc.js");
 const { renderPage } = await import("./lib/page.js");
 const { backend } = await import("./lib/jev.js");
 
+const FLAGS = new Set(["quiet", "sevenths"]);
+const VALUES = new Set(["key", "mode", "tempo", "form", "mood", "chords", "order", "seed", "title", "out", "name"]);
+const fail = (msg) => { console.error(msg); process.exit(2); };
 const args = {};
 for (let i = 2; i < process.argv.length; i++) {
   const a = process.argv[i];
   if (a === "--help" || a === "-h") { console.log(fs.readFileSync(new URL(import.meta.url)).toString().split("\n").slice(1, 9).map((l) => l.replace(/^\/\/ ?/, "")).join("\n")); process.exit(0); }
-  if (a.startsWith("--")) { const k = a.slice(2); const v = process.argv[i + 1]; if (v == null || v.startsWith("--")) args[k] = true; else { args[k] = v; i++; } }
+  if (!a.startsWith("--")) fail(`unexpected argument "${a}" (options start with --; see --help)`);
+  const k = a.slice(2);
+  if (FLAGS.has(k)) { args[k] = true; continue; }
+  if (!VALUES.has(k)) fail(`unknown option --${k} (see --help)`);
+  const v = process.argv[i + 1];
+  if (v == null || v.startsWith("--")) fail(`--${k} needs a value`);
+  args[k] = v; i++;
 }
+if (args.seed != null && !Number.isFinite(Number(args.seed))) fail(`--seed must be a number, got "${args.seed}"`);
+if (args.tempo != null && !Number.isFinite(Number(args.tempo))) fail(`--tempo must be a number, got "${args.tempo}"`);
 const opts = {
   key: args.key ?? "C", mode: args.mode, tempo: args.tempo, form: args.form, mood: args.mood,
   chords: args.chords ?? "jev", order: args.order ?? "chords-first", sevenths: args.sevenths === true ? true : undefined,
   seed: args.seed ?? Math.floor(Math.random() * 9000) + 1000, title: args.title,
 };
-if (opts.form && opts.form !== "auto" && !FORMS[opts.form]) { console.error(`unknown form "${opts.form}"; one of ${Object.keys(FORMS).join(", ")}, or auto`); process.exit(2); }
+if (opts.form && opts.form !== "auto" && !Object.hasOwn(FORMS, opts.form)) fail(`unknown form "${opts.form}"; one of ${Object.keys(FORMS).join(", ")}, or auto`);
 if (!ORDERS.includes(opts.order)) { console.error(`unknown order "${opts.order}"; one of ${ORDERS.join(", ")}`); process.exit(2); }
 const be = backend(process.env);
 const outDir = args.out ?? "out";
