@@ -13,8 +13,10 @@ Built with Claude **Fable 5.1** in one afternoon, for fun.
 
 ## Live
 
-- **https://beingcognitive.github.io/jev-songwriter/** — five tunes, each with a score, a player, and
-  “Watch it being built in Jev's real time”.
+Five tunes, each with a score, a player, and “Watch it being built in Jev's real time”:
+
+- **https://jev-songwriter.chardonn.ai**
+- https://jev-songwriter.pages.dev (Cloudflare Pages) · https://beingcognitive.github.io/jev-songwriter/ (GitHub Pages)
 
 ## Five tunes
 
