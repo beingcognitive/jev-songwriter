@@ -37,17 +37,6 @@ real time, one call at a time**, with the probabilities and the raw response bes
   </tr>
 </table>
 
-## The prompt that started it
-
-> Take a quick look at jev-go, only to figure out what Jev is. Jev is good at returning reliable outputs.
-> So I think we can use Jev as a songwriter, just for fun.
->
-> Nah, I'm not talking about the lyrics. It can generate like `A3-B2-C5-F7`, with length or pause marked.
-
-Then, over the afternoon: *“shouldn't we input the song mood thing to the chord settings?”*, *“Jev writes chord,
-melody, chord, melody, like you did, with some repeat?”*, *“It would be fun to re-display how each song was built,
-with animation, every time a Jev call succeeds, even reflecting the response time.”*
-
 ## How it works
 
 ```mermaid
