@@ -71,8 +71,27 @@ pre.small { max-height: 320px; overflow: auto; }
 button { font: inherit; padding: 6px 12px; border-radius: 8px; border: 1px solid var(--line); background: var(--card); color: var(--ink); cursor: pointer; }
 button:hover { border-color: var(--accent); } button:disabled { opacity: .5; cursor: default; }
 button.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
-.abcjs-inline-audio { background: var(--accent-soft) !important; border-radius: 8px; }
-.abcjs-inline-audio .abcjs-btn { fill: var(--ink); }
+/* The abcjs transport, restyled for this page: card surface, filled play button, dark icons, slim track. */
+.transport { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
+.transport > div { flex: 1 1 420px; min-width: 0; }
+.transport .abcjs-inline-audio { width: 100%; height: 44px; padding: 0 8px 0 6px; border-radius: 10px; background: var(--card) !important; border: 1px solid var(--line); }
+.abcjs-inline-audio .abcjs-btn { width: 34px; height: 34px; padding: 8px 6px; margin: 0 2px 0 0; border-radius: 8px; border: 1px solid transparent; }
+.abcjs-inline-audio .abcjs-btn g { fill: var(--ink) !important; stroke: var(--ink) !important; }
+.abcjs-inline-audio .abcjs-btn:hover { background: var(--accent-soft); }
+.abcjs-inline-audio .abcjs-btn:hover g { fill: var(--accent) !important; stroke: var(--accent) !important; }
+.abcjs-inline-audio .abcjs-midi-start { background: var(--accent) !important; border-radius: 50%; margin: 0 8px 0 2px; }
+.abcjs-inline-audio .abcjs-midi-start g, .abcjs-inline-audio .abcjs-midi-start:hover g { fill: #fff !important; stroke: #fff !important; }
+.abcjs-inline-audio .abcjs-midi-loop.abcjs-pushed, .abcjs-inline-audio .abcjs-midi-reset.abcjs-pushed { background: var(--accent-soft) !important; border-color: var(--accent) !important; }
+.abcjs-inline-audio .abcjs-midi-progress-background { height: 6px; border: 0 !important; background: var(--line) !important; margin: 0 12px; border-radius: 3px; }
+.abcjs-inline-audio .abcjs-midi-progress-indicator { width: 16px; height: 16px; margin-left: -8px; top: -5px; border-radius: 50%; background: var(--accent) !important; box-shadow: 0 0 0 3px var(--card); }
+.abcjs-inline-audio .abcjs-midi-clock { color: var(--ink) !important; font: 13px/1 ui-monospace, SFMono-Regular, Menlo, monospace; font-variant-numeric: tabular-nums; margin: 0 2px 0 4px; }
+.abcjs-inline-audio .abcjs-total { color: var(--muted); font: 13px/1 ui-monospace, SFMono-Regular, Menlo, monospace; font-variant-numeric: tabular-nums; margin: 0 12px 0 4px; }
+.abcjs-inline-audio .abcjs-tempo-wrapper { color: var(--muted) !important; font-size: 12px; display: flex; align-items: center; gap: 4px; white-space: nowrap; }
+.abcjs-inline-audio .abcjs-tempo-wrapper::before { content: "tempo"; }
+.abcjs-inline-audio .abcjs-midi-tempo { width: 46px; border: 1px solid var(--line) !important; border-radius: 6px; background: var(--bg) !important; color: var(--ink) !important; padding: 3px 4px; font-size: 12px; text-align: right; }
+.transport .pill { display: inline-flex; align-items: center; gap: 8px; padding: 0 12px; height: 44px; border: 1px solid var(--line); border-radius: 10px; background: var(--card); color: var(--ink); font-size: 14px; cursor: pointer; user-select: none; white-space: nowrap; }
+.transport .pill input { accent-color: var(--accent); width: 16px; height: 16px; margin: 0; }
+@media (max-width: 640px) { .abcjs-inline-audio .abcjs-tempo-wrapper { display: none; } }
 #audio.off { opacity: .45; pointer-events: none; }
 @media (max-width: 640px) { th:nth-child(9), td:nth-child(9) { display: none; } }
 </style>
@@ -99,11 +118,11 @@ button.primary { background: var(--accent); color: #fff; border-color: var(--acc
     <div class="sheet">
       <div class="think"><div class="think-bar"><i id="think-fill"></i></div><span id="think-ms"></span></div>
       <div id="paper"></div>
-      <div id="audio"></div>
-      <div class="row">
-        <label><input type="checkbox" id="chords" checked> play the chords under the melody</label>
-        <span id="audio-note"></span>
+      <div class="transport">
+        <div id="audio"></div>
+        <label class="pill" title="abcjs plays the chord symbols as an accompaniment"><input type="checkbox" id="chords" checked> chords</label>
       </div>
+      <p class="meta" id="audio-note"></p>
     </div>
     <aside class="call" id="answer" hidden>
       <h3>Raw response <span class="when" id="res-when"></span></h3>
@@ -140,6 +159,14 @@ const $ = (id) => document.getElementById(id);
 const pct = (x) => (x == null ? "–" : Math.round(x * 100) + "%");
 const fmtMs = (ms) => (ms >= 1000 ? (ms / 1000).toFixed(1) + " s" : Math.round(ms) + " ms");
 const PRICE = 0.042;
+const fmtClock = (s) => Math.floor(s / 60) + ":" + String(Math.round(s % 60)).padStart(2, "0");
+function addTotal(container, seconds) {
+  const clock = container.querySelector(".abcjs-midi-clock"); if (!clock) return;
+  const total = document.createElement("span"); total.className = "abcjs-total"; clock.after(total);
+  const tempo = container.querySelector(".abcjs-midi-tempo");
+  const update = () => { const pctv = tempo ? Number(tempo.value) || 100 : 100; total.textContent = "/ " + fmtClock((seconds * 100) / pctv); };
+  update(); if (tempo) tempo.addEventListener("change", update);
+}
 // Every string that reaches innerHTML goes through this, including option keys, which come from the API response.
 const h = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 $("abc").textContent = DATA.abc;
@@ -221,6 +248,7 @@ const loadAudio = () => {
 if (ABCJS.synth.supportsAudio()) {
   synthControl = new ABCJS.synth.SynthController();
   synthControl.load("#audio", cursorControl, { displayLoop: true, displayRestart: true, displayPlay: true, displayProgress: true, displayWarp: true });
+  addTotal($("audio"), DATA.seconds);
   loadAudio();
   $("chords").onchange = () => { if (k === N) loadAudio(); }; // a partial score is never loaded; step N reloads it
   // Never play without a click: pause when the page is hidden or left, and come back paused if the browser

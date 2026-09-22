@@ -26,8 +26,27 @@ nav { display: flex; gap: 14px; flex-wrap: wrap; margin: 18px 0 8px; font-size: 
 .paper svg { max-width: 100%; } .paper { margin-top: 8px; }
 .paper .abcjs-note.hl, .paper .abcjs-rest.hl, .paper .hl path { fill: var(--hl) !important; stroke: var(--hl) !important; }
 .paper .abcjs-cursor { stroke: var(--accent); stroke-width: 2.5; opacity: .85; }
-.abcjs-inline-audio { background: var(--accent-soft) !important; border-radius: 8px; }
-.abcjs-inline-audio .abcjs-btn { fill: var(--ink); }
+/* The abcjs transport, restyled for this page: card surface, filled play button, dark icons, slim track. */
+.transport { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
+.transport > div { flex: 1 1 420px; min-width: 0; }
+.transport .abcjs-inline-audio { width: 100%; height: 44px; padding: 0 8px 0 6px; border-radius: 10px; background: var(--card) !important; border: 1px solid var(--line); }
+.abcjs-inline-audio .abcjs-btn { width: 34px; height: 34px; padding: 8px 6px; margin: 0 2px 0 0; border-radius: 8px; border: 1px solid transparent; }
+.abcjs-inline-audio .abcjs-btn g { fill: var(--ink) !important; stroke: var(--ink) !important; }
+.abcjs-inline-audio .abcjs-btn:hover { background: var(--accent-soft); }
+.abcjs-inline-audio .abcjs-btn:hover g { fill: var(--accent) !important; stroke: var(--accent) !important; }
+.abcjs-inline-audio .abcjs-midi-start { background: var(--accent) !important; border-radius: 50%; margin: 0 8px 0 2px; }
+.abcjs-inline-audio .abcjs-midi-start g, .abcjs-inline-audio .abcjs-midi-start:hover g { fill: #fff !important; stroke: #fff !important; }
+.abcjs-inline-audio .abcjs-midi-loop.abcjs-pushed, .abcjs-inline-audio .abcjs-midi-reset.abcjs-pushed { background: var(--accent-soft) !important; border-color: var(--accent) !important; }
+.abcjs-inline-audio .abcjs-midi-progress-background { height: 6px; border: 0 !important; background: var(--line) !important; margin: 0 12px; border-radius: 3px; }
+.abcjs-inline-audio .abcjs-midi-progress-indicator { width: 16px; height: 16px; margin-left: -8px; top: -5px; border-radius: 50%; background: var(--accent) !important; box-shadow: 0 0 0 3px var(--card); }
+.abcjs-inline-audio .abcjs-midi-clock { color: var(--ink) !important; font: 13px/1 ui-monospace, SFMono-Regular, Menlo, monospace; font-variant-numeric: tabular-nums; margin: 0 2px 0 4px; }
+.abcjs-inline-audio .abcjs-total { color: var(--muted); font: 13px/1 ui-monospace, SFMono-Regular, Menlo, monospace; font-variant-numeric: tabular-nums; margin: 0 12px 0 4px; }
+.abcjs-inline-audio .abcjs-tempo-wrapper { color: var(--muted) !important; font-size: 12px; display: flex; align-items: center; gap: 4px; white-space: nowrap; }
+.abcjs-inline-audio .abcjs-tempo-wrapper::before { content: "tempo"; }
+.abcjs-inline-audio .abcjs-midi-tempo { width: 46px; border: 1px solid var(--line) !important; border-radius: 6px; background: var(--bg) !important; color: var(--ink) !important; padding: 3px 4px; font-size: 12px; text-align: right; }
+.transport .pill { display: inline-flex; align-items: center; gap: 8px; padding: 0 12px; height: 44px; border: 1px solid var(--line); border-radius: 10px; background: var(--card); color: var(--ink); font-size: 14px; cursor: pointer; user-select: none; white-space: nowrap; }
+.transport .pill input { accent-color: var(--accent); width: 16px; height: 16px; margin: 0; }
+@media (max-width: 640px) { .abcjs-inline-audio .abcjs-tempo-wrapper { display: none; } }
 .how { max-width: 760px; } .how li { margin-bottom: 8px; }
 code, pre { font: 14px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; } pre { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; overflow-x: auto; }
 table { border-collapse: collapse; font-size: 14px; } td, th { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--line); } th { color: var(--muted); font-weight: 600; }
@@ -56,7 +75,7 @@ a { color: var(--accent); }
     <a class="button" href="demos/live-jazz.html">Watch it being built →</a>
   </div>
   <div class="paper" id="paper-0"></div>
-  <div class="audio" id="audio-0"></div>
+  <div class="transport"><div class="audio" id="audio-0"></div></div>
 </article>
 
 <article class="demo" id="live-bossa">
@@ -71,7 +90,7 @@ a { color: var(--accent); }
     <a class="button" href="demos/live-bossa.html">Watch it being built →</a>
   </div>
   <div class="paper" id="paper-1"></div>
-  <div class="audio" id="audio-1"></div>
+  <div class="transport"><div class="audio" id="audio-1"></div></div>
 </article>
 
 <article class="demo" id="live-mood">
@@ -86,7 +105,7 @@ a { color: var(--accent); }
     <a class="button" href="demos/live-mood.html">Watch it being built →</a>
   </div>
   <div class="paper" id="paper-2"></div>
-  <div class="audio" id="audio-2"></div>
+  <div class="transport"><div class="audio" id="audio-2"></div></div>
 </article>
 
 <article class="demo" id="demo-morning">
@@ -101,7 +120,7 @@ a { color: var(--accent); }
     <a class="button" href="demos/demo-morning.html">Watch it being built →</a>
   </div>
   <div class="paper" id="paper-3"></div>
-  <div class="audio" id="audio-3"></div>
+  <div class="transport"><div class="audio" id="audio-3"></div></div>
 </article>
 
 <article class="demo" id="demo-lullaby">
@@ -116,7 +135,7 @@ a { color: var(--accent); }
     <a class="button" href="demos/demo-lullaby.html">Watch it being built →</a>
   </div>
   <div class="paper" id="paper-4"></div>
-  <div class="audio" id="audio-4"></div>
+  <div class="transport"><div class="audio" id="audio-4"></div></div>
 </article>
 
 <article class="demo" id="demo-fanfare">
@@ -131,7 +150,7 @@ a { color: var(--accent); }
     <a class="button" href="demos/demo-fanfare.html">Watch it being built →</a>
   </div>
   <div class="paper" id="paper-5"></div>
-  <div class="audio" id="audio-5"></div>
+  <div class="transport"><div class="audio" id="audio-5"></div></div>
 </article>
 
 <article class="demo" id="demo-pop-loop">
@@ -146,7 +165,7 @@ a { color: var(--accent); }
     <a class="button" href="demos/demo-pop-loop.html">Watch it being built →</a>
   </div>
   <div class="paper" id="paper-6"></div>
-  <div class="audio" id="audio-6"></div>
+  <div class="transport"><div class="audio" id="audio-6"></div></div>
 </article>
 
 <article class="demo" id="demo-wistful-loop">
@@ -161,7 +180,7 @@ a { color: var(--accent); }
     <a class="button" href="demos/demo-wistful-loop.html">Watch it being built →</a>
   </div>
   <div class="paper" id="paper-7"></div>
-  <div class="audio" id="audio-7"></div>
+  <div class="transport"><div class="audio" id="audio-7"></div></div>
 </article>
 
 <article class="demo" id="demo-ii-v-i">
@@ -176,7 +195,7 @@ a { color: var(--accent); }
     <a class="button" href="demos/demo-ii-v-i.html">Watch it being built →</a>
   </div>
   <div class="paper" id="paper-8"></div>
-  <div class="audio" id="audio-8"></div>
+  <div class="transport"><div class="audio" id="audio-8"></div></div>
 </article>
 
 <article class="demo" id="demo-bossa-given">
@@ -191,7 +210,7 @@ a { color: var(--accent); }
     <a class="button" href="demos/demo-bossa-given.html">Watch it being built →</a>
   </div>
   <div class="paper" id="paper-9"></div>
-  <div class="audio" id="audio-9"></div>
+  <div class="transport"><div class="audio" id="audio-9"></div></div>
 </article>
 
 <section class="how">
@@ -232,7 +251,15 @@ npm run serve                                             # http://localhost:322
 </main>
 <script src="https://cdn.jsdelivr.net/npm/abcjs@6/dist/abcjs-basic-min.js"></script>
 <script>
-const DEMOS = [{"abc":"X:1\nT:Jazz\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=120\nK:F\n\"Fmaj7\"F2A3 c2A | \"Gm7\"G2F2 G3F | \"C7\"G2c2 B3c | \"Fmaj7\"A2c2 A3F |\n\"Gm7\"G2F2 G3F | \"C7\"G2c2 B3c | \"Bbmaj7\"B2A2 B3A | \"C7\"c8 |\n\"Fmaj7\"F2A3 c2A | \"Gm7\"G2F2 G3F | \"C7\"G2c2 B3c | \"Fmaj7\"A2c2 A3F |\n\"Gm7\"G2F2 G3F | \"C7\"G2c2 B3c | \"Bbmaj7\"B2A2 B3A | \"Fmaj7\"F8 |\n\"Gm7\"G2B2 G3F | \"C7\"G2c2 B3c | \"C7\"B2c2 B3c | \"Fmaj7\"A2c2 A2zE |\n\"Gm7\"G2B2 G2BG | \"C7\"c2B2 c2Bc | \"Bbmaj7\"B2A2 B2AB | \"C7\"c8 |\n\"Fmaj7\"F2A3 c2A | \"Gm7\"G2F2 G3F | \"C7\"G2c2 B3c | \"Fmaj7\"A2c2 A3F |\n\"Gm7\"G2F2 G3F | \"C7\"G2c2 B3c | \"Bbmaj7\"B2A2 B3A | \"Fmaj7\"F8 |]\n"},{"abc":"X:1\nT:Bossa nova\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=88\nK:Cm\n\"Cm7\"C4 E3C | \"Fm7\"E3F3 EF | \"Gm7\"G3F3 GF | \"Cm7\"E3G3 EG |\n\"Fm7\"E3F3 EF | \"Gm7\"G3F3 GF | \"Fm7\"E3F3 EF | \"Gm7\"G8 |\n\"Cm7\"C4 E3C | \"Fm7\"E3F3 EF | \"Gm7\"G3F3 GF | \"Cm7\"E3G3 EG |\n\"Fm7\"E3F3 EF | \"Gm7\"G3F3 GF | \"Fm7\"E3F3 EF | \"Cm7\"C8 |]\n"},{"abc":"X:1\nT:Wistful, late night\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=72\nK:Am\n\"Am\"C4 E4 | \"Dm\"D4 F4 | \"Em\"E4 G4 | \"Am\"A4 E4 |\n\"Dm\"F4 D4 | \"Em\"E4 G4 | \"Dm\"F4 D4 | \"Em\"E8 |\n\"Am\"C4 E4 | \"Dm\"D4 F4 | \"Em\"E4 G4 | \"Am\"A4 E4 |\n\"Dm\"F4 D4 | \"Em\"E4 G4 | \"Dm\"F4 D4 | \"Am\"A,8 |]\n"},{"abc":"X:1\nT:Bright and hopeful, a morning walk\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=88\nK:C\n\"C\"C2E2 G2EG | \"F\"F2A2 F2AF | \"C\"G2E2 G2EG | \"F\"F2A2 F2AF |\n\"C\"G2E2 G2EG | \"F\"F2A2 F2AF | \"F\"A2F2 A2FA | \"G\"G8 |\n\"C\"C2E2 G2EG | \"F\"F2A2 F2AF | \"C\"G2E2 G2EG | \"F\"F2A2 F2AF |\n\"C\"G2E2 G2EG | \"F\"F2A2 F2AF | \"F\"A2F2 A2FA | \"C\"c8 |]\n"},{"abc":"X:1\nT:A lullaby, soft and slow\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=72\nK:Gm\n\"Gm\"G,4 B,4 | \"Cm\"C4 G,4 | \"Cm\"C4 G,4 | \"Dm\"D8 |\n\"Gm\"G,4 B,4 | \"Cm\"C4 G,4 | \"Cm\"C4 G,4 | \"Gm\"G,8 |]\n"},{"abc":"X:1\nT:Triumphant, a fanfare\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=140\nK:D\n\"D\"A2d2 f4 | \"G\"d2B2 d4 | \"D\"A4 d4 | \"G\"B2d2 B4 |\n\"D\"A2d2 A4 | \"A\"c4 A4 | \"G\"B2d4 Bd | \"A\"A8 |\n\"D\"A2d2 f4 | \"G\"d2B2 d4 | \"D\"A4 d4 | \"G\"B2d2 B4 |\n\"D\"A2d2 A4 | \"A\"c4 A4 | \"G\"B2d4 Bd | \"D\"d8 |]\n"},{"abc":"X:1\nT:A bright pop chorus everyone can sing\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=120\nK:C\n\"C\"C2E2 G2EC | \"G\"G2B2 G2BG | \"Am\"A2c2 A2cA | \"F\"F2A2 F2AF |\n\"C\"G2E2 G2EG | \"G\"B2G2 B2GB | \"Am\"A2E2 A2EA | \"F\"G8 |\n\"C\"C2E2 G2EC | \"G\"G2B2 G2BG | \"Am\"A2c2 A2cA | \"F\"F2A2 F2AF |\n\"C\"G2E2 G2EG | \"G\"B2G2 B2GB | \"Am\"A2E2 A2EA | \"F\"c8 |\n\"C\"G2E2 G2EG | \"G\"B2G2 B2GB | \"Am\"A2c2 A2cA | \"F\"F2A2 F2AF |\n\"C\"G2E2 G2EG | \"G\"B2G2 B2GB | \"Am\"A2E2 A2EA | \"F\"G8 |\n\"C\"C2E2 G2EC | \"G\"G2B2 G2BG | \"Am\"A2c2 A2cA | \"F\"F2A2 F2AF |\n\"C\"G2E2 G2EG | \"G\"B2G2 B2GB | \"Am\"A2E2 A2EA | \"F\"c8 |]\n"},{"abc":"X:1\nT:Wistful, looking back\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=92\nK:Am\n\"Am\"C4 E4 | \"F\"F4 A4 | \"C\"G4 E4 | \"G\"G4 B4 |\n\"Am\"A4 E4 | \"F\"F4 A4 | \"C\"G4 E4 | \"G\"E8 |\n\"Am\"C4 E4 | \"F\"F4 A4 | \"C\"G4 E4 | \"G\"G4 B4 |\n\"Am\"A4 E4 | \"F\"F4 A4 | \"C\"G4 E4 | \"G\"A8 |]\n"},{"abc":"X:1\nT:Jazz\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=132\nK:C\n\"Dm7\"D2F3 D2z | \"G7\"GF2G2 F2G | \"Cmaj7\"EG2B G3B | \"Cmaj7\"GB2c Bc2B |\n\"Dm7\"AF2A FD2F | \"G7\"GF2G BG2B | \"Cmaj7\"zB2c2 B2z | \"Cmaj7\"G8 |\n\"Dm7\"D2F3 D2z | \"G7\"GF2G2 F2G | \"Cmaj7\"EG2B G3B | \"Cmaj7\"GB2c Bc2B |\n\"Dm7\"AF2A FD2F | \"G7\"GF2G BG2B | \"Cmaj7\"zB2c2 B2z | \"Cmaj7\"c8 |]\n"},{"abc":"X:1\nT:Bossa nova\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=120\nK:F\n\"Fmaj7\"A4 c4 | \"Gm7\"B4 G4 | \"C7\"B4 c4 | \"Fmaj7\"A4 c4 |\n\"Bbmaj7\"A4 B4 | \"Am7\"A4 G4 | \"Gm7\"B4 G4 | \"C7\"c8 |\n\"Fmaj7\"A4 c4 | \"Gm7\"B4 G4 | \"C7\"B4 c4 | \"Fmaj7\"A4 c4 |\n\"Bbmaj7\"A4 B4 | \"Am7\"A4 G4 | \"Gm7\"B4 G4 | \"C7\"F8 |\n\"Fmaj7\"A4 F4 | \"Gm7\"G4 F4 | \"C7\"E4 G4 | \"Fmaj7\"A4 F4 |\n\"Bbmaj7\"A4 B4 | \"Am7\"A4 G4 | \"Gm7\"B4 G4 | \"C7\"c8 |\n\"Fmaj7\"A4 c4 | \"Gm7\"B4 G4 | \"C7\"B4 c4 | \"Fmaj7\"A4 c4 |\n\"Bbmaj7\"A4 B4 | \"Am7\"A4 G4 | \"Gm7\"B4 G4 | \"C7\"F8 |]\n"}];
+const DEMOS = [{"abc":"X:1\nT:Jazz\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=120\nK:F\n\"Fmaj7\"F2A3 c2A | \"Gm7\"G2F2 G3F | \"C7\"G2c2 B3c | \"Fmaj7\"A2c2 A3F |\n\"Gm7\"G2F2 G3F | \"C7\"G2c2 B3c | \"Bbmaj7\"B2A2 B3A | \"C7\"c8 |\n\"Fmaj7\"F2A3 c2A | \"Gm7\"G2F2 G3F | \"C7\"G2c2 B3c | \"Fmaj7\"A2c2 A3F |\n\"Gm7\"G2F2 G3F | \"C7\"G2c2 B3c | \"Bbmaj7\"B2A2 B3A | \"Fmaj7\"F8 |\n\"Gm7\"G2B2 G3F | \"C7\"G2c2 B3c | \"C7\"B2c2 B3c | \"Fmaj7\"A2c2 A2zE |\n\"Gm7\"G2B2 G2BG | \"C7\"c2B2 c2Bc | \"Bbmaj7\"B2A2 B2AB | \"C7\"c8 |\n\"Fmaj7\"F2A3 c2A | \"Gm7\"G2F2 G3F | \"C7\"G2c2 B3c | \"Fmaj7\"A2c2 A3F |\n\"Gm7\"G2F2 G3F | \"C7\"G2c2 B3c | \"Bbmaj7\"B2A2 B3A | \"Fmaj7\"F8 |]\n","seconds":64},{"abc":"X:1\nT:Bossa nova\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=88\nK:Cm\n\"Cm7\"C4 E3C | \"Fm7\"E3F3 EF | \"Gm7\"G3F3 GF | \"Cm7\"E3G3 EG |\n\"Fm7\"E3F3 EF | \"Gm7\"G3F3 GF | \"Fm7\"E3F3 EF | \"Gm7\"G8 |\n\"Cm7\"C4 E3C | \"Fm7\"E3F3 EF | \"Gm7\"G3F3 GF | \"Cm7\"E3G3 EG |\n\"Fm7\"E3F3 EF | \"Gm7\"G3F3 GF | \"Fm7\"E3F3 EF | \"Cm7\"C8 |]\n","seconds":44},{"abc":"X:1\nT:Wistful, late night\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=72\nK:Am\n\"Am\"C4 E4 | \"Dm\"D4 F4 | \"Em\"E4 G4 | \"Am\"A4 E4 |\n\"Dm\"F4 D4 | \"Em\"E4 G4 | \"Dm\"F4 D4 | \"Em\"E8 |\n\"Am\"C4 E4 | \"Dm\"D4 F4 | \"Em\"E4 G4 | \"Am\"A4 E4 |\n\"Dm\"F4 D4 | \"Em\"E4 G4 | \"Dm\"F4 D4 | \"Am\"A,8 |]\n","seconds":53},{"abc":"X:1\nT:Bright and hopeful, a morning walk\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=88\nK:C\n\"C\"C2E2 G2EG | \"F\"F2A2 F2AF | \"C\"G2E2 G2EG | \"F\"F2A2 F2AF |\n\"C\"G2E2 G2EG | \"F\"F2A2 F2AF | \"F\"A2F2 A2FA | \"G\"G8 |\n\"C\"C2E2 G2EG | \"F\"F2A2 F2AF | \"C\"G2E2 G2EG | \"F\"F2A2 F2AF |\n\"C\"G2E2 G2EG | \"F\"F2A2 F2AF | \"F\"A2F2 A2FA | \"C\"c8 |]\n","seconds":44},{"abc":"X:1\nT:A lullaby, soft and slow\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=72\nK:Gm\n\"Gm\"G,4 B,4 | \"Cm\"C4 G,4 | \"Cm\"C4 G,4 | \"Dm\"D8 |\n\"Gm\"G,4 B,4 | \"Cm\"C4 G,4 | \"Cm\"C4 G,4 | \"Gm\"G,8 |]\n","seconds":27},{"abc":"X:1\nT:Triumphant, a fanfare\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=140\nK:D\n\"D\"A2d2 f4 | \"G\"d2B2 d4 | \"D\"A4 d4 | \"G\"B2d2 B4 |\n\"D\"A2d2 A4 | \"A\"c4 A4 | \"G\"B2d4 Bd | \"A\"A8 |\n\"D\"A2d2 f4 | \"G\"d2B2 d4 | \"D\"A4 d4 | \"G\"B2d2 B4 |\n\"D\"A2d2 A4 | \"A\"c4 A4 | \"G\"B2d4 Bd | \"D\"d8 |]\n","seconds":27},{"abc":"X:1\nT:A bright pop chorus everyone can sing\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=120\nK:C\n\"C\"C2E2 G2EC | \"G\"G2B2 G2BG | \"Am\"A2c2 A2cA | \"F\"F2A2 F2AF |\n\"C\"G2E2 G2EG | \"G\"B2G2 B2GB | \"Am\"A2E2 A2EA | \"F\"G8 |\n\"C\"C2E2 G2EC | \"G\"G2B2 G2BG | \"Am\"A2c2 A2cA | \"F\"F2A2 F2AF |\n\"C\"G2E2 G2EG | \"G\"B2G2 B2GB | \"Am\"A2E2 A2EA | \"F\"c8 |\n\"C\"G2E2 G2EG | \"G\"B2G2 B2GB | \"Am\"A2c2 A2cA | \"F\"F2A2 F2AF |\n\"C\"G2E2 G2EG | \"G\"B2G2 B2GB | \"Am\"A2E2 A2EA | \"F\"G8 |\n\"C\"C2E2 G2EC | \"G\"G2B2 G2BG | \"Am\"A2c2 A2cA | \"F\"F2A2 F2AF |\n\"C\"G2E2 G2EG | \"G\"B2G2 B2GB | \"Am\"A2E2 A2EA | \"F\"c8 |]\n","seconds":64},{"abc":"X:1\nT:Wistful, looking back\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=92\nK:Am\n\"Am\"C4 E4 | \"F\"F4 A4 | \"C\"G4 E4 | \"G\"G4 B4 |\n\"Am\"A4 E4 | \"F\"F4 A4 | \"C\"G4 E4 | \"G\"E8 |\n\"Am\"C4 E4 | \"F\"F4 A4 | \"C\"G4 E4 | \"G\"G4 B4 |\n\"Am\"A4 E4 | \"F\"F4 A4 | \"C\"G4 E4 | \"G\"A8 |]\n","seconds":42},{"abc":"X:1\nT:Jazz\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=132\nK:C\n\"Dm7\"D2F3 D2z | \"G7\"GF2G2 F2G | \"Cmaj7\"EG2B G3B | \"Cmaj7\"GB2c Bc2B |\n\"Dm7\"AF2A FD2F | \"G7\"GF2G BG2B | \"Cmaj7\"zB2c2 B2z | \"Cmaj7\"G8 |\n\"Dm7\"D2F3 D2z | \"G7\"GF2G2 F2G | \"Cmaj7\"EG2B G3B | \"Cmaj7\"GB2c Bc2B |\n\"Dm7\"AF2A FD2F | \"G7\"GF2G BG2B | \"Cmaj7\"zB2c2 B2z | \"Cmaj7\"c8 |]\n","seconds":29},{"abc":"X:1\nT:Bossa nova\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=120\nK:F\n\"Fmaj7\"A4 c4 | \"Gm7\"B4 G4 | \"C7\"B4 c4 | \"Fmaj7\"A4 c4 |\n\"Bbmaj7\"A4 B4 | \"Am7\"A4 G4 | \"Gm7\"B4 G4 | \"C7\"c8 |\n\"Fmaj7\"A4 c4 | \"Gm7\"B4 G4 | \"C7\"B4 c4 | \"Fmaj7\"A4 c4 |\n\"Bbmaj7\"A4 B4 | \"Am7\"A4 G4 | \"Gm7\"B4 G4 | \"C7\"F8 |\n\"Fmaj7\"A4 F4 | \"Gm7\"G4 F4 | \"C7\"E4 G4 | \"Fmaj7\"A4 F4 |\n\"Bbmaj7\"A4 B4 | \"Am7\"A4 G4 | \"Gm7\"B4 G4 | \"C7\"c8 |\n\"Fmaj7\"A4 c4 | \"Gm7\"B4 G4 | \"C7\"B4 c4 | \"Fmaj7\"A4 c4 |\n\"Bbmaj7\"A4 B4 | \"Am7\"A4 G4 | \"Gm7\"B4 G4 | \"C7\"F8 |]\n","seconds":64}];
+const fmtClock = (s) => Math.floor(s / 60) + ":" + String(Math.round(s % 60)).padStart(2, "0");
+function addTotal(container, seconds) {
+  const clock = container.querySelector(".abcjs-midi-clock"); if (!clock) return;
+  const total = document.createElement("span"); total.className = "abcjs-total"; clock.after(total);
+  const tempo = container.querySelector(".abcjs-midi-tempo");
+  const update = () => { const pctv = tempo ? Number(tempo.value) || 100 : 100; total.textContent = "/ " + fmtClock((seconds * 100) / pctv); };
+  update(); if (tempo) tempo.addEventListener("change", update);
+}
 const controls = [];
 DEMOS.forEach((d, i) => {
   const visualObj = ABCJS.renderAbc("paper-" + i, d.abc, { responsive: "resize", add_classes: true })[0];
@@ -250,7 +277,8 @@ DEMOS.forEach((d, i) => {
     },
   };
   const sc = new ABCJS.synth.SynthController();
-  sc.load("#audio-" + i, cursor, { displayLoop: true, displayRestart: true, displayPlay: true, displayProgress: true });
+  sc.load("#audio-" + i, cursor, { displayLoop: true, displayRestart: true, displayPlay: true, displayProgress: true, displayWarp: true });
+  addTotal(document.getElementById("audio-" + i), d.seconds);
   sc.setTune(visualObj, false, { chordsOff: false }).catch(() => {});
   controls.push(sc);
 });

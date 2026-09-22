@@ -2,7 +2,7 @@
 // the write-up of how it was built, and a copy of each demo page. Reads demos.json and out/<name>.json; no API calls.
 import fs from "node:fs";
 import path from "node:path";
-import { renderPage, esc, pct, embedJson } from "./lib/page.js";
+import { renderPage, esc, pct, embedJson, TRANSPORT_CSS, TRANSPORT_JS } from "./lib/page.js";
 import { toAbc } from "./lib/abc.js";
 
 // Each demo's trace is kept next to its page in docs/demos/<name>.json, so a fresh clone (out/ is git-ignored)
@@ -40,11 +40,11 @@ const cards = demos.map((d, i) => {
     <a class="button" href="demos/${encodeURIComponent(d.name)}.html">Watch it being built →</a>
   </div>
   <div class="paper" id="paper-${i}"></div>
-  <div class="audio" id="audio-${i}"></div>
+  <div class="transport"><div class="audio" id="audio-${i}"></div></div>
 </article>`;
 }).join("\n");
 
-const data = embedJson(demos.map((d) => ({ abc: d.r.abc })));
+const data = embedJson(demos.map((d) => ({ abc: d.r.abc, seconds: d.r.seconds })));
 const index = `<!doctype html>
 <html lang="en">
 <head>
@@ -73,8 +73,7 @@ nav { display: flex; gap: 14px; flex-wrap: wrap; margin: 18px 0 8px; font-size: 
 .paper svg { max-width: 100%; } .paper { margin-top: 8px; }
 .paper .abcjs-note.hl, .paper .abcjs-rest.hl, .paper .hl path { fill: var(--hl) !important; stroke: var(--hl) !important; }
 .paper .abcjs-cursor { stroke: var(--accent); stroke-width: 2.5; opacity: .85; }
-.abcjs-inline-audio { background: var(--accent-soft) !important; border-radius: 8px; }
-.abcjs-inline-audio .abcjs-btn { fill: var(--ink); }
+${TRANSPORT_CSS}
 .how { max-width: 760px; } .how li { margin-bottom: 8px; }
 code, pre { font: 14px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; } pre { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; overflow-x: auto; }
 table { border-collapse: collapse; font-size: 14px; } td, th { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--line); } th { color: var(--muted); font-weight: 600; }
@@ -131,6 +130,7 @@ npm run serve                                             # http://localhost:322
 <script src="https://cdn.jsdelivr.net/npm/abcjs@6/dist/abcjs-basic-min.js"></script>
 <script>
 const DEMOS = ${data};
+${TRANSPORT_JS}
 const controls = [];
 DEMOS.forEach((d, i) => {
   const visualObj = ABCJS.renderAbc("paper-" + i, d.abc, { responsive: "resize", add_classes: true })[0];
@@ -148,7 +148,8 @@ DEMOS.forEach((d, i) => {
     },
   };
   const sc = new ABCJS.synth.SynthController();
-  sc.load("#audio-" + i, cursor, { displayLoop: true, displayRestart: true, displayPlay: true, displayProgress: true });
+  sc.load("#audio-" + i, cursor, { displayLoop: true, displayRestart: true, displayPlay: true, displayProgress: true, displayWarp: true });
+  addTotal(document.getElementById("audio-" + i), d.seconds);
   sc.setTune(visualObj, false, { chordsOff: false }).catch(() => {});
   controls.push(sc);
 });
