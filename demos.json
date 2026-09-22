@@ -1,18 +1,18 @@
 [
   {
-    "name": "live-jazz",
-    "tag": "Jev wrote everything",
-    "blurb": "Told only “jazz”, Jev chose F major, 120 bpm and AABA, then walked ii–V–I in seventh chords and wrote a rest into the bridge."
-  },
-  {
     "name": "live-mood",
     "tag": "Jev wrote everything",
     "blurb": "“Wistful, late night”: minor at 100% confidence, 72 bpm, an all-minor i–iv–v, two long notes a bar."
   },
   {
-    "name": "live-bossa",
+    "name": "demo-morning",
     "tag": "Jev wrote everything",
-    "blurb": "Told “bossa nova”, Jev split 50/50 on the mode, took C minor, 88 bpm, and leaned the whole tune on dotted off-beat rhythms."
+    "blurb": "“Bright and hopeful, a morning walk”: major at 100% confidence, 88 bpm, a 16-bar period rocking between C and F with one motif carried through."
+  },
+  {
+    "name": "demo-fanfare",
+    "tag": "Jev wrote everything, interleaved",
+    "blurb": "“Triumphant, a fanfare”: D major at 100%, 140 bpm; each bar's chord was decided just before its notes, and the tune opens with the fanfare leap A–D–F#."
   },
   {
     "name": "demo-pop-loop",
