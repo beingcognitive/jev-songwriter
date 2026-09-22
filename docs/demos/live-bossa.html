@@ -277,6 +277,10 @@ let k = N, playing = false, raf = 0, timer = 0, audioReady = true;
 const speed = () => Number($("speed").value);
 const dwell = (ms) => ms / speed();
 $("scrub").max = N; $("scrub").value = N;
+// What a replay costs at each speed: Jev's own latency plus a short beat per step.
+const DWELL_CALL = 120, DWELL_CODE = 100;
+const REPLAY_MS = CALLS.reduce((a, s) => a + (s.latencyMs || 0), 0) + CALLS.length * DWELL_CALL + (N - CALLS.length) * DWELL_CODE;
+for (const o of $("speed").options) o.textContent = (o.value === "1" ? "real time" : o.value + "×") + " · " + fmtClock(REPLAY_MS / 1000 / Number(o.value));
 
 // ABC with only the notes up to index upto and only the chords decided by step kk; the rest of every bar is an
 // invisible rest, so the grid is always complete.
@@ -371,7 +375,7 @@ function detail(s, animate) {
     const crit = q && s.io.request.questions[q] && s.io.request.questions[q].criteria[pickKey];
     $("facts").textContent = crit ? "What code told Jev about its pick: " + crit : "";
     $("req").textContent = JSON.stringify(s.io.request, null, 1);
-    $("res-when").textContent = "· arrived after " + s.latencyMs + " ms";
+    $("res-when").textContent = "· call " + callIndex(s) + ", arrived after " + s.latencyMs + " ms";
     typeInto($("res"), JSON.stringify(s.io.response, null, 1), animate ? dwell(450) : 0);
   } else {
     $("status").textContent = "No call · " + whereText(s) + " · " + (s.source === "reuse" || s.kind === "reuse" ? "repeat: " : "code: ") + s.note;
@@ -424,7 +428,8 @@ function showThinking(s) {
   $("think-fill").style.width = "0%"; $("think-ms").textContent = "0 ms";
   showPanel(true);
   $("req").textContent = JSON.stringify(s.io.request, null, 1);
-  $("res-when").textContent = "· waiting"; typeInto($("res"), "…", 0);
+  $("res-when").textContent = callIndex(s) > 1 ? "· call " + (callIndex(s) - 1) + ", while call " + callIndex(s) + " is asked" : "· waiting for call 1";
+  if (callIndex(s) === 1) typeInto($("res"), "…", 0);
 }
 function think(ms, done) {
   const start = performance.now(), dur = dwell(ms);
@@ -441,8 +446,8 @@ function step() {
   if (!playing) return;
   if (k >= N) return stop(true);
   const s = STEPS[k];
-  if (isCall(s)) { showThinking(s); think(s.latencyMs || 0, () => { showState(k + 1, true); timer = setTimeout(step, dwell(350)); }); }
-  else { showState(k + 1, true); timer = setTimeout(step, dwell(250)); }
+  if (isCall(s)) { showThinking(s); think(s.latencyMs || 0, () => { showState(k + 1, true); timer = setTimeout(step, dwell(DWELL_CALL)); }); }
+  else { showState(k + 1, true); timer = setTimeout(step, dwell(DWELL_CODE)); }
 }
 function stop(finished) {
   playing = false; cancelAnimationFrame(raf); clearTimeout(timer);
