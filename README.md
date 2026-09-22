@@ -67,29 +67,6 @@ flowchart TD
 - **Cheap.** About 250 ms and 1,600 input tokens a call; a 32-bar song is 60 to 80 calls, twenty seconds,
   half a cent.
 
-## Second take: what Jev is actually like
-
-The first bridge Jev wrote was seven whole notes. Told, bar after bar, that the previous bar was a single held
-note, its probability for holding again climbed from 64% to 94%. A later bridge sat on one chord for five bars.
-**Jev's one strong trait is consistency.** So code got three rules about what is *offered*: no whole note in a
-phrase's first bar or right after a held bar, no chord root for a third bar in a row, a rest only where every
-length on offer fits under a half note. Everything else is Jev's, and the mood does reach the music: minor at 100%
-for “wistful”, major at 100% and twice the tempo for “playful”, the diminished chord for “restless”.
-
-The first demos were titled “jazz” and “bossa nova”. Jev did walk ii–V–I in seventh chords for the first and lean
-on off-beats for the second, but a title that names a genre promises what a one-line melody cannot deliver, while
-a title that names a feeling promises what it visibly does. The genre tunes went; the moods stayed.
-
-## Verification
-
-- 32 tests, all offline on a seeded mock, covering the musical invariants, odd API answers, the CLI, the server
-  and the site builder.
-- Reviewed three times: one Codex review plus a fan-out of three Codex and three Opus reviewers on the same prompt,
-  then two “break the fix” rounds. Severity fell each round; the last found only small things.
-- Security-checked before publishing: no secret anywhere in the tree or history, the local server confined to
-  `out/` and `docs/` on localhost, all user and API strings escaped on their way into HTML, abcjs pinned to an
-  exact version with integrity hashes.
-
 ## Run it yourself
 
 Node 22.15+, no dependencies. A TypeSafe API key in the environment or in `.dev.vars` (copy `.dev.vars.example`);
