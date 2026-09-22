@@ -39,15 +39,24 @@ export function safeFile(root, pathname) {
   } catch { return null; }
 }
 
-export function handler(req, res) {
+export function handler(req, res, root = ROOT) {
   let url;
   try { url = new URL(req.url, "http://localhost"); } catch { res.writeHead(400); return res.end("bad request"); }
   if (url.pathname === "/") {
-    const files = fs.existsSync("out") ? fs.readdirSync("out").filter((f) => f.endsWith(".html")).sort((a, b) => fs.statSync(path.join("out", b)).mtimeMs - fs.statSync(path.join("out", a)).mtimeMs) : [];
+    // Only pages the server would actually serve are listed; a dangling symlink or an odd name cannot throw here.
+    let files = [];
+    try {
+      files = fs.readdirSync(path.join(root, "out")).flatMap((name) => {
+        if (!name.endsWith(".html")) return [];
+        const file = safeFile(root, "/out/" + encodeURIComponent(name));
+        if (!file) return [];
+        try { return [{ name, mtime: fs.statSync(file).mtimeMs }]; } catch { return []; }
+      }).sort((a, b) => b.mtime - a.mtime).map((f) => f.name);
+    } catch {}
     res.writeHead(200, { "content-type": "text/html; charset=utf-8" });
     return res.end(`<!doctype html><meta charset="utf-8"><title>Jev songwriter</title><body style="font-family:system-ui;max-width:640px;margin:40px auto;padding:0 16px"><h1>Compositions</h1>${files.length ? `<ul>${files.map((f) => `<li><a href="/out/${encodeURIComponent(f)}">${esc(f)}</a></li>`).join("")}</ul>` : "<p>Nothing yet. Run <code>npm run compose</code>.</p>"}<p><a href="/docs/index.html">The site (docs/)</a></p>`);
   }
-  const file = safeFile(ROOT, url.pathname);
+  const file = safeFile(root, url.pathname);
   if (!file) { res.writeHead(404); return res.end("not found"); }
   res.writeHead(200, { "content-type": TYPES[path.extname(file)] });
   fs.createReadStream(file).pipe(res);

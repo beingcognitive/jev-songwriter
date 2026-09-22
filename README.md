@@ -149,3 +149,10 @@ found real regressions, applied with tests:
 | Semantic CLI errors exited 7 with a stack trace | Opus | message and exit 2 |
 | `--out` elsewhere printed a link the server cannot serve; the site said Node 20 | Opus | fixed |
 | The rest rule left two dead branches and means no bar begins with silence; the published demos predate the rule | Opus | branches removed, consequence documented here and on the site |
+
+### Round three
+
+One Codex pass over the second batch: no P0, no P1, four P2s, all applied. A dangling symlink in `out/` could
+crash the server's index page; the player was enabled before its queued tune had loaded; the replay's status
+text blamed the pitch for a length-only fallback; the CLI footer could print a URL the server rejects. The
+review stopped here: three rounds, severity falling each time, with the 32 tests extended to cover each fix.

@@ -8,7 +8,7 @@ import { MOODS, resolveMood } from "./lib/moods.js";
 import { toAbc, abcPitch } from "./lib/abc.js";
 import { renderPage } from "./lib/page.js";
 import { rng, mockChoice, readAnswer, confidenceFrom, cleanProbs } from "./lib/jev.js";
-import { resolveFile, safeFile } from "./serve.mjs";
+import { resolveFile, safeFile, handler } from "./serve.mjs";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
@@ -429,6 +429,13 @@ test("serve: only out/ and docs/ files, never the root, dotfiles, siblings or ba
   assert.equal(safeFile(root, "/out/leak.json"), null, "a symlink out of the served tree is refused");
   assert.equal(safeFile(root, "/out/real.json"), fs.realpathSync(path.join(root, "out", "real.json")));
   assert.equal(safeFile(root, "/out/none.json"), null);
+  fs.symlinkSync(path.join(root, "gone.html"), path.join(root, "out", "dangling.html")); fs.writeFileSync(path.join(root, "out", "good.html"), "<p>");
+  let status = 0, body = "";
+  const res = { writeHead: (s) => { status = s; }, end: (b) => { body += b; } };
+  assert.doesNotThrow(() => handler({ url: "/" }, res, root), "a dangling symlink cannot crash the index");
+  assert.equal(status, 200); assert.ok(body.includes("good.html") && !body.includes("dangling"));
+  status = 0; body = ""; handler({ url: "/out/leak.json" }, res, root); assert.equal(status, 404);
+  status = 0; body = ""; handler({ url: "/%" }, res, root); assert.equal(status, 404);
 });
 
 test("site: refuses to publish without every demo's trace; cli: bad arguments fail before any call", () => {
@@ -446,6 +453,16 @@ test("site: refuses to publish without every demo's trace; cli: bad arguments fa
     const c = spawnSync(process.execPath, [cli, ...args, "--out", dir], { encoding: "utf8", env });
     assert.equal(c.status, 2, args.join(" ")); assert.match(c.stderr, re);
   }
+  const outDir = fs.mkdtempSync(path.join(process.cwd(), "out", "test-"));
+  try {
+    const ok = spawnSync(process.execPath, [cli, "--form", "mini_8", "--seed", "1", "--quiet", "--out", outDir, "--name", "review#1"], { encoding: "utf8", env });
+    assert.equal(ok.status, 0, ok.stderr);
+    const url = /http:\/\/localhost:3222(\S+)/.exec(ok.stdout)?.[1];
+    assert.ok(url && url.includes("review%231") && !url.includes("//"), `the footer URL is servable: ${url}`);
+    assert.ok(safeFile(process.cwd(), url), "the server would serve it");
+    const elsewhere = spawnSync(process.execPath, [cli, "--form", "mini_8", "--seed", "1", "--quiet", "--out", dir], { encoding: "utf8", env });
+    assert.match(elsewhere.stdout, /serves only out\/ and docs\//);
+  } finally { fs.rmSync(outDir, { recursive: true, force: true }); }
 });
 
 test("rule: a whole note is never offered right after a bar that held one note", async () => {

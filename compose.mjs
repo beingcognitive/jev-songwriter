@@ -15,6 +15,7 @@ const { FORMS } = await import("./lib/form.js");
 const { toAbc } = await import("./lib/abc.js");
 const { renderPage } = await import("./lib/page.js");
 const { backend } = await import("./lib/jev.js");
+const { safeFile } = await import("./serve.mjs");
 
 const FLAGS = new Set(["quiet", "sevenths"]);
 const VALUES = new Set(["key", "mode", "tempo", "form", "mood", "chords", "order", "seed", "title", "out", "name"]);
@@ -84,5 +85,7 @@ console.log(`\n${result.key}, ${result.tempo} bpm, ${result.formName}: ${result.
 const pctOf = (x) => (x == null ? "–" : `${Math.round(x * 100)}%`);
 if (be.kind === "native") console.log(`${s.calls} calls, ${s.inputTokens.toLocaleString()} input tokens, about $${s.costUsd.toFixed(4)}. Agreement with code's first choice: notes ${pctOf(s.agreement)}${s.chordCalls ? `, chords ${pctOf(s.chordAgreement)}` : ""}.`);
 console.log(`\n${abc}`);
-const servable = path.relative(process.cwd(), path.resolve(base)).startsWith(`out${path.sep}`);
-console.log(`Wrote ${base}.abc, .json, .html\n${servable ? `Listen: npm run serve, then http://localhost:3222/${base}.html  (or open ${base}.html)` : `Open ${base}.html (npm run serve serves only out/ and docs/)`}`);
+const relative = path.relative(process.cwd(), path.resolve(`${base}.html`));
+const urlPath = "/" + relative.split(path.sep).map(encodeURIComponent).join("/");
+const servable = !relative.startsWith("..") && !path.isAbsolute(relative) && safeFile(process.cwd(), urlPath);
+console.log(`Wrote ${base}.abc, .json, .html\n${servable ? `Listen: npm run serve, then http://localhost:3222${urlPath}  (or open ${base}.html)` : `Open ${base}.html (npm run serve serves only out/ and docs/)`}`);
