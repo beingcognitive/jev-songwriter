@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jev, the songwriter</title>
+<meta name="description" content="A decision model writes songs: code computes the legal notes, Jev judges which one comes next. Demos with every call replayable.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/abcjs@6/abcjs-audio.css">
+<style>
+:root { color-scheme: light dark; --bg: #f7f6f2; --card: #ffffff; --ink: #1d1c1a; --muted: #6b675f; --line: #e4e1da; --accent: #2f6f4e; --accent-soft: #d9ece1; --hl: #f3c969; --chord: #a0522d; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #171614; --card: #201f1c; --ink: #ebe7df; --muted: #a09a8f; --line: #35322d; --accent: #7fc9a0; --accent-soft: #23392d; --hl: #b8892b; --chord: #e0956a; } }
+:root[data-theme="dark"] { --bg: #171614; --card: #201f1c; --ink: #ebe7df; --muted: #a09a8f; --line: #35322d; --accent: #7fc9a0; --accent-soft: #23392d; --hl: #b8892b; --chord: #e0956a; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.55 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+main { max-width: 980px; margin: 0 auto; padding: 32px 16px 80px; }
+h1 { font-size: 40px; line-height: 1.1; margin: 0 0 8px; letter-spacing: -0.02em; }
+h2 { font-size: 22px; margin: 48px 0 12px; letter-spacing: -0.01em; }
+h3 { font-size: 20px; margin: 4px 0 2px; }
+p { margin: 0 0 12px; } .meta { color: var(--muted); font-size: 14px; } .lede { font-size: 19px; color: var(--muted); max-width: 720px; }
+.blurb { margin: 6px 0; }
+nav { display: flex; gap: 14px; flex-wrap: wrap; margin: 18px 0 8px; font-size: 14px; } nav a { color: var(--accent); }
+.demo { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px; margin-top: 18px; }
+.demo-head { display: flex; gap: 16px; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; }
+.tag { display: inline-block; padding: 2px 10px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-size: 12px; font-weight: 600; }
+.button { display: inline-block; padding: 8px 14px; border-radius: 10px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; white-space: nowrap; }
+.paper svg { max-width: 100%; } .paper { margin-top: 8px; }
+.paper .abcjs-note.hl, .paper .abcjs-rest.hl, .paper .hl path { fill: var(--hl) !important; stroke: var(--hl) !important; }
+.paper .abcjs-cursor { stroke: var(--accent); stroke-width: 2.5; opacity: .85; }
+.abcjs-inline-audio { background: var(--accent-soft) !important; border-radius: 8px; }
+.abcjs-inline-audio .abcjs-btn { fill: var(--ink); }
+.how { max-width: 760px; } .how li { margin-bottom: 8px; }
+code, pre { font: 14px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; } pre { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; overflow-x: auto; }
+table { border-collapse: collapse; font-size: 14px; } td, th { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--line); } th { color: var(--muted); font-weight: 600; }
+footer { margin-top: 56px; color: var(--muted); font-size: 14px; }
+a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+<h1>Jev, the songwriter</h1>
+<p class="lede">Jev is TypeSafe AI's decision model. It cannot write a note. Given a state and a list of options it returns one choice with a probability for every option. So we let code do everything that only needs to be legal, and let Jev do the judging: which chord, which note, how long. Every call is recorded, and every song below can be rebuilt on screen call by call, at the speed Jev actually answered.</p>
+<nav><a href="#demos">The demos</a><a href="#how">How we built it</a><a href="#found">What we found</a><a href="#run">Run it yourself</a><a href="https://jev-go.chardonn.ai">Beat Jev at Go</a></nav>
+
+<h2 id="demos">The demos</h2>
+<p class="meta">Press play on any score; the cursor follows the notes. “Watch it being built” opens the replay: the empty grid, then the chords landing, then the notes, with Jev's probabilities and raw responses for every call.</p>
+
+<article class="demo" id="live-jazz">
+  <div class="demo-head">
+    <div>
+      <span class="tag">Jev wrote everything</span>
+      <h3>Jazz</h3>
+      <p class="meta">F major · 120 bpm · AABA · 32 bars, about 64 s · mood: “jazz”</p>
+      <p class="blurb">Told only “jazz”, Jev chose F major, 120 bpm and AABA, then walked ii–V–I in seventh chords and wrote a rest into the bridge.</p>
+      <p class="meta">Jev chose mode major (97%), tempo 120 bpm (29%), form aaba_32 (54%). First phrase: Fmaj7 Gm7 C7 Fmaj7 Gm7 C7 Bbmaj7 C7. 14 chord calls, 60 note calls, about $0.0056; Jev agreed with code's first choice on 65% of notes and 64% of chords.</p>
+    </div>
+    <a class="button" href="demos/live-jazz.html">Watch it being built →</a>
+  </div>
+  <div class="paper" id="paper-0"></div>
+  <div class="audio" id="audio-0"></div>
+</article>
+
+<article class="demo" id="live-bossa">
+  <div class="demo-head">
+    <div>
+      <span class="tag">Jev wrote everything</span>
+      <h3>Bossa nova</h3>
+      <p class="meta">C minor · 88 bpm · 16-bar period · 16 bars, about 44 s · mood: “bossa nova”</p>
+      <p class="blurb">Told “bossa nova”, Jev split 50/50 on the mode, took C minor, 88 bpm, and leaned the whole tune on dotted off-beat rhythms.</p>
+      <p class="meta">Jev chose mode minor (7%), tempo 88 bpm (70%), form short_16 (49%). First phrase: Cm7 Fm7 Gm7 Cm7 Fm7 Gm7 Fm7 Gm7. 7 chord calls, 27 note calls, about $0.0025; Jev agreed with code's first choice on 74% of notes and 86% of chords.</p>
+    </div>
+    <a class="button" href="demos/live-bossa.html">Watch it being built →</a>
+  </div>
+  <div class="paper" id="paper-1"></div>
+  <div class="audio" id="audio-1"></div>
+</article>
+
+<article class="demo" id="live-mood">
+  <div class="demo-head">
+    <div>
+      <span class="tag">Jev wrote everything</span>
+      <h3>Wistful, late night</h3>
+      <p class="meta">A minor · 72 bpm · 16-bar period · 16 bars, about 53 s · mood: “wistful, late night”</p>
+      <p class="blurb">“Wistful, late night”: minor at 100% confidence, 72 bpm, an all-minor i–iv–v, two long notes a bar.</p>
+      <p class="meta">Jev chose mode minor (100%), tempo 72 bpm (93%), form short_16 (44%). First phrase: Am Dm Em Am Dm Em Dm Em. 7 chord calls, 14 note calls, about $0.0013; Jev agreed with code's first choice on 79% of notes and 86% of chords.</p>
+    </div>
+    <a class="button" href="demos/live-mood.html">Watch it being built →</a>
+  </div>
+  <div class="paper" id="paper-2"></div>
+  <div class="audio" id="audio-2"></div>
+</article>
+
+<article class="demo" id="demo-morning">
+  <div class="demo-head">
+    <div>
+      <span class="tag">Jev wrote everything</span>
+      <h3>Bright and hopeful, a morning walk</h3>
+      <p class="meta">C major · 88 bpm · 16-bar period · 16 bars, about 44 s · mood: “bright and hopeful, a morning walk”</p>
+      <p class="blurb">“Bright and hopeful, a morning walk”: major at 100% confidence, 88 bpm, a 16-bar period rocking between C and F with one motif carried through.</p>
+      <p class="meta">Jev chose mode major (100%), tempo 88 bpm (47%), form short_16 (41%). First phrase: C F C F C F F G. 7 chord calls, 35 note calls, about $0.0027; Jev agreed with code's first choice on 26% of notes and 86% of chords.</p>
+    </div>
+    <a class="button" href="demos/demo-morning.html">Watch it being built →</a>
+  </div>
+  <div class="paper" id="paper-3"></div>
+  <div class="audio" id="audio-3"></div>
+</article>
+
+<article class="demo" id="demo-lullaby">
+  <div class="demo-head">
+    <div>
+      <span class="tag">Jev wrote everything</span>
+      <h3>A lullaby, soft and slow</h3>
+      <p class="meta">G minor · 72 bpm · 8-bar period · 8 bars, about 27 s · mood: “a lullaby, soft and slow”</p>
+      <p class="blurb">“A lullaby, soft and slow”: 72 bpm at 100% confidence, the mode a 33% guess that landed on G minor, eight bars of half notes.</p>
+      <p class="meta">Jev chose mode minor (33%), tempo 72 bpm (100%), form mini_8 (32%). First phrase: Gm Cm Cm Dm. 3 chord calls, 6 note calls, about $0.0006; Jev agreed with code's first choice on 50% of notes and 67% of chords.</p>
+    </div>
+    <a class="button" href="demos/demo-lullaby.html">Watch it being built →</a>
+  </div>
+  <div class="paper" id="paper-4"></div>
+  <div class="audio" id="audio-4"></div>
+</article>
+
+<article class="demo" id="demo-fanfare">
+  <div class="demo-head">
+    <div>
+      <span class="tag">Jev wrote everything, interleaved</span>
+      <h3>Triumphant, a fanfare</h3>
+      <p class="meta">D major · 140 bpm · 16-bar period · 16 bars, about 27 s · mood: “triumphant, a fanfare”</p>
+      <p class="blurb">“Triumphant, a fanfare”: D major at 100%, 140 bpm; each bar's chord was decided just before its notes, and the tune opens with the fanfare leap A–D–F#.</p>
+      <p class="meta">Jev chose mode major (100%), tempo 140 bpm (56%), form short_16 (32%). First phrase: D G D G D A G A. 7 chord calls, 20 note calls, about $0.0018; Jev agreed with code's first choice on 35% of notes and 71% of chords.</p>
+    </div>
+    <a class="button" href="demos/demo-fanfare.html">Watch it being built →</a>
+  </div>
+  <div class="paper" id="paper-5"></div>
+  <div class="audio" id="audio-5"></div>
+</article>
+
+<article class="demo" id="demo-pop-loop">
+  <div class="demo-head">
+    <div>
+      <span class="tag">Chords given</span>
+      <h3>A bright pop chorus everyone can sing</h3>
+      <p class="meta">C major · 120 bpm · AABA · 32 bars, about 64 s · mood: “a bright pop chorus everyone can sing”</p>
+      <p class="blurb">The four-chord pop loop C G Am F at 120; Jev writes a chorus over it, one arpeggiated motif per chord.</p>
+      <p class="meta">First phrase: C G Am F C G Am F. 70 note calls, about $0.0049; Jev agreed with code's first choice on 26% of notes.</p>
+    </div>
+    <a class="button" href="demos/demo-pop-loop.html">Watch it being built →</a>
+  </div>
+  <div class="paper" id="paper-6"></div>
+  <div class="audio" id="audio-6"></div>
+</article>
+
+<article class="demo" id="demo-wistful-loop">
+  <div class="demo-head">
+    <div>
+      <span class="tag">Chords given</span>
+      <h3>Wistful, looking back</h3>
+      <p class="meta">A minor · 92 bpm · 16-bar period · 16 bars, about 42 s · mood: “wistful, looking back”</p>
+      <p class="blurb">Am F C G at 92, told “wistful, looking back”: two long notes a bar, mostly chord tones.</p>
+      <p class="meta">First phrase: Am F C G Am F C G. 14 note calls, about $0.0010; Jev agreed with code's first choice on 71% of notes.</p>
+    </div>
+    <a class="button" href="demos/demo-wistful-loop.html">Watch it being built →</a>
+  </div>
+  <div class="paper" id="paper-7"></div>
+  <div class="audio" id="audio-7"></div>
+</article>
+
+<article class="demo" id="demo-ii-v-i">
+  <div class="demo-head">
+    <div>
+      <span class="tag">Chords given</span>
+      <h3>Jazz</h3>
+      <p class="meta">C major · 132 bpm · 16-bar period · 16 bars, about 29 s · mood: “jazz”</p>
+      <p class="blurb">Dm7 G7 Cmaj7 Cmaj7 at 132, told “jazz”: the tune breathes with rests and starts phrases off the beat.</p>
+      <p class="meta">First phrase: Dm7 G7 Cmaj7 Cmaj7 Dm7 G7 Cmaj7 Cmaj7. 37 note calls, about $0.0028; Jev agreed with code's first choice on 41% of notes.</p>
+    </div>
+    <a class="button" href="demos/demo-ii-v-i.html">Watch it being built →</a>
+  </div>
+  <div class="paper" id="paper-8"></div>
+  <div class="audio" id="audio-8"></div>
+</article>
+
+<article class="demo" id="demo-bossa-given">
+  <div class="demo-head">
+    <div>
+      <span class="tag">Chords given</span>
+      <h3>Bossa nova</h3>
+      <p class="meta">F major · 120 bpm · AABA · 32 bars, about 64 s · mood: “bossa nova”</p>
+      <p class="blurb">An eight-bar bossa progression in F with sevenths at 120; Jev writes a slow line of half notes over it, and a different one for the bridge.</p>
+      <p class="meta">First phrase: Fmaj7 Gm7 C7 Fmaj7 Bbmaj7 Am7 Gm7 C7. 28 note calls, about $0.0022; Jev agreed with code's first choice on 68% of notes.</p>
+    </div>
+    <a class="button" href="demos/demo-bossa-given.html">Watch it being built →</a>
+  </div>
+  <div class="paper" id="paper-9"></div>
+  <div class="audio" id="audio-9"></div>
+</article>
+
+<section class="how">
+<h2 id="how">How we built it</h2>
+<p><strong>The doctrine, borrowed from <a href="https://jev-go.chardonn.ai">jev-go</a>: code computes, Jev judges.</strong> Jev never generates text or notes. It picks from options that code enumerated, so it cannot write an illegal note, a bar that does not add up, or a chord outside the key. What it can do is prefer.</p>
+<ol>
+<li><strong>Setup.</strong> Given a mood such as “wistful, late night”, one call asks Jev for the mode (major or minor), the tempo (five bands) and the song form (an 8-bar period, a 16-bar period, AABB, or the classic 32-bar AABA), unless you pinned them. The mood text then rides along in every later call.</li>
+<li><strong>Chords, one call per fresh bar.</strong> The options are the seven diatonic triads, plus the seventh chords for jazz and bossa. Each option carries facts computed by code: its quality and harmonic function, the root motion from the previous chord and how many tones they share, how usual the move is in songs, and what it does right before the coming cadence. Cadence chords are set by the form. A repeated phrase keeps its model's chords. In the interleaved variant the chord for a bar is decided just before its notes, one bar ahead, so it can see the melody so far.</li>
+<li><strong>Notes, one call per note.</strong> Code offers the scale tones within an octave of the last note, plus a rest, and the lengths that still fit in the bar. Each pitch says what interval it makes, whether it is a chord tone, whether it resolves a leap, whether it is a new high point, how far it is from the cadence note. Each length says where it starts and ends and whether it syncopates. Jev answers both questions in one call.</li>
+<li><strong>Forced moves, no call.</strong> The last bar of every phrase holds the closing degree, tonic or dominant. The answering phrase repeats the opening phrase bar for bar except that last bar, and the return repeats the answer. Repetition is what makes sixteen bars of choices sound like a song.</li>
+</ol>
+<p>Output is real ABC notation, a JSON trace of every request and response, and a page that renders the score with abcjs, plays it with the chords underneath, and replays the whole composition decision by decision.</p>
+</section>
+
+<section class="how">
+<h2 id="found">What we found</h2>
+<ul>
+<li><strong>Jev has a preference, and it is consistency.</strong> With the same options in front of it, it favours the chord tone, the same rhythm as the last bar, the same chord as the last bar. That gives motifs for free, and it also gives chains: the first bridge we got was seven whole notes, and Jev's probability for “hold again” climbed from 64% to 94% over three bars even when told the previous bars were held. A jazz bridge later sat on C7 for five bars.</li>
+<li><strong>So code got two rules of the game.</strong> A whole note is not offered in the first bar of a phrase or right after a bar that held one note. A chord root is not offered for a third bar in a row. Everything else is Jev's.</li>
+<li><strong>Mood reaches the music.</strong> “Wistful, late night” came back minor at 100% confidence and 72 bpm. “Jazz” came back F major at 97% and walked ii–V–I in sevenths. “Bossa nova” split the mode almost evenly, which is fair, and leaned the whole tune on off-beats. Tempo answers are softer, 30% to 70%, so pin the tempo if you care.</li>
+<li><strong>Jev is not echoing code's ranking.</strong> Code ranks every option with a one-ply score of its own; Jev's pick was code's first choice between 35% and 80% of the time depending on the tune, and the page shows the rank of every pick.</li>
+<li><strong>It is fast and nearly free.</strong> A call takes about 250 ms and about 1,600 input tokens; a 32-bar AABA is 60 to 80 calls, roughly twenty seconds and half a cent.</li>
+</ul>
+</section>
+
+<section class="how">
+<h2 id="run">Run it yourself</h2>
+<pre>npm test
+npm run compose -- --mood "wistful, late night"          # Jev picks mode, tempo, form, chords, notes
+npm run compose -- --mood jazz --key F                    # named moods: jazz, bossa nova (seventh chords)
+npm run compose -- --chords "C G Am F" --mood "a bright pop chorus" --tempo 120 --form aaba_32
+npm run compose -- --mood "triumphant" --order interleaved
+npm run serve                                             # http://localhost:3222</pre>
+<p class="meta">Needs Node 20+ and a TypeSafe API key in <code>.dev.vars</code>; without one a seeded mock plays Jev's part so the whole pipeline runs offline. Jev bills input only, $0.042 per million tokens.</p>
+</section>
+
+<footer>Built with Claude Code, for fun. Jev is <a href="https://typesafe.ai">TypeSafe AI</a>'s System One decision model; scores and audio by <a href="https://www.abcjs.net">abcjs</a>.</footer>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/abcjs@6/dist/abcjs-basic-min.js"></script>
+<script>
+const DEMOS = [{"abc":"X:1\nT:Jazz\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=120\nK:F\n\"Fmaj7\"F2A3 c2A | \"Gm7\"G2F2 G3F | \"C7\"G2c2 B3c | \"Fmaj7\"A2c2 A3F |\n\"Gm7\"G2F2 G3F | \"C7\"G2c2 B3c | \"Bbmaj7\"B2A2 B3A | \"C7\"c8 |\n\"Fmaj7\"F2A3 c2A | \"Gm7\"G2F2 G3F | \"C7\"G2c2 B3c | \"Fmaj7\"A2c2 A3F |\n\"Gm7\"G2F2 G3F | \"C7\"G2c2 B3c | \"Bbmaj7\"B2A2 B3A | \"Fmaj7\"F8 |\n\"Gm7\"G2B2 G3F | \"C7\"G2c2 B3c | \"C7\"B2c2 B3c | \"Fmaj7\"A2c2 A2zE |\n\"Gm7\"G2B2 G2BG | \"C7\"c2B2 c2Bc | \"Bbmaj7\"B2A2 B2AB | \"C7\"c8 |\n\"Fmaj7\"F2A3 c2A | \"Gm7\"G2F2 G3F | \"C7\"G2c2 B3c | \"Fmaj7\"A2c2 A3F |\n\"Gm7\"G2F2 G3F | \"C7\"G2c2 B3c | \"Bbmaj7\"B2A2 B3A | \"Fmaj7\"F8 |]\n"},{"abc":"X:1\nT:Bossa nova\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=88\nK:Cm\n\"Cm7\"C4 E3C | \"Fm7\"E3F3 EF | \"Gm7\"G3F3 GF | \"Cm7\"E3G3 EG |\n\"Fm7\"E3F3 EF | \"Gm7\"G3F3 GF | \"Fm7\"E3F3 EF | \"Gm7\"G8 |\n\"Cm7\"C4 E3C | \"Fm7\"E3F3 EF | \"Gm7\"G3F3 GF | \"Cm7\"E3G3 EG |\n\"Fm7\"E3F3 EF | \"Gm7\"G3F3 GF | \"Fm7\"E3F3 EF | \"Cm7\"C8 |]\n"},{"abc":"X:1\nT:Wistful, late night\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=72\nK:Am\n\"Am\"C4 E4 | \"Dm\"D4 F4 | \"Em\"E4 G4 | \"Am\"A4 E4 |\n\"Dm\"F4 D4 | \"Em\"E4 G4 | \"Dm\"F4 D4 | \"Em\"E8 |\n\"Am\"C4 E4 | \"Dm\"D4 F4 | \"Em\"E4 G4 | \"Am\"A4 E4 |\n\"Dm\"F4 D4 | \"Em\"E4 G4 | \"Dm\"F4 D4 | \"Am\"A,8 |]\n"},{"abc":"X:1\nT:Bright and hopeful, a morning walk\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=88\nK:C\n\"C\"C2E2 G2EG | \"F\"F2A2 F2AF | \"C\"G2E2 G2EG | \"F\"F2A2 F2AF |\n\"C\"G2E2 G2EG | \"F\"F2A2 F2AF | \"F\"A2F2 A2FA | \"G\"G8 |\n\"C\"C2E2 G2EG | \"F\"F2A2 F2AF | \"C\"G2E2 G2EG | \"F\"F2A2 F2AF |\n\"C\"G2E2 G2EG | \"F\"F2A2 F2AF | \"F\"A2F2 A2FA | \"C\"c8 |]\n"},{"abc":"X:1\nT:A lullaby, soft and slow\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=72\nK:Gm\n\"Gm\"G,4 B,4 | \"Cm\"C4 G,4 | \"Cm\"C4 G,4 | \"Dm\"D8 |\n\"Gm\"G,4 B,4 | \"Cm\"C4 G,4 | \"Cm\"C4 G,4 | \"Gm\"G,8 |]\n"},{"abc":"X:1\nT:Triumphant, a fanfare\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=140\nK:D\n\"D\"A2d2 f4 | \"G\"d2B2 d4 | \"D\"A4 d4 | \"G\"B2d2 B4 |\n\"D\"A2d2 A4 | \"A\"c4 A4 | \"G\"B2d4 Bd | \"A\"A8 |\n\"D\"A2d2 f4 | \"G\"d2B2 d4 | \"D\"A4 d4 | \"G\"B2d2 B4 |\n\"D\"A2d2 A4 | \"A\"c4 A4 | \"G\"B2d4 Bd | \"D\"d8 |]\n"},{"abc":"X:1\nT:A bright pop chorus everyone can sing\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=120\nK:C\n\"C\"C2E2 G2EC | \"G\"G2B2 G2BG | \"Am\"A2c2 A2cA | \"F\"F2A2 F2AF |\n\"C\"G2E2 G2EG | \"G\"B2G2 B2GB | \"Am\"A2E2 A2EA | \"F\"G8 |\n\"C\"C2E2 G2EC | \"G\"G2B2 G2BG | \"Am\"A2c2 A2cA | \"F\"F2A2 F2AF |\n\"C\"G2E2 G2EG | \"G\"B2G2 B2GB | \"Am\"A2E2 A2EA | \"F\"c8 |\n\"C\"G2E2 G2EG | \"G\"B2G2 B2GB | \"Am\"A2c2 A2cA | \"F\"F2A2 F2AF |\n\"C\"G2E2 G2EG | \"G\"B2G2 B2GB | \"Am\"A2E2 A2EA | \"F\"G8 |\n\"C\"C2E2 G2EC | \"G\"G2B2 G2BG | \"Am\"A2c2 A2cA | \"F\"F2A2 F2AF |\n\"C\"G2E2 G2EG | \"G\"B2G2 B2GB | \"Am\"A2E2 A2EA | \"F\"c8 |]\n"},{"abc":"X:1\nT:Wistful, looking back\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=92\nK:Am\n\"Am\"C4 E4 | \"F\"F4 A4 | \"C\"G4 E4 | \"G\"G4 B4 |\n\"Am\"A4 E4 | \"F\"F4 A4 | \"C\"G4 E4 | \"G\"E8 |\n\"Am\"C4 E4 | \"F\"F4 A4 | \"C\"G4 E4 | \"G\"G4 B4 |\n\"Am\"A4 E4 | \"F\"F4 A4 | \"C\"G4 E4 | \"G\"A8 |]\n"},{"abc":"X:1\nT:Jazz\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=132\nK:C\n\"Dm7\"D2F3 D2z | \"G7\"GF2G2 F2G | \"Cmaj7\"EG2B G3B | \"Cmaj7\"GB2c Bc2B |\n\"Dm7\"AF2A FD2F | \"G7\"GF2G BG2B | \"Cmaj7\"zB2c2 B2z | \"Cmaj7\"G8 |\n\"Dm7\"D2F3 D2z | \"G7\"GF2G2 F2G | \"Cmaj7\"EG2B G3B | \"Cmaj7\"GB2c Bc2B |\n\"Dm7\"AF2A FD2F | \"G7\"GF2G BG2B | \"Cmaj7\"zB2c2 B2z | \"Cmaj7\"c8 |]\n"},{"abc":"X:1\nT:Bossa nova\nC:Jev (TypeSafe System One)\nM:4/4\nL:1/8\nQ:1/4=120\nK:F\n\"Fmaj7\"A4 c4 | \"Gm7\"B4 G4 | \"C7\"B4 c4 | \"Fmaj7\"A4 c4 |\n\"Bbmaj7\"A4 B4 | \"Am7\"A4 G4 | \"Gm7\"B4 G4 | \"C7\"c8 |\n\"Fmaj7\"A4 c4 | \"Gm7\"B4 G4 | \"C7\"B4 c4 | \"Fmaj7\"A4 c4 |\n\"Bbmaj7\"A4 B4 | \"Am7\"A4 G4 | \"Gm7\"B4 G4 | \"C7\"F8 |\n\"Fmaj7\"A4 F4 | \"Gm7\"G4 F4 | \"C7\"E4 G4 | \"Fmaj7\"A4 F4 |\n\"Bbmaj7\"A4 B4 | \"Am7\"A4 G4 | \"Gm7\"B4 G4 | \"C7\"c8 |\n\"Fmaj7\"A4 c4 | \"Gm7\"B4 G4 | \"C7\"B4 c4 | \"Fmaj7\"A4 c4 |\n\"Bbmaj7\"A4 B4 | \"Am7\"A4 G4 | \"Gm7\"B4 G4 | \"C7\"F8 |]\n"}];
+const controls = [];
+DEMOS.forEach((d, i) => {
+  const visualObj = ABCJS.renderAbc("paper-" + i, d.abc, { responsive: "resize", add_classes: true })[0];
+  if (!ABCJS.synth.supportsAudio()) return;
+  const paper = document.getElementById("paper-" + i);
+  const cursor = {
+    onStart() { controls.forEach((c, j) => { if (j !== i) c.pause(); }); const svg = paper.querySelector("svg"); if (svg && !svg.querySelector(".abcjs-cursor")) { const l = document.createElementNS("http://www.w3.org/2000/svg", "line"); l.setAttribute("class", "abcjs-cursor"); svg.appendChild(l); } },
+    onFinished() { paper.querySelectorAll(".hl").forEach((el) => el.classList.remove("hl")); const l = paper.querySelector(".abcjs-cursor"); if (l) l.remove(); },
+    onEvent(ev) {
+      if (ev.measureStart && ev.left === null) return;
+      paper.querySelectorAll(".hl").forEach((el) => el.classList.remove("hl"));
+      for (const set of ev.elements || []) for (const el of set) el.classList.add("hl");
+      const l = paper.querySelector(".abcjs-cursor");
+      if (l && ev.left != null) { l.setAttribute("x1", ev.left - 2); l.setAttribute("x2", ev.left - 2); l.setAttribute("y1", ev.top); l.setAttribute("y2", ev.top + ev.height); }
+    },
+  };
+  const sc = new ABCJS.synth.SynthController();
+  sc.load("#audio-" + i, cursor, { displayLoop: true, displayRestart: true, displayPlay: true, displayProgress: true });
+  sc.setTune(visualObj, false, { chordsOff: false }).catch(() => {});
+  controls.push(sc);
+});
+window.addEventListener("pagehide", () => controls.forEach((c) => c.pause()));
+</script>
+</body>
+</html>

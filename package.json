@@ -1,0 +1,14 @@
+{
+  "name": "jev-songwriter",
+  "private": true,
+  "type": "module",
+  "description": "Jev writes melodies: code builds the grid and the legal notes, Jev judges which one comes next.",
+  "scripts": {
+    "compose": "node --use-system-ca compose.mjs",
+    "render": "node render.mjs",
+    "site": "node site.mjs",
+    "serve": "node serve.mjs",
+    "test": "node --test test.mjs"
+  },
+  "engines": { "node": ">=20" }
+}

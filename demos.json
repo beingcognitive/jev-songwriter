@@ -1,0 +1,52 @@
+[
+  {
+    "name": "live-jazz",
+    "tag": "Jev wrote everything",
+    "blurb": "Told only “jazz”, Jev chose F major, 120 bpm and AABA, then walked ii–V–I in seventh chords and wrote a rest into the bridge."
+  },
+  {
+    "name": "live-bossa",
+    "tag": "Jev wrote everything",
+    "blurb": "Told “bossa nova”, Jev split 50/50 on the mode, took C minor, 88 bpm, and leaned the whole tune on dotted off-beat rhythms."
+  },
+  {
+    "name": "live-mood",
+    "tag": "Jev wrote everything",
+    "blurb": "“Wistful, late night”: minor at 100% confidence, 72 bpm, an all-minor i–iv–v, two long notes a bar."
+  },
+  {
+    "name": "demo-morning",
+    "tag": "Jev wrote everything",
+    "blurb": "“Bright and hopeful, a morning walk”: major at 100% confidence, 88 bpm, a 16-bar period rocking between C and F with one motif carried through."
+  },
+  {
+    "name": "demo-lullaby",
+    "tag": "Jev wrote everything",
+    "blurb": "“A lullaby, soft and slow”: 72 bpm at 100% confidence, the mode a 33% guess that landed on G minor, eight bars of half notes."
+  },
+  {
+    "name": "demo-fanfare",
+    "tag": "Jev wrote everything, interleaved",
+    "blurb": "“Triumphant, a fanfare”: D major at 100%, 140 bpm; each bar's chord was decided just before its notes, and the tune opens with the fanfare leap A–D–F#."
+  },
+  {
+    "name": "demo-pop-loop",
+    "tag": "Chords given",
+    "blurb": "The four-chord pop loop C G Am F at 120; Jev writes a chorus over it, one arpeggiated motif per chord."
+  },
+  {
+    "name": "demo-wistful-loop",
+    "tag": "Chords given",
+    "blurb": "Am F C G at 92, told “wistful, looking back”: two long notes a bar, mostly chord tones."
+  },
+  {
+    "name": "demo-ii-v-i",
+    "tag": "Chords given",
+    "blurb": "Dm7 G7 Cmaj7 Cmaj7 at 132, told “jazz”: the tune breathes with rests and starts phrases off the beat."
+  },
+  {
+    "name": "demo-bossa-given",
+    "tag": "Chords given",
+    "blurb": "An eight-bar bossa progression in F with sevenths at 120; Jev writes a slow line of half notes over it, and a different one for the bridge."
+  }
+]

@@ -1,0 +1,3 @@
+# Copy to .dev.vars (read by `node compose.mjs`). Leave empty for the seeded mock backend.
+# TypeSafe key, from https://console.typesafe.ai/keys
+TYPESAFE_API_KEY=
