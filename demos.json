@@ -1,5 +1,10 @@
 [
   {
+    "name": "demo-river",
+    "tag": "Jev wrote everything",
+    "blurb": "“Content and warm, a summer evening by the river”: F major at 100% confidence, 88 bpm, a full AABA; the bridge slows to half notes and the tune comes home."
+  },
+  {
     "name": "live-mood",
     "tag": "Jev wrote everything",
     "blurb": "“Wistful, late night”: minor at 100% confidence, 72 bpm, an all-minor i–iv–v, two long notes a bar."
@@ -15,13 +20,8 @@
     "blurb": "“Restless, pacing the room at midnight, unable to sleep”: E minor at 100%, 140 bpm, and Jev opened on F#dim, the one tense chord in the key, which code had ranked last of seven."
   },
   {
-    "name": "demo-fanfare",
-    "tag": "Jev wrote everything, interleaved",
-    "blurb": "“Triumphant, a fanfare”: D major at 100%, 140 bpm; each bar's chord was decided just before its notes, and the tune opens with the fanfare leap A–D–F#."
-  },
-  {
-    "name": "demo-pop-loop",
-    "tag": "Chords given",
-    "blurb": "The four-chord pop loop C G Am F at 120; Jev writes a chorus over it, one arpeggiated motif per chord."
+    "name": "demo-tender",
+    "tag": "Jev wrote everything",
+    "blurb": "“Tender, rocking a child to sleep”: E-flat major, 72 bpm at 95% confidence, two long notes a bar for sixteen bars."
   }
 ]
