@@ -60,7 +60,7 @@ a { color: var(--accent); }
 <main>
 <h1>Jev, the songwriter</h1>
 <p class="lede">Jev is TypeSafe AI's decision model. It cannot write a note. Given a state and a list of options it returns one choice with a probability for every option. So we let code do everything that only needs to be legal, and let Jev do the judging: which chord, which note, how long. Every call is recorded, and every song below can be rebuilt on screen call by call, at the speed Jev actually answered.</p>
-<nav><a href="#demos">The demos</a><a href="#how">How we built it</a><a href="#found">What we found</a><a href="#run">Run it yourself</a><a href="https://jev-go.chardonn.ai">Beat Jev at Go</a></nav>
+<nav><a href="#demos">The demos</a><a href="#how">How we built it</a><a href="#found">What we found</a><a href="#run">Run it yourself</a><a href="https://github.com/beingcognitive/jev-songwriter">Source on GitHub</a></nav>
 
 <h2 id="demos">The demos</h2>
 <p class="meta">Press play on any score; the cursor follows the notes. “Watch it being built in Jev's real time” opens the replay: the empty grid, then the chords landing, then the notes, with Jev's probabilities and raw responses for every call, each taking exactly as long as Jev took (a speed control is there if you want the gist). These were recorded on 22 September 2026 against jev-1.13.0, before the engine gained its rest rule, so a replay can show a rest offered next to a long length; the notes played are the ones Jev chose then.</p>
@@ -142,7 +142,7 @@ a { color: var(--accent); }
 
 <section class="how">
 <h2 id="how">How we built it</h2>
-<p><strong>The doctrine, borrowed from <a href="https://jev-go.chardonn.ai">jev-go</a>: code computes, Jev judges.</strong> Jev never generates text or notes. It picks from options that code enumerated, so it cannot write an illegal note, a bar that does not add up, or a chord outside the key. What it can do is prefer.</p>
+<p><strong>Code computes, Jev judges.</strong> Jev never generates text or notes. It picks from options that code enumerated, so it cannot write an illegal note, a bar that does not add up, or a chord outside the key. What it can do is prefer.</p>
 <ol>
 <li><strong>Setup.</strong> Given a mood such as “wistful, late night”, one call asks Jev for the mode (major or minor), the tempo (five bands) and the song form (an 8-bar period, a 16-bar period, AABB, or the classic 32-bar AABA), unless you pinned them. The mood text then rides along in every later call.</li>
 <li><strong>Chords, one call per fresh bar.</strong> The options are the seven diatonic triads, plus the seventh chords for jazz and bossa. Each option carries facts computed by code: its quality and harmonic function, the root motion from the previous chord and how many tones they share, how usual the move is in songs, and what it does right before the coming cadence. Cadence chords are set by the form. A repeated phrase keeps its model's chords. In the interleaved variant the chord for a bar is decided just before its notes, one bar ahead, so it can see the melody so far.</li>
@@ -165,6 +165,7 @@ a { color: var(--accent); }
 
 <section class="how">
 <h2 id="run">Run it yourself</h2>
+<p>The whole project is open source: <a href="https://github.com/beingcognitive/jev-songwriter"><strong>github.com/beingcognitive/jev-songwriter</strong></a> — MIT, no dependencies, and the JSON trace of every call on this page is in the repository too.</p>
 <pre>npm test
 npm run compose -- --mood "wistful, late night"          # Jev picks mode, tempo, form, chords, notes
 npm run compose -- --mood jazz --key F                    # named moods: jazz, bossa nova (seventh chords)
