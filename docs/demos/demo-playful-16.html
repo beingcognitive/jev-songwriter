@@ -407,10 +407,10 @@ function detail(s, animate) {
     $("res-when").textContent = "· call " + callIndex(s) + ", arrived after " + s.latencyMs + " ms";
     typeInto($("res"), JSON.stringify(s.io.response, null, 1), animate ? dwell(450) : 0);
   } else {
-    $("status").textContent = "No call · " + whereText(s) + " · " + (s.source === "reuse" || s.kind === "reuse" ? "repeat: " : "code: ") + s.note;
+    $("status").textContent = "No call · " + whereText(s) + " · " + (s.source === "reuse" || s.kind === "reuse" ? "" : "code closes the phrase, ") + s.note;
     $("think-fill").style.width = "0%"; $("think-ms").textContent = "0 ms (no call)";
-    const why = s.kind === "chord" ? (s.source === "forced" ? "The cadence chord is set by the form; code places it without asking Jev." : "A repeated phrase keeps its model's chords; code copies them without asking Jev.")
-      : s.kind === "forced" ? "A forced move: the cadence bar is played by code without asking Jev." : "A repeat: code copies the earlier bar without asking Jev.";
+    const why = s.kind === "chord" ? (s.source === "forced" ? "Code closes the phrase: its last bar carries the chord the form ends on." : "This phrase answers an earlier one, so it keeps that phrase's chords.")
+      : s.kind === "forced" ? "Code closes the phrase: its last bar is one note held for the whole bar, on the tonic to finish or the dominant to leave the phrase open." : "This phrase answers an earlier one, so this bar repeats it note for note.";
     opts.innerHTML = '<p class="meta">' + why + "</p>";
     $("facts").textContent = ""; $("req").textContent = ""; $("res-when").textContent = ""; typeInto($("res"), "(no call)", 0);
   }
