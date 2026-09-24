@@ -16,6 +16,10 @@ h1 { font-size: 26px; margin: 0 0 4px; letter-spacing: -0.01em; }
 h2 { font-size: 16px; margin: 0 0 12px; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; }
 h3 { font-size: 13px; margin: 0 0 6px; color: var(--muted); font-weight: 600; }
 .meta { color: var(--muted); margin: 0 0 4px; }
+.home { margin: 0 0 10px; font-size: 14px; }
+.home--end { margin: 20px 0 0; }
+.home a { color: var(--accent); text-decoration: none; }
+.home a:hover { text-decoration: underline; }
 .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; margin-top: 16px; }
 #paper svg { max-width: 100%; }
 #paper .abcjs-note.hl, #paper .abcjs-rest.hl, #paper .hl path { fill: var(--hl) !important; stroke: var(--hl) !important; }
@@ -109,6 +113,7 @@ button.primary { background: var(--accent); color: #fff; border-color: var(--acc
 </head>
 <body>
 <main>
+<p class="home"><a href="../index.html">← Jev, the songwriter</a></p>
 <h1>Playful, skipping down the street on a spring afternoon</h1>
 <p class="meta">G major · 4/4 · 120 bpm · AABB · 16 bars, about 32 s · range E3–B4 · seed 34</p>
 <p class="meta">Mood: “playful, skipping down the street on a spring afternoon” · Jev chose mode major (100%), tempo 120 bpm (84%) · chords by Jev, all chords first, then the notes</p>
@@ -161,6 +166,7 @@ button.primary { background: var(--accent); color: #fff; border-color: var(--acc
   <p class="meta"><button id="copy">Copy ABC</button> Paste it into any ABC tool, or a DAW that imports ABC.</p>
   <pre id="abc"></pre>
 </section>
+<p class="home home--end"><a href="../index.html">← Jev, the songwriter</a></p>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/abcjs@6.7.1/dist/abcjs-basic-min.js" integrity="sha384-gO9mym1Z3WJwxNm4ZpC6ZQbMyiu+72akLTHzztpwTs6KYVd3NnfkQigzPk+Oqzqy" crossorigin="anonymous"></script>
 <script>

@@ -20,7 +20,7 @@ if (missing.length) {
 const demos = manifest.filter((d) => traceOf(d.name)).map((d) => { const r = JSON.parse(fs.readFileSync(traceOf(d.name), "utf8")); r.abc = toAbc(r); return { ...d, r }; });
 fs.writeFileSync("docs/.nojekyll", "");
 for (const d of demos) {
-  fs.writeFileSync(path.join("docs/demos", `${d.name}.html`), renderPage(d.r, d.r.abc));
+  fs.writeFileSync(path.join("docs/demos", `${d.name}.html`), renderPage(d.r, d.r.abc, { home: "../index.html", homeLabel: "Jev, the songwriter" }));
   fs.writeFileSync(path.join("docs/demos", `${d.name}.json`), JSON.stringify(d.r, null, 2));
 }
 const cards = demos.map((d, i) => {

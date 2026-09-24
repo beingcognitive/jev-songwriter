@@ -240,6 +240,10 @@ test("abc: header, bar count, spans, and the page", async () => {
   const html = renderPage(r, abc);
   assert.ok(html.includes("abcjs-basic-min.js") && html.includes('"abc":') && html.includes("Test tune") && html.includes("sunny"));
   assert.match(html, /abcjs@\d+\.\d+\.\d+\/dist\/abcjs-basic-min\.js" integrity="sha384-/, "abcjs is pinned to an exact version with an integrity hash");
+  assert.ok(!html.includes('class="home"'), "a page written to out/ has no home link");
+  const onSite = renderPage(r, abc, { home: "../index.html", homeLabel: "Jev, the songwriter" });
+  assert.match(onSite, /<p class="home"><a href="\.\.\/index\.html">← Jev, the songwriter<\/a><\/p>/, "a page built for the site links back to it");
+  assert.equal((onSite.match(/class="home/g) || []).length, 2, "and again at the end of the page");
   assert.ok(html.includes('has("replay")'), "the page starts the replay when opened with ?replay=1");
 });
 
