@@ -54,8 +54,9 @@ h3 { font-size: 13px; margin: 0 0 6px; color: var(--muted); font-weight: 600; }
 .opt.pick b { color: var(--accent); } .opt.pick .bar i { background: var(--accent); }
 .opt small { color: var(--muted); }
 .facts { font-size: 13px; color: var(--muted); margin: 0; }
-#lat { display: flex; align-items: flex-end; gap: 2px; height: 44px; margin-top: 4px; flex-wrap: wrap; }
-#lat i { display: block; width: 6px; background: var(--bar); border-radius: 2px 2px 0 0; min-height: 2px; }
+/* One bar per call, on one row: they share the width rather than wrapping into the stats line below. */
+#lat { display: flex; align-items: flex-end; gap: 2px; height: 44px; margin-top: 4px; overflow: hidden; }
+#lat i { display: block; flex: 1 1 0; min-width: 1px; max-width: 8px; background: var(--bar); border-radius: 2px 2px 0 0; min-height: 2px; }
 #lat i.chord { background: var(--chord); opacity: .7; }
 #lat i.cur { background: var(--accent); opacity: 1; }
 .stats { color: var(--muted); font-size: 13px; margin-top: 0; font-variant-numeric: tabular-nums; }
