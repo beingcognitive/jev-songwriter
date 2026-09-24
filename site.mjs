@@ -23,6 +23,11 @@ for (const d of demos) {
   fs.writeFileSync(path.join("docs/demos", `${d.name}.html`), renderPage(d.r, d.r.abc, { home: "../index.html", homeLabel: "Jev, the songwriter" }));
   fs.writeFileSync(path.join("docs/demos", `${d.name}.json`), JSON.stringify(d.r, null, 2));
 }
+const COUNTS = ["no", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
+const countWord = (n) => COUNTS[n] ?? String(n);
+const shortTitle = (r) => String(r.title).split(",")[0].trim();
+const chips = demos.map((d) => `<a class="chip" href="#${esc(d.name)}">${esc(shortTitle(d.r))}<span>${clock(replaySeconds(d.r))}</span></a>`).join("");
+
 const cards = demos.map((d, i) => {
   const r = d.r, st = r.stats;
   const chords = r.barPlan.filter((b) => b.phrase === r.barPlan[0].phrase).map((b) => b.chord).join(" ");
@@ -66,10 +71,18 @@ h3 { font-size: 20px; margin: 4px 0 2px; }
 p { margin: 0 0 12px; } .meta { color: var(--muted); font-size: 14px; } .lede { font-size: 19px; color: var(--muted); max-width: 720px; }
 .blurb { margin: 6px 0; }
 nav { display: flex; gap: 14px; flex-wrap: wrap; margin: 18px 0 8px; font-size: 14px; } nav a { color: var(--accent); }
+/* One chip per tune, straight under the nav: how many there are, what they are, and how long each replay runs. */
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 2px 0 6px; }
+.chip { display: inline-flex; align-items: baseline; gap: 6px; padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--card); color: var(--ink); text-decoration: none; font-size: 14px; }
+.chip span { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+.chip:hover { border-color: var(--accent); color: var(--accent); }
+.demo { scroll-margin-top: 12px; }
 .demo { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px; margin-top: 18px; }
 .demo-head { display: flex; gap: 16px; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; }
 .tag { display: inline-block; padding: 2px 10px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-size: 12px; font-weight: 600; }
-.button { display: inline-block; padding: 8px 14px; border-radius: 10px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; white-space: nowrap; }
+.button { display: inline-block; max-width: 100%; padding: 8px 14px; border-radius: 10px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; white-space: nowrap; }
+/* On a phone the button is wider than the screen, so let its label wrap instead of pushing the page. */
+@media (max-width: 480px) { .button { white-space: normal; } }
 .paper svg { max-width: 100%; } .paper { margin-top: 8px; }
 .paper .abcjs-note.hl, .paper .abcjs-rest.hl, .paper .hl path { fill: var(--hl) !important; stroke: var(--hl) !important; }
 .paper .abcjs-cursor { stroke: var(--accent); stroke-width: 2.5; opacity: .85; }
@@ -85,9 +98,10 @@ a { color: var(--accent); }
 <main>
 <h1>Jev, the songwriter</h1>
 <p class="lede">Jev is TypeSafe AI's decision model. It cannot write a note. Given a state and a list of options it returns one choice with a probability for every option. So we let code do everything that only needs to be legal, and let Jev do the judging: which chord, which note, how long. Every call is recorded, and every song below can be rebuilt on screen call by call, at the speed Jev actually answered.</p>
-<nav><a href="#demos">The demos</a><a href="#how">How we built it</a><a href="#found">What we found</a><a href="#run">Run it yourself</a><a href="https://github.com/beingcognitive/jev-songwriter">Source on GitHub</a></nav>
+<nav><a href="#demos">The ${countWord(demos.length)} tunes</a><a href="#how">How we built it</a><a href="#found">What we found</a><a href="#run">Run it yourself</a><a href="https://github.com/beingcognitive/jev-songwriter">Source on GitHub</a></nav>
+<div class="chips">${chips}</div>
 
-<h2 id="demos">The demos</h2>
+<h2 id="demos">The ${countWord(demos.length)} tunes</h2>
 <p class="meta">Press play on any score; the cursor follows the notes. “Watch it being built in Jev's real time” opens the replay: the empty grid, then the chords landing, then the notes, with Jev's probabilities and raw responses for every call, each taking exactly as long as Jev took (a speed control is there if you want the gist). These were recorded on 22 September 2026 against jev-1.13.0, before the engine gained its rest rule, so a replay can show a rest offered next to a long length; the notes played are the ones Jev chose then.</p>
 ${cards}
 
