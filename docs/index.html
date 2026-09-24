@@ -40,7 +40,9 @@ nav { display: flex; gap: 14px; flex-wrap: wrap; margin: 18px 0 8px; font-size: 
 .transport .abcjs-inline-audio { width: 100%; height: 44px; padding: 0 8px 0 6px; border-radius: 10px; background: var(--card) !important; border: 1px solid var(--line); }
 .abcjs-inline-audio .abcjs-btn { width: 34px; height: 34px; padding: 0; margin: 0 2px 0 0; border-radius: 8px; border: 1px solid transparent; display: flex; align-items: center; justify-content: center; }
 .abcjs-inline-audio .abcjs-btn svg { display: block; width: 16px; height: 16px; }
-.abcjs-inline-audio .abcjs-midi-start svg { width: 15px; height: 15px; margin-left: 2px; } /* a triangle reads centred when nudged toward its point */
+.abcjs-inline-audio .abcjs-midi-start svg { width: 15px; height: 15px; }
+.abcjs-inline-audio .abcjs-play-svg { margin-left: 2px; } /* only a triangle reads centred when nudged toward its point */
+.abcjs-inline-audio .abcjs-midi-start .abcjs-pause-svg { width: 13px; height: 13px; } /* full-height bars look heavier than the triangle */
 .abcjs-inline-audio .abcjs-btn g { fill: var(--ink) !important; stroke: var(--ink) !important; }
 .abcjs-inline-audio .abcjs-btn:hover { background: var(--accent-soft); }
 .abcjs-inline-audio .abcjs-btn:hover g { fill: var(--accent) !important; stroke: var(--accent) !important; }
@@ -57,6 +59,8 @@ nav { display: flex; gap: 14px; flex-wrap: wrap; margin: 18px 0 8px; font-size: 
 .transport .pill { display: inline-flex; align-items: center; gap: 8px; padding: 0 12px; height: 44px; border: 1px solid var(--line); border-radius: 10px; background: var(--card); color: var(--ink); font-size: 14px; cursor: pointer; user-select: none; white-space: nowrap; }
 .transport .pill input { accent-color: var(--accent); width: 16px; height: 16px; margin: 0; }
 @media (max-width: 640px) { .abcjs-inline-audio .abcjs-tempo-wrapper { display: none; } }
+/* Narrower still: the total time would wrap inside the bar and be clipped, so only the elapsed clock stays. */
+@media (max-width: 400px) { .abcjs-inline-audio .abcjs-total { display: none; } }
 .how { max-width: 760px; } .how li { margin-bottom: 8px; }
 code, pre { font: 14px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; } pre { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; overflow-x: auto; }
 table { border-collapse: collapse; font-size: 14px; } td, th { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--line); } th { color: var(--muted); font-weight: 600; }
